@@ -149,135 +149,136 @@ class Home
 
     function AcmedentHomeCategories()
     {
-        $imgPath = "wp-content/plugins/AcmeShotcodes/assets/img/";
+        
+        $imgPath = ABSPATH."wp-content/uploads/2019/10/";
         $categories = array(
             array(
-                "link" => "/wp-content/uploads/2019/10/abrasives/",
+                "link" => "product-category/abrasives/",
                 "name" => "Abrasives",
                 "img" => $imgPath . "abrasives.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/acrylics/",
+                "link" => "product-category/acrylics/",
                 "name" => "Acrylics",
                 "img" => $imgPath . "acrylics.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/alloys/",
+                "link" => "product-category/alloys/",
                 "name" => "Alloys",
                 "img" => $imgPath . "alloys.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/anesthetics/",
+                "link" => "product-category/anesthetics/",
                 "name" => "Anesthetics",
                 "img" => $imgPath . "anesthetics.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/articularing-paper/",
+                "link" => "product-category/articularing-paper/",
                 "name" => "Articularing Paper",
                 "img" => $imgPath . "articularing-paper.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/burs/",
+                "link" => "product-category/burs/",
                 "name" => "Burs",
                 "img" => $imgPath . "burs.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/cavity-liners/",
+                "link" => "product-category/cavity-liners/",
                 "name" => "Cavity Liners",
                 "img" => $imgPath . "cavity-liners.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/cosmetics/",
+                "link" => "product-category/cosmetics/",
                 "name" => "Cosmetics",
                 "img" => $imgPath . "cosmetics.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/crown-and-bridge/",
+                "link" => "product-category/crown-and-bridge/",
                 "name" => "Crown and Bridge",
                 "img" => $imgPath . "crown-bridge.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/disposables/",
+                "link" => "product-category/disposables/",
                 "name" => "Disposables",
                 "img" => $imgPath . "disposables.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/endodontics/",
+                "link" => "product-category/endodontics/",
                 "name" => "Endodontics",
                 "img" => $imgPath . "endodontics.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/equipments/",
+                "link" => "product-category/equipments/",
                 "name" => "Equipments",
                 "img" => $imgPath . "equipments.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/films/",
+                "link" => "product-category/films/",
                 "name" => "Films",
                 "img" => $imgPath . "films.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/germicides/",
+                "link" => "product-category/germicides/",
                 "name" => "Germicides",
                 "img" => $imgPath . "germicides.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/handpieces/",
+                "link" => "product-category/handpieces/",
                 "name" => "Handpieces",
                 "img" => $imgPath . "handpieces.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/hemostatic-solutions/",
+                "link" => "product-category/hemostatic-solutions/",
                 "name" => "Hemostatic Solutions",
                 "img" => $imgPath . "hemostatic-solutions.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/impression-materials/",
+                "link" => "product-category/impression-materials/",
                 "name" => "Impression Materials",
                 "img" => $imgPath . "impression-materials.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/infection-control/",
+                "link" => "product-category/infection-control/",
                 "name" => "Infection Control",
                 "img" => $imgPath . "infection-control.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/matrix-and-wedges/",
+                "link" => "product-category/matrix-and-wedges/",
                 "name" => "Matrix and Wedges",
                 "img" => $imgPath . "matrix-wedges.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/miscellaneous/",
+                "link" => "product-category/miscellaneous/",
                 "name" => "Miscellaneous",
                 "img" => $imgPath . "miscellaneous.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/orthodontics/",
+                "link" => "product-category/orthodontics/",
                 "name" => "Orthodontics",
                 "img" => $imgPath . "orthodontics.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/parts-equipment/",
+                "link" => "product-category/parts-equipment/",
                 "name" => "Parts Equipment",
                 "img" => $imgPath . "parts-equipments.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/pins-and-posts/",
+                "link" => "product-category/pins-and-posts/",
                 "name" => "Pins and Posts",
                 "img" => $imgPath . "pins-posts.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/preventives/",
+                "link" => "product-category/preventives/",
                 "name" => "Preventives",
                 "img" => $imgPath . "preventives.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/rubber-dams/",
+                "link" => "product-category/rubber-dams/",
                 "name" => "Rubber Dams",
                 "img" => $imgPath . "rubber-dams.jpg"
             ),
             array(
-                "link" => "/wp-content/uploads/2019/10/surgical-and-sutures/",
+                "link" => "product-category/surgical-and-sutures/",
                 "name" => "Surgical and Sutures",
                 "img" => $imgPath . "surgical-sutures.jpg"
             )
