@@ -56,7 +56,7 @@
 }
 
 .slide1 {
-    background-image: url(http://localhost/acme/wp-content/uploads/2019/08/shipping.jpg);
+    background-image: url(/wp-content/uploads/2019/08/shipping.jpg);
     background-size: cover;
     background-position-y: 50%;
     background-position-x: 0;
@@ -65,7 +65,7 @@
 
 .slide2 {
     height: 100%;
-    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/catalog.jpg);
+    background-image: url(/wp-content/uploads/2019/06/catalog.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +75,7 @@
     background-size: cover;
     background-position-y: 75%;
     background-position-x: 0;
-    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/shop.jpg);
+    background-image: url(/wp-content/uploads/2019/06/shop.jpg);
 }
 
 .acme-slide-box {
