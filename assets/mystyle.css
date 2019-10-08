@@ -1,0 +1,141 @@
+@import "promo.css";
+@import "categories.css";
+@import "partners.css";
+@import "promo.css";
+@import "quaterly.css";
+@import "wplogin.css";
+@import "slides.css";
+.entry {
+    align-content: center;
+}
+
+#main>header>div>h1,
+.menu-item {
+    font-family: "Yantramanav", Sans-serif;
+}
+
+#content-wrap {
+    overflow: hidden;
+}
+
+.acme-2cl {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.acme-container {
+    display: block;
+    position: relative;
+    padding: 0px;
+    max-width: 1024px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.wpforms-field-label {
+    font-family: "Yantramanav", Sans-serif;
+}
+
+.acme-maintitle {
+    font-family: "Yantramanav", Sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #008ae0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.acme-sec-title {
+    font-weight: 600;
+    font-family: "Yantramanav", Sans-serif;
+    text-align: justify;
+    color: #0f0f0f;
+    font-size: 24px;
+    width: 100%;
+}
+
+.acme-text {
+    font-family: "Yantramanav", Sans-serif;
+    text-align: justify;
+    color: #7a7a7a;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.acme-list>li {
+    list-style-type: decimal;
+}
+
+.home-login-grid {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 70% 10% 20%;
+}
+
+.acme-info-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 1048px) {
+    .acme-maintitle {
+        font-size: 22px;
+    }
+    .acme-maintitle {
+        text-align: center;
+    }
+    .acme-sec-title {
+        text-align: center;
+    }
+    .acme-2cl {
+        display: block;
+    }
+    .quaterly-grid {
+        grid-template-columns: auto auto auto;
+    }
+    .acme-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .acme-maintitle {
+        font-size: 20px;
+    }
+    .partners-grid {
+        grid-template-columns: auto auto auto;
+    }
+    .quaterly-grid {
+        grid-template-columns: auto auto;
+    }
+    .home-login-grid {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #wpmem_login {
+        width: 50%;
+        margin: 20px auto;
+    }
+    /*SLIDER*/
+    .promo-grid {
+        grid-template: 'promoTitle promoTitle' 'promoDate promoDate' '. .' '. .' '. .' 'promoMsg promoMsg' 'promoSteam promoSteam' 'promoPhone promoPhone';
+    }
+}
+
+@media (max-width: 500px) {
+    .partners-grid {
+        grid-template-columns: auto auto;
+    }
+    .quaterly-grid {
+        grid-template-columns: auto;
+    }
+    .promo-grid {
+        display: block;
+    }
+}

@@ -1,0 +1,215 @@
+.acme-wrap {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-left: 30%;
+    left: 0;
+}
+
+.slide-arrow {
+    z-index: 99;
+    cursor: pointer;
+    position: absolute;
+    font-size: 3.2rem;
+    text-align: center;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    top: 140px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.slide-arrow i {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.slide-arrow:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.left-arrow {
+    left: 0;
+    margin-left: 22%;
+}
+
+.right-arrow {
+    right: 0;
+    margin-right: 24%;
+}
+
+.acme-slider {
+    margin: auto;
+    width: 500%;
+    height: 300px;
+    margin-left: 0%;
+    background-color: #777;
+}
+
+.acme-slide {
+    display: flex;
+    float: left;
+    width: 20%;
+    height: 300px;
+    margin-left: 0px;
+}
+
+.slide1 {
+    background-image: url(http://localhost/acme/wp-content/uploads/2019/08/shipping.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x: 0;
+    height: 100%;
+}
+
+.slide2 {
+    height: 100%;
+    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/catalog.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide3 {
+    background-size: cover;
+    background-position-y: 75%;
+    background-position-x: 0;
+    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/shop.jpg);
+}
+
+.acme-slide-box {
+    width: 900px;
+    margin: auto;
+}
+
+.slide1>div>a>h2 {
+    font-size: 16px;
+    margin: auto;
+    color: white;
+    width: 100px;
+    height: 30px;
+    background: rgba(1, 173, 211, .4);
+    transition: 0.5s;
+    line-height: 30px;
+}
+
+.slide1>div>a>h2:hover {
+    background: rgba(1, 173, 211, 1);
+    border-radius: 15px;
+}
+
+.slide1-h2 {
+    z-index: 5;
+    background: rgba(1, 173, 211, .4);
+    max-width: 400px !important;
+    padding: 5px;
+    font-size: 30px;
+    margin: auto;
+    color: #fff !important;
+}
+
+.slide2 div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    line-height: 100%;
+    overflow: visible;
+}
+
+.slide2-img {
+    display: block;
+    position: relative;
+    padding: 0px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/catalog.jpg);
+    background-position: center;
+}
+
+.slide2-h2 {
+    line-height: 300px;
+    z-index: 2;
+    width: 600px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff !important;
+}
+
+.slide3 {
+    display: block;
+    padding-top: 100px;
+}
+
+.slide3 a {
+    display: block;
+    background: #337ebf;
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    transition: 1s;
+}
+
+.slide3 a:hover {
+    background: #000;
+}
+
+.slide3 a h2 {
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.slide2-h3 {
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    max-width: 450px !important;
+    color: rgba(1, 173, 211, .4);
+    background: rgba(255, 255, 255, 0.7);
+    line-height: 60px;
+    border-radius: 30px;
+}
+
+@media (max-width: 1048px) {}
+
+@media (max-width: 768px) {
+    .acme-wrap {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0%;
+    }
+    .slide-arrow {
+        border-radius: 20px;
+        height: 40px;
+        width: 40px;
+        top: 160px;
+        line-height: 40px;
+    }
+    .slide-arrow i {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .left-arrow {
+        left: 3%;
+        margin-left: 1%;
+    }
+    .right-arrow {
+        margin-left: 100%;
+        right: -20%;
+    }
+    .slide2-h2 {
+        line-height: 300px;
+        z-index: 2;
+        padding: 0;
+        width: 600px;
+        margin: auto;
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 500px) {}

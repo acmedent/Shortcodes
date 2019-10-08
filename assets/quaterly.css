@@ -1,0 +1,62 @@
+.quaterly {
+    height: 170px;
+}
+
+.qtl-img-box {
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    min-height: 120px;
+    line-height: 120px;
+    margin-bottom: 10px;
+}
+
+.quaterly img {
+    max-height: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.quaterly {
+    text-align: center;
+    align-content: center;
+}
+
+.qtl-btn-box {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.qtl-btn {
+    line-height: 40px;
+    height: 40px;
+    background-color: #008ae0;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: 0.5s;
+}
+
+.qtl-btn:hover {
+    background-color: #000;
+    text-decoration: underline;
+}
+
+.quaterly-link {
+    padding: 0;
+    text-align: center;
+    align-content: center;
+}
+
+@media (max-width: 1048px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}

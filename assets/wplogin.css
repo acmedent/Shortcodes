@@ -1,0 +1,55 @@
+#wpmem_login form fieldset {
+    margin: 0;
+}
+
+#wpmem_login form fieldset legend {
+    font-size: 16px;
+}
+
+#wpmem_login form fieldset>label {
+    font-size: 14px;
+}
+
+#wpmem_login form fieldset>div {
+    margin: 0;
+    padding: 0;
+}
+
+#wpmem_login form fieldset>div>input {
+    margin: 0;
+    font-size: 12px;
+}
+
+#wpmem_login_form>fieldset>div.button_div {
+    text-align: left;
+    align-content: left;
+    padding: 0;
+}
+
+#wpmem_login .button_div input:nth-child(1) {
+    height: 15px;
+    width: 15px;
+    margin: 0;
+}
+
+#wpmem_login_form>fieldset>div.button_div>input.buttons {
+    padding: 5px 10px;
+    vertical-align: middle;
+    font-size: 12px;
+    height: 20px;
+}
+
+#wpmem_login .button_div label {
+    font-size: 14px;
+}
+
+@media (max-width: 1048px) {}
+
+@media (max-width: 768px) {
+    .login-box {
+        margin: auto;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 500px) {}

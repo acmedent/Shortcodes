@@ -1,0 +1,161 @@
+.promo-grid {
+    display: grid;
+    grid-template: 'promoTitle promoTitle promoTitle' 'promoDate promoDate promoDate' '. . .' '. . .' 'promoMsg promoMsg promoMsg' 'promoSteam promoSteam promoSteam' 'promoPhone promoPhone promoPhone';
+    grid-template-columns: repeat(1, auto);
+    margin: auto;
+    max-width: 1048px;
+    padding: 0;
+    font-family: "Roboto", Sans-serif;
+}
+
+.promo-title {
+    color: rgb(18, 168, 18);
+    text-align: center;
+    font-size: 30px;
+    grid-area: promoTitle;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.promo-date {
+    margin: 10px auto;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    grid-area: promoDate;
+}
+
+.promo-msg {
+    grid-area: promoMsg;
+    color: #7a7a7a;
+    line-height: 50px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center !important;
+}
+
+.promo-steam {
+    grid-area: promoSteam;
+    color: #6ec1e4;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 30px !important;
+}
+
+.promo-phone {
+    grid-area: promoPhone;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+}
+
+.promo-prod {
+    text-align: center;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+
+.img-box {
+    width: 100%;
+    height: 230px;
+    text-align: center
+}
+
+.promo-img {
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    max-width: 230px;
+    max-height: 230px;
+    width: 230px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.promo-img:hover {
+    max-height: 230px;
+    width: 210px;
+    max-width: 210px;
+    padding: 10px;
+    filter: saturate(300%);
+}
+
+.title-box {
+    height: 50px;
+}
+
+.promo-name {
+    color: #6ec1e4;
+    font-size: 26px;
+    height: 30px;
+}
+
+.prod-title {
+    color: #6ec1e4;
+    font-size: 16px;
+    margin: auto;
+    max-width: 300px;
+}
+
+.each-price {
+    color: rgb(6, 187, 6);
+}
+
+.net-price {
+    color: rgb(6, 187, 6);
+    height: 30px;
+}
+
+.prod-price {
+    color: rgb(6, 187, 6);
+    height: 70px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.prod-normal-price {
+    color: #000;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 100;
+    text-decoration: line-through;
+}
+
+.promo-btn {
+    text-decoration: none;
+    margin: auto;
+}
+
+.promo-btn h2 {
+    margin: auto;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    width: 150px;
+    background: #6ec1e4;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.promo-btn h2:hover {
+    background: #000;
+}
+
+@media (max-width: 1048px) {}
+
+@media (max-width: 768px) {
+    .promo-name {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {}
