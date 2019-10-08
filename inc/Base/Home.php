@@ -16,6 +16,7 @@ class Home
     {
         add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
         add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
+        add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
     }
@@ -104,12 +105,12 @@ class Home
 
 
         $ids = array(
-            26321 => array("promo" => "PROMO 1+1", "promo-price" => 110.00, "net-price" => 10.00),
-            38568 => array("promo" => "PROMO 2+1", "promo-price" => 120.00, "net-price" => 20.00),
-            28067 => array("promo" => "PROMO 3+1", "promo-price" => 130.00, "net-price" => 30.00),
-            31403 => array("promo" => "PROMO 4+1", "promo-price" => 140.00, "net-price" => 40.00),
-            39021 => array("promo" => "PROMO 5+1", "promo-price" => 150.00, "net-price" => 50.00),
-            36610 => array("promo" => "PROMO 6+1", "promo-price" => 160.00, "net-price" => 60.00)
+            26321 => array("promo" => "", "promo-price" => "49.00", "net-price" => ""),
+            38568 => array("promo" => "PROMO 3+2", "promo-price" => "14.99", "net-price" => "8.99"),
+            28067 => array("promo" => "PROMO 5+1 OR 10+3 Or 15+6", "promo-price" => "111.00", "net-price" => "30.00 | $85.38 | $79.28"),
+            31403 => array("promo" => "PROMO 3+1", "promo-price" => "144.00", "net-price" => "108.00"),
+            39021 => array("promo" => "PROMO 6+4", "promo-price" => "21.99", "net-price" => "13.19"),
+            36610 => array("promo" => "", "promo-price" => "82.00", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
@@ -128,10 +129,78 @@ class Home
             $page .= "
             <div class='promo-prod'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
-                <div class='img-box'><a href='".get_permalink( $product->get_id() )."'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
+                <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
-                <h2 class='prod-price'>Each: $" . number_format($value["promo-price"], 2, '.', '') . "<br>Net Price: $" . number_format($value["net-price"], 2, '.', '') . "</h2>
-                <a class='promo-btn' href=''>
+                <h2 class='prod-price'>Each: $" . $value["promo-price"];
+            if ($value["net-price"] == "")
+                $page .=  "</h2>";
+            else
+                $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
+
+            $page .= " <a class='promo-btn' href=''>
+                    <h2>Add to Cart</h2>
+                </a>
+            </div>";
+        }
+
+        $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
+        <h2 class='acme-maintitle promo-steam'>Sales Team</h2>
+        <h2 class='acme-sec-title promo-phone'>905-761-6850</h2>
+
+        </div><br>";
+
+        return $page;
+    }
+
+
+
+    function AcmedentHomePromoNextWeek()
+    {
+        $ids = array(28067, 28067, 28067, 28067, 28067, 28067);
+
+        $page = "
+        <br>
+        <div class='promo-grid'>
+
+        <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
+
+        <h2 class='promo-date'>September 30 to October 06, 2019</h2>";
+
+
+        $ids = array(
+            26321 => array("promo" => "", "promo-price" => "49.00", "net-price" => ""),
+            38568 => array("promo" => "PROMO 3+2", "promo-price" => "14.99", "net-price" => "8.99"),
+            28067 => array("promo" => "PROMO 5+1 OR 10+3 Or 15+6", "promo-price" => "111.00", "net-price" => "30.00 | $85.38 | $79.28"),
+            31403 => array("promo" => "PROMO 3+1", "promo-price" => "144.00", "net-price" => "108.00"),
+            39021 => array("promo" => "PROMO 6+4", "promo-price" => "21.99", "net-price" => "13.19"),
+            36610 => array("promo" => "", "promo-price" => "82.00", "net-price" => "")
+        );
+
+        foreach ($ids as $id => $value) {
+
+            $product = wc_get_product($id);
+
+            $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
+
+
+            $prod_info = array(
+                "name" => $product->get_name(),
+                "img" => $image,
+                "price" => $product->get_price(),
+            );
+
+            $page .= "
+            <div class='promo-prod'>
+                <h2 class='promo-name'>" . $value["promo"] . "</h2>
+                <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
+                <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
+                <h2 class='prod-price'>Each: $" . $value["promo-price"];
+            if ($value["net-price"] == "")
+                $page .=  "</h2>";
+            else
+                $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
+
+            $page .= " <a class='promo-btn' href=''>
                     <h2>Add to Cart</h2>
                 </a>
             </div>";
@@ -149,7 +218,7 @@ class Home
 
     function AcmedentHomeCategories()
     {
-        
+
         $imgPath = "/wp-content/uploads/2019/10/";
         $categories = array(
             array(
