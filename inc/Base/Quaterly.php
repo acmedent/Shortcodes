@@ -29,82 +29,82 @@ class Quaterly
 
         $arr = array(
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/coltene-1.png",
+                "src" => "/wp-content/uploads/2019/06/coltene-1.png",
                 "link"=>"1",
                 "alt" => "Coltene"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/dentsply-1.png",
+                "src" => "/wp-content/uploads/2019/06/dentsply-1.png",
                 "link"=>"",
                 "alt" => "Dentsply"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/diadent.png",
+                "src" => "/wp-content/uploads/2019/06/diadent.png",
                 "link"=>"",
                 "alt" => "DiaDent"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/dmg-1.png",
+                "src" => "/wp-content/uploads/2019/06/dmg-1.png",
                 "link"=>"",
                 "alt" => "DMG"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/gc-america.png",
+                "src" => "/wp-content/uploads/2019/06/gc-america.png",
                 "link"=>"",
                 "alt" => "GC America"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/hedy.jpg",
+                "src" => "/wp-content/uploads/2019/06/hedy.jpg",
                 "link"=>"",
                 "alt" => "Hedy"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/hufriendy.png",
+                "src" => "/wp-content/uploads/2019/06/hufriendy.png",
                 "link"=>"",
                 "alt" => "Hu-Friendly"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/kulzer.jpg",
+                "src" => "/wp-content/uploads/2019/06/kulzer.jpg",
                 "link"=>"",
                 "alt" => "Kulzer"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/kuraray-1.png",
+                "src" => "/wp-content/uploads/2019/06/kuraray-1.png",
                 "link"=>"",
                 "alt" => "Kuraray"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/medicom-1.png",
+                "src" => "/wp-content/uploads/2019/06/medicom-1.png",
                 "link"=>"",
                 "alt" => "Medicom"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/morita.png",
+                "src" => "/wp-content/uploads/2019/06/morita.png",
                 "link"=>"",
                 "alt" => "Morita"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/puldent.png", 
+                "src" => "/wp-content/uploads/2019/06/puldent.png", 
                 "link" => "",
                 "alt" => "Pulpdent"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/sable.png",
+                "src" => "/wp-content/uploads/2019/06/sable.png",
                 "link" => "",
                 "alt" => "Sable"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/shofu.png",
+                "src" => "/wp-content/uploads/2019/06/shofu.png",
                 "link" => "",
                 "alt" => "Shofu"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/young.png",
+                "src" => "/wp-content/uploads/2019/06/young.png",
                 "link" => "",
                 "alt" => "Young"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/zest-dental.jpg",
+                "src" => "/wp-content/uploads/2019/06/zest-dental.jpg",
                 "link" => "2",
                 "alt" => "Zest Dental"
             )

@@ -59,87 +59,87 @@ class About
 
         $arr = array(
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/coltene-1.png",
+                "src" => "/wp-content/uploads/2019/06/coltene-1.png",
                 "alt" => "Coltene"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/dentsply-1.png",
+                "src" => "/wp-content/uploads/2019/06/dentsply-1.png",
                 "alt" => "Dentsply"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/dmg-1.png",
+                "src" => "/wp-content/uploads/2019/06/dmg-1.png",
                 "alt" => "DMG"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/gc-america.png",
+                "src" => "/wp-content/uploads/2019/06/gc-america.png",
                 "alt" => "GC America"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/heraeus.png",
+                "src" => "/wp-content/uploads/2019/06/heraeus.png",
                 "alt" => "Heraeus"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/hufriendy.png",
+                "src" => "/wp-content/uploads/2019/06/hufriendy.png",
                 "alt" => "Hu-Friendly"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/kuraray-1.png",
+                "src" => "/wp-content/uploads/2019/06/kuraray-1.png",
                 "alt" => "Kuraray"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/medicom-1.png",
+                "src" => "/wp-content/uploads/2019/06/medicom-1.png",
                 "alt" => "Medicom"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/microcopy.png",
+                "src" => "/wp-content/uploads/2019/06/microcopy.png",
                 "alt" => "Microcopy"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/miltex.png",
+                "src" => "/wp-content/uploads/2019/06/miltex.png",
                 "alt" => "Miltex"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/morita.png",
+                "src" => "/wp-content/uploads/2019/06/morita.png",
                 "alt" => "Morita"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/oceanpacific.png",
+                "src" => "/wp-content/uploads/2019/06/oceanpacific.png",
                 "alt" => "Ocean Pacific"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/parkell.png",
+                "src" => "/wp-content/uploads/2019/06/parkell.png",
                 "alt" => "Parkell"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/premier.png",
+                "src" => "/wp-content/uploads/2019/06/premier.png",
                 "alt" => "Premier"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/puldent.png",
+                "src" => "/wp-content/uploads/2019/06/puldent.png",
                 "alt" => "Pulpdent"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/sable.png",
+                "src" => "/wp-content/uploads/2019/06/sable.png",
                 "alt" => "Sable"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/techwest.png",
+                "src" => "/wp-content/uploads/2019/06/techwest.png",
                 "alt" => "Tech West"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/teledyne.png",
+                "src" => "/wp-content/uploads/2019/06/teledyne.png",
                 "alt" => "Teledyne"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/tuttnauer.png",
+                "src" => "/wp-content/uploads/2019/06/tuttnauer.png",
                 "alt" => "Tuttnauer"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/velopex.png",
+                "src" => "/wp-content/uploads/2019/06/velopex.png",
                 "alt" => "Velopex"
             ),
             array(
-                "src" => "http://localhost/acme/wp-content/uploads/2019/06/young.png",
+                "src" => "/wp-content/uploads/2019/06/young.png",
                 "alt" => "Young"
             )
         );

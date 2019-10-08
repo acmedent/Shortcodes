@@ -124,7 +124,7 @@
     padding: 0px;
     max-width: 400px;
     margin: 0 auto;
-    background-image: url(http://localhost/acme/wp-content/uploads/2019/06/catalog.jpg);
+    background-image: url(/wp-content/uploads/2019/06/catalog.jpg);
     background-position: center;
 }
 
