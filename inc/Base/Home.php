@@ -150,7 +150,7 @@ class Home
     function AcmedentHomeCategories()
     {
         
-        $imgPath = ABSPATH."wp-content/uploads/2019/10/";
+        $imgPath = "/wp-content/uploads/2019/10/";
         $categories = array(
             array(
                 "link" => "product-category/abrasives/",
