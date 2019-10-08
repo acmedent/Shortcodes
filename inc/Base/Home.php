@@ -128,7 +128,7 @@ class Home
             $page .= "
             <div class='promo-prod'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
-                <div class='img-box'><a href=''> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
+                <div class='img-box'><a href='".get_permalink( $product->get_id() )."'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
                 <h2 class='prod-price'>Each: $" . number_format($value["promo-price"], 2, '.', '') . "<br>Net Price: $" . number_format($value["net-price"], 2, '.', '') . "</h2>
                 <a class='promo-btn' href=''>
@@ -137,17 +137,11 @@ class Home
             </div>";
         }
 
-
-
-
-
         $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
         <h2 class='acme-maintitle promo-steam'>Sales Team</h2>
         <h2 class='acme-sec-title promo-phone'>905-761-6850</h2>
 
         </div><br>";
-
-
 
         return $page;
     }
@@ -158,132 +152,132 @@ class Home
         $imgPath = "wp-content/plugins/AcmeShotcodes/assets/img/";
         $categories = array(
             array(
-                "link" => "product-category/abrasives/",
+                "link" => "/wp-content/uploads/2019/10/abrasives/",
                 "name" => "Abrasives",
                 "img" => $imgPath . "abrasives.jpg"
             ),
             array(
-                "link" => "product-category/acrylics/",
+                "link" => "/wp-content/uploads/2019/10/acrylics/",
                 "name" => "Acrylics",
                 "img" => $imgPath . "acrylics.jpg"
             ),
             array(
-                "link" => "product-category/alloys/",
+                "link" => "/wp-content/uploads/2019/10/alloys/",
                 "name" => "Alloys",
                 "img" => $imgPath . "alloys.jpg"
             ),
             array(
-                "link" => "product-category/anesthetics/",
+                "link" => "/wp-content/uploads/2019/10/anesthetics/",
                 "name" => "Anesthetics",
                 "img" => $imgPath . "anesthetics.jpg"
             ),
             array(
-                "link" => "product-category/articularing-paper/",
+                "link" => "/wp-content/uploads/2019/10/articularing-paper/",
                 "name" => "Articularing Paper",
                 "img" => $imgPath . "articularing-paper.jpg"
             ),
             array(
-                "link" => "product-category/burs/",
+                "link" => "/wp-content/uploads/2019/10/burs/",
                 "name" => "Burs",
                 "img" => $imgPath . "burs.jpg"
             ),
             array(
-                "link" => "product-category/cavity-liners/",
+                "link" => "/wp-content/uploads/2019/10/cavity-liners/",
                 "name" => "Cavity Liners",
                 "img" => $imgPath . "cavity-liners.jpg"
             ),
             array(
-                "link" => "product-category/cosmetics/",
+                "link" => "/wp-content/uploads/2019/10/cosmetics/",
                 "name" => "Cosmetics",
                 "img" => $imgPath . "cosmetics.jpg"
             ),
             array(
-                "link" => "product-category/crown-and-bridge/",
+                "link" => "/wp-content/uploads/2019/10/crown-and-bridge/",
                 "name" => "Crown and Bridge",
                 "img" => $imgPath . "crown-bridge.jpg"
             ),
             array(
-                "link" => "product-category/disposables/",
+                "link" => "/wp-content/uploads/2019/10/disposables/",
                 "name" => "Disposables",
                 "img" => $imgPath . "disposables.jpg"
             ),
             array(
-                "link" => "product-category/endodontics/",
+                "link" => "/wp-content/uploads/2019/10/endodontics/",
                 "name" => "Endodontics",
                 "img" => $imgPath . "endodontics.jpg"
             ),
             array(
-                "link" => "product-category/equipments/",
+                "link" => "/wp-content/uploads/2019/10/equipments/",
                 "name" => "Equipments",
                 "img" => $imgPath . "equipments.jpg"
             ),
             array(
-                "link" => "product-category/films/",
+                "link" => "/wp-content/uploads/2019/10/films/",
                 "name" => "Films",
                 "img" => $imgPath . "films.jpg"
             ),
             array(
-                "link" => "product-category/germicides/",
+                "link" => "/wp-content/uploads/2019/10/germicides/",
                 "name" => "Germicides",
                 "img" => $imgPath . "germicides.jpg"
             ),
             array(
-                "link" => "product-category/handpieces/",
+                "link" => "/wp-content/uploads/2019/10/handpieces/",
                 "name" => "Handpieces",
                 "img" => $imgPath . "handpieces.jpg"
             ),
             array(
-                "link" => "product-category/hemostatic-solutions/",
+                "link" => "/wp-content/uploads/2019/10/hemostatic-solutions/",
                 "name" => "Hemostatic Solutions",
                 "img" => $imgPath . "hemostatic-solutions.jpg"
             ),
             array(
-                "link" => "product-category/impression-materials/",
+                "link" => "/wp-content/uploads/2019/10/impression-materials/",
                 "name" => "Impression Materials",
                 "img" => $imgPath . "impression-materials.jpg"
             ),
             array(
-                "link" => "product-category/infection-control/",
+                "link" => "/wp-content/uploads/2019/10/infection-control/",
                 "name" => "Infection Control",
                 "img" => $imgPath . "infection-control.jpg"
             ),
             array(
-                "link" => "product-category/matrix-and-wedges/",
+                "link" => "/wp-content/uploads/2019/10/matrix-and-wedges/",
                 "name" => "Matrix and Wedges",
                 "img" => $imgPath . "matrix-wedges.jpg"
             ),
             array(
-                "link" => "product-category/miscellaneous/",
+                "link" => "/wp-content/uploads/2019/10/miscellaneous/",
                 "name" => "Miscellaneous",
                 "img" => $imgPath . "miscellaneous.jpg"
             ),
             array(
-                "link" => "product-category/orthodontics/",
+                "link" => "/wp-content/uploads/2019/10/orthodontics/",
                 "name" => "Orthodontics",
                 "img" => $imgPath . "orthodontics.jpg"
             ),
             array(
-                "link" => "product-category/parts-equipment/",
+                "link" => "/wp-content/uploads/2019/10/parts-equipment/",
                 "name" => "Parts Equipment",
                 "img" => $imgPath . "parts-equipments.jpg"
             ),
             array(
-                "link" => "product-category/pins-and-posts/",
+                "link" => "/wp-content/uploads/2019/10/pins-and-posts/",
                 "name" => "Pins and Posts",
                 "img" => $imgPath . "pins-posts.jpg"
             ),
             array(
-                "link" => "product-category/preventives/",
+                "link" => "/wp-content/uploads/2019/10/preventives/",
                 "name" => "Preventives",
                 "img" => $imgPath . "preventives.jpg"
             ),
             array(
-                "link" => "product-category/rubber-dams/",
+                "link" => "/wp-content/uploads/2019/10/rubber-dams/",
                 "name" => "Rubber Dams",
                 "img" => $imgPath . "rubber-dams.jpg"
             ),
             array(
-                "link" => "product-category/surgical-and-sutures/",
+                "link" => "/wp-content/uploads/2019/10/surgical-and-sutures/",
                 "name" => "Surgical and Sutures",
                 "img" => $imgPath . "surgical-sutures.jpg"
             )
