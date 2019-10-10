@@ -161,7 +161,7 @@ class Home
 
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
-        <h2 class='promo-date'>October 07 - 13, 2019</h2>";
+        <h2 class='promo-date'>October 14 - 20, 2019</h2>";
 
 
         $ids = array(
