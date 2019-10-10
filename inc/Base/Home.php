@@ -135,10 +135,10 @@ class Home
             else
                 $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-            $page .= " <a class='promo-btn' href=''>
-                    <h2>Add to Cart</h2>
+                $page .= " <a class='promo-btn' href='".get_permalink( $product->get_id() )."'>
+                <h2>Product Page</h2>
                 </a>
-            </div>";
+                </div>";
         }
 
         $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
@@ -197,8 +197,8 @@ class Home
             else
                 $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-            $page .= " <a class='promo-btn' href=''>
-                    <h2>Add to Cart</h2>
+            $page .= " <a class='promo-btn' href='".get_permalink( $product->get_id() )."'>
+                    <h2>Product Page</h2>
                 </a>
             </div>";
         }
