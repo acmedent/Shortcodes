@@ -135,7 +135,7 @@ class Home
             else
                 $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-                $page .= " <a class='promo-btn' href='".get_permalink( $product->get_id() )."'>
+            $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
                 <h2>Product Page</h2>
                 </a>
                 </div>";
@@ -197,7 +197,7 @@ class Home
             else
                 $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-            $page .= " <a class='promo-btn' href='".get_permalink( $product->get_id() )."'>
+            $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
                     <h2>Product Page</h2>
                 </a>
             </div>";
@@ -387,14 +387,9 @@ class Home
  
         <div class='acme-info-grid'>
 
-        <div><h2 class='acme-maintitle'><i class='fas fa-truck'></i></h2><h2 class='acme-maintitle'>Free shipping on all orders over $300.00</h2></div>
-        <div><h2 class='acme-maintitle'><i class='fas fa-handshake'></i></h2><h2 class='acme-maintitle'>If you're not satisfied, we're not satisfied
-        </h2></div>
-        <div><h2 class='acme-maintitle'><i class='fas fa-dollar-sign'></i></h2><h2 class='acme-maintitle'>Increase revenue decrease expenses</h2></div>
-
-
-
-
+        <div><h2 class='acme-maintitle'>Free shipping on all orders over $300.00</h2></div>
+        <div><h2 class='acme-maintitle'>If you're not satisfied, we're not satisfied</h2></div>
+        <div><h2 class='acme-maintitle'>Increase revenue decrease expenses</h2></div>
 
         </div>
     </div><br>";
