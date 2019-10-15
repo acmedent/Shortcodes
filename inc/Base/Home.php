@@ -71,8 +71,8 @@ class Home
        <br> <div class='home-login-grid'>
         <div class='acme-wrap'>
         <div class='slide-arrow left-arrow' id='left-arrow'>
-        <i class='fas fa-angle-left'></i></div>
-                <div class='slide-arrow right-arrow' id='right-arrow'><i class='fas fa-angle-right'></i></div>
+        <</div>
+                <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
                     " . $slide3 . $slide1 . $slide2 . $slide3 . $slide1 . "
 
@@ -103,12 +103,12 @@ class Home
 
 
         $ids = array(
-            26321 => array("promo" => "", "promo-price" => "49.00", "net-price" => ""),
-            38568 => array("promo" => "PROMO 3+2", "promo-price" => "14.99", "net-price" => "8.99"),
-            26843 => array("promo" => "PROMO 5+1 OR 10+3 OR 15+6", "promo-price" => "111.00", "net-price" => "92.50 | $85.38 | $79.28"),
-            31403 => array("promo" => "PROMO 3+1", "promo-price" => "144.00", "net-price" => "108.00"),
-            39021 => array("promo" => "PROMO 6+4", "promo-price" => "21.99", "net-price" => "13.19"),
-            36610 => array("promo" => "", "promo-price" => "82.00", "net-price" => "")
+            41090 => array("promo" => "", "promo-price" => "84.95", "net-price" => ""),
+            28281 => array("promo" => "", "promo-price" => "7.65", "net-price" => ""),
+            33652 => array("promo" => "", "promo-price" => "75.70", "net-price" => ""),
+            32038 => array("promo" => "", "promo-price" => "85.00", "net-price" => ""),
+            34277 => array("promo" => "", "promo-price" => "65.95", "net-price" => ""),
+            28248 => array("promo" => "", "promo-price" => "13.50", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
