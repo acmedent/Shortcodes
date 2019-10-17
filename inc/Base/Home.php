@@ -28,7 +28,7 @@ class Home
         $slide1 = "<div class='acme-slide slide1'>
         <div class='acme-slide-box'>
 
-        <a class='side1-link'  href=''>
+        <a class='side1-link'  href='/wp-content/uploads/pdf/catalog.pdf'>
         <h2 class='acme-maintitle'>Download</h2>
         </a>
         
