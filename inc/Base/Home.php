@@ -217,134 +217,135 @@ class Home
     {
 
         $imgPath = "/wp-content/uploads/2019/10/";
+        $pagePath = "dental-products-supplies/";
         $categories = array(
             array(
-                "link" => "product-category/abrasives/",
+                "link" => $pagePath."abrasives/",
                 "name" => "Abrasives",
                 "img" => $imgPath . "abrasives.jpg"
             ),
             array(
-                "link" => "product-category/acrylics/",
+                "link" => $pagePath."acrylics/",
                 "name" => "Acrylics",
                 "img" => $imgPath . "acrylics.jpg"
             ),
             array(
-                "link" => "product-category/alloys/",
+                "link" => $pagePath."alloys/",
                 "name" => "Alloys",
                 "img" => $imgPath . "alloys.jpg"
             ),
             array(
-                "link" => "product-category/anesthetics/",
+                "link" => $pagePath."anesthetics/",
                 "name" => "Anesthetics",
                 "img" => $imgPath . "anesthetics.jpg"
             ),
             array(
-                "link" => "product-category/articularing-paper/",
+                "link" => $pagePath."articularing-paper/",
                 "name" => "Articularing Paper",
                 "img" => $imgPath . "articularing-paper.jpg"
             ),
             array(
-                "link" => "product-category/burs/",
+                "link" => $pagePath."burs/",
                 "name" => "Burs",
                 "img" => $imgPath . "burs.jpg"
             ),
             array(
-                "link" => "product-category/cavity-liners/",
+                "link" => $pagePath."cavity-liners/",
                 "name" => "Cavity Liners",
                 "img" => $imgPath . "cavity-liners.jpg"
             ),
             array(
-                "link" => "product-category/cosmetics/",
+                "link" => $pagePath."cosmetics/",
                 "name" => "Cosmetics",
                 "img" => $imgPath . "cosmetics.jpg"
             ),
             array(
-                "link" => "product-category/crown-and-bridge/",
+                "link" => $pagePath."crown-and-bridge/",
                 "name" => "Crown and Bridge",
                 "img" => $imgPath . "crown-bridge.jpg"
             ),
             array(
-                "link" => "product-category/disposables/",
+                "link" => $pagePath."disposables/",
                 "name" => "Disposables",
                 "img" => $imgPath . "disposables.jpg"
             ),
             array(
-                "link" => "product-category/endodontics/",
+                "link" => $pagePath."endodontics/",
                 "name" => "Endodontics",
                 "img" => $imgPath . "endodontics.jpg"
             ),
             array(
-                "link" => "product-category/equipments/",
+                "link" => $pagePath."equipments/",
                 "name" => "Equipments",
                 "img" => $imgPath . "equipments.jpg"
             ),
             array(
-                "link" => "product-category/films/",
+                "link" => $pagePath."films/",
                 "name" => "Films",
                 "img" => $imgPath . "films.jpg"
             ),
             array(
-                "link" => "product-category/germicides/",
+                "link" => $pagePath."germicides/",
                 "name" => "Germicides",
                 "img" => $imgPath . "germicides.jpg"
             ),
             array(
-                "link" => "product-category/handpieces/",
+                "link" => $pagePath."handpieces/",
                 "name" => "Handpieces",
                 "img" => $imgPath . "handpieces.jpg"
             ),
             array(
-                "link" => "product-category/hemostatic-solutions/",
+                "link" => $pagePath."hemostatic-solutions/",
                 "name" => "Hemostatic Solutions",
                 "img" => $imgPath . "hemostatic-solutions.jpg"
             ),
             array(
-                "link" => "product-category/impression-materials/",
+                "link" => $pagePath."impression-materials/",
                 "name" => "Impression Materials",
                 "img" => $imgPath . "impression-materials.jpg"
             ),
             array(
-                "link" => "product-category/infection-control/",
+                "link" => $pagePath."infection-control/",
                 "name" => "Infection Control",
                 "img" => $imgPath . "infection-control.jpg"
             ),
             array(
-                "link" => "product-category/matrix-and-wedges/",
+                "link" => $pagePath."matrix-and-wedges/",
                 "name" => "Matrix and Wedges",
                 "img" => $imgPath . "matrix-wedges.jpg"
             ),
             array(
-                "link" => "product-category/miscellaneous/",
+                "link" => $pagePath."miscellaneous/",
                 "name" => "Miscellaneous",
                 "img" => $imgPath . "miscellaneous.jpg"
             ),
             array(
-                "link" => "product-category/orthodontics/",
+                "link" => $pagePath."orthodontics/",
                 "name" => "Orthodontics",
                 "img" => $imgPath . "orthodontics.jpg"
             ),
             array(
-                "link" => "product-category/parts-equipment/",
+                "link" => $pagePath."parts-equipment/",
                 "name" => "Parts Equipment",
                 "img" => $imgPath . "parts-equipments.jpg"
             ),
             array(
-                "link" => "product-category/pins-and-posts/",
+                "link" => $pagePath."pins-and-posts/",
                 "name" => "Pins and Posts",
                 "img" => $imgPath . "pins-posts.jpg"
             ),
             array(
-                "link" => "product-category/preventives/",
+                "link" => $pagePath."preventives/",
                 "name" => "Preventives",
                 "img" => $imgPath . "preventives.jpg"
             ),
             array(
-                "link" => "product-category/rubber-dams/",
+                "link" => $pagePath."rubber-dams/",
                 "name" => "Rubber Dams",
                 "img" => $imgPath . "rubber-dams.jpg"
             ),
             array(
-                "link" => "product-category/surgical-and-sutures/",
+                "link" => $pagePath."surgical-and-sutures/",
                 "name" => "Surgical and Sutures",
                 "img" => $imgPath . "surgical-sutures.jpg"
             )
