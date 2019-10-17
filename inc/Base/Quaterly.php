@@ -27,85 +27,87 @@ class Quaterly
             
             ";
 
+        $pdfPath = "/wp-content/uploads/pdf/";
+
         $arr = array(
             array(
                 "src" => "/wp-content/uploads/2019/06/coltene-1.png",
-                "link"=>"1",
+                "link"=> $pdfPath."",
                 "alt" => "Coltene"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/dentsply-1.png",
-                "link"=>"",
+                "link"=>$pdfPath."Dentsply-Q4-2019.pdf",
                 "alt" => "Dentsply"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/diadent.png",
-                "link"=>"",
+                "link"=>$pdfPath."DiaDent-Q4-2019.pdf",
                 "alt" => "DiaDent"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/dmg-1.png",
-                "link"=>"",
+                "link"=>$pdfPath."DMG-Q4-2019.pdf",
                 "alt" => "DMG"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/gc-america.png",
-                "link"=>"",
+                "link"=>$pdfPath."GC-America-Q4-2019.pdf",
                 "alt" => "GC America"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/hedy.jpg",
-                "link"=>"",
+                "link"=>$pdfPath."",
                 "alt" => "Hedy"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/hufriendy.png",
-                "link"=>"",
-                "alt" => "Hu-Friendly"
+                "link"=>$pdfPath."Hu-Friedy-Q4-2019.pdf",
+                "alt" => "Hu-Friedy"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/kulzer.jpg",
-                "link"=>"",
+                "link"=>$pdfPath."Kulzer-Q4-2019.pdf",
                 "alt" => "Kulzer"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/kuraray-1.png",
-                "link"=>"",
+                "link"=>$pdfPath."Kuraray-Q4-2019.pdf",
                 "alt" => "Kuraray"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/medicom-1.png",
-                "link"=>"",
+                "link"=>$pdfPath."Medicom-Q4-2019.pdf",
                 "alt" => "Medicom"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/morita.png",
-                "link"=>"",
-                "alt" => "Morita"
+                "link"=>$pdfPath."JMorita-Q4-2019.pdf",
+                "alt" => "JMorita"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/puldent.png", 
-                "link" => "",
+                "link" => $pdfPath."Pulpdent-Q4-2019.pdf",
                 "alt" => "Pulpdent"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/sable.png",
-                "link" => "",
+                "link" => $pdfPath."Sable-Q4-2019.pdf",
                 "alt" => "Sable"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/shofu.png",
-                "link" => "",
+                "link" => $pdfPath."Shofu-Q4-2019.pdf",
                 "alt" => "Shofu"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/young.png",
-                "link" => "",
+                "link" => $pdfPath."Young-Q4-2019.pdf",
                 "alt" => "Young"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/zest-dental.jpg",
-                "link" => "2",
+                "link" => $pdfPath."Danville-Zest-Q4-2019.pdf",
                 "alt" => "Zest Dental"
             )
         );
