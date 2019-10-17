@@ -32,7 +32,7 @@ class Quaterly
         $arr = array(
             array(
                 "src" => "/wp-content/uploads/2019/06/coltene-1.png",
-                "link"=> $pdfPath."",
+                "link"=> $pdfPath."Coltene-Q4-2019.pdf",
                 "alt" => "Coltene"
             ),
             array(
@@ -57,7 +57,7 @@ class Quaterly
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/hedy.jpg",
-                "link"=>$pdfPath."",
+                "link"=>$pdfPath."Hedy-Q4-2019.pdf",
                 "alt" => "Hedy"
             ),
             array(
