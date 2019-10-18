@@ -26,8 +26,6 @@ window.onload = function() {
     });
 
 
-
-
     function slidePos(spos) {
         animating = true;
         clearTimeout(auto);

@@ -161,16 +161,16 @@ class Home
 
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
-        <h2 class='promo-date'>October 14 - 20, 2019</h2>";
+        <h2 class='promo-date'>October 21 - 27, 2019</h2>";
 
 
         $ids = array(
-            41090 => array("promo" => "", "promo-price" => "84.95", "net-price" => ""),
-            28281 => array("promo" => "", "promo-price" => "7.65", "net-price" => ""),
-            33652 => array("promo" => "", "promo-price" => "75.70", "net-price" => ""),
-            32038 => array("promo" => "", "promo-price" => "85.00", "net-price" => ""),
-            34277 => array("promo" => "", "promo-price" => "65.95", "net-price" => ""),
-            28248 => array("promo" => "", "promo-price" => "13.50", "net-price" => "")
+            41148 => array("promo" => "", "promo-price" => "28.50", "net-price" => ""),
+            38991 => array("promo" => "", "promo-price" => "6.00", "net-price" => ""),
+            37485 => array("promo" => "", "promo-price" => "29.95", "net-price" => ""),
+            26854 => array("promo" => "Promo 3+1", "promo-price" => "149.95", "net-price" => "112.46"),
+            27952 => array("promo" => "Promo 4+1", "promo-price" => "57.70", "net-price" => "46.16"),
+            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.99", "net-price" => "9.79")
         );
 
         foreach ($ids as $id => $value) {

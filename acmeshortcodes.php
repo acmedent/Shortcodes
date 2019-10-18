@@ -61,7 +61,7 @@ if (!class_exists('AcmeShortcodes')) {
         {
 
             add_action('wp_enqueue_scripts', array($this, 'enqueue'));
-            add_action('admin_enqueue_scripts', array($this, 'enqueue'));
+            //add_action('admin_enqueue_scripts', array($this, 'enqueue'));
             $Pages = new Pages();
             $Pages->register();
         }
