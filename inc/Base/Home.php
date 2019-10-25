@@ -58,7 +58,7 @@ class Home
         //ONLINE STORE
         $slide3 = "<div class='acme-slide slide3'>
         
-        <a href='#'><h2>Coming Soon</h2></a>
+        <a href='https://www.acmedent.com/shop-dental-supplies-products/'><h2>Store</h2></a>
         <br>
         <h2 class='acme-maintitle slide2-h3'>New Online Store</h2>
        
