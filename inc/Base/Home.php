@@ -15,10 +15,10 @@ class Home
     function __construct()
     {
         add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
-        add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
+        add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
     }
 
 
@@ -103,12 +103,12 @@ class Home
 
 
         $ids = array(
-            41090 => array("promo" => "", "promo-price" => "84.95", "net-price" => ""),
-            28281 => array("promo" => "", "promo-price" => "7.65", "net-price" => ""),
-            33652 => array("promo" => "", "promo-price" => "75.70", "net-price" => ""),
-            32038 => array("promo" => "", "promo-price" => "85.00", "net-price" => ""),
-            34277 => array("promo" => "", "promo-price" => "65.95", "net-price" => ""),
-            28248 => array("promo" => "", "promo-price" => "13.50", "net-price" => "")
+            41148 => array("promo" => "", "promo-price" => "28.50", "net-price" => ""),
+            38991 => array("promo" => "", "promo-price" => "6.00", "net-price" => ""),
+            37485 => array("promo" => "", "promo-price" => "29.95", "net-price" => ""),
+            26854 => array("promo" => "Promo 3+1", "promo-price" => "149.95", "net-price" => "112.46"),
+            27952 => array("promo" => "Promo 4+1", "promo-price" => "57.70", "net-price" => "46.16"),
+            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.99", "net-price" => "9.79")
         );
 
         foreach ($ids as $id => $value) {
@@ -161,16 +161,15 @@ class Home
 
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
-        <h2 class='promo-date'>October 21 - 27, 2019</h2>";
-
+        <h2 class='promo-date'>October 28 - November 3, 2019</h2>";
 
         $ids = array(
-            41148 => array("promo" => "", "promo-price" => "28.50", "net-price" => ""),
-            38991 => array("promo" => "", "promo-price" => "6.00", "net-price" => ""),
-            37485 => array("promo" => "", "promo-price" => "29.95", "net-price" => ""),
-            26854 => array("promo" => "Promo 3+1", "promo-price" => "149.95", "net-price" => "112.46"),
-            27952 => array("promo" => "Promo 4+1", "promo-price" => "57.70", "net-price" => "46.16"),
-            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.99", "net-price" => "9.79")
+            26322 => array("promo" => "", "promo-price" => "134.95", "net-price" => ""),
+            31347 => array("promo" => "Promo 4+1", "promo-price" => "99.00", "net-price" => "79.20"),
+            38872 => array("promo" => "Promo 7+3", "promo-price" => "28.50", "net-price" => "19.95"),
+            32032 => array("promo" => "", "promo-price" => "7.99", "net-price" => ""),
+            27827 => array("promo" => "", "promo-price" => "7.99", "net-price" => ""),
+            37638 => array("promo" => "", "promo-price" => "1.99", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
@@ -220,132 +219,132 @@ class Home
         $pagePath = "dental-products-supplies/";
         $categories = array(
             array(
-                "link" => $pagePath."abrasives/",
+                "link" => $pagePath . "abrasives/",
                 "name" => "Abrasives",
                 "img" => $imgPath . "abrasives.jpg"
             ),
             array(
-                "link" => $pagePath."acrylics/",
+                "link" => $pagePath . "acrylics/",
                 "name" => "Acrylics",
                 "img" => $imgPath . "acrylics.jpg"
             ),
             array(
-                "link" => $pagePath."alloys/",
+                "link" => $pagePath . "alloys/",
                 "name" => "Alloys",
                 "img" => $imgPath . "alloys.jpg"
             ),
             array(
-                "link" => $pagePath."anesthetics/",
+                "link" => $pagePath . "anesthetics/",
                 "name" => "Anesthetics",
                 "img" => $imgPath . "anesthetics.jpg"
             ),
             array(
-                "link" => $pagePath."articularing-paper/",
+                "link" => $pagePath . "articularing-paper/",
                 "name" => "Articularing Paper",
                 "img" => $imgPath . "articularing-paper.jpg"
             ),
             array(
-                "link" => $pagePath."burs/",
+                "link" => $pagePath . "burs/",
                 "name" => "Burs",
                 "img" => $imgPath . "burs.jpg"
             ),
             array(
-                "link" => $pagePath."cavity-liners/",
+                "link" => $pagePath . "cavity-liners/",
                 "name" => "Cavity Liners",
                 "img" => $imgPath . "cavity-liners.jpg"
             ),
             array(
-                "link" => $pagePath."cosmetics/",
+                "link" => $pagePath . "cosmetics/",
                 "name" => "Cosmetics",
                 "img" => $imgPath . "cosmetics.jpg"
             ),
             array(
-                "link" => $pagePath."crown-and-bridge/",
+                "link" => $pagePath . "crown-and-bridge/",
                 "name" => "Crown and Bridge",
                 "img" => $imgPath . "crown-bridge.jpg"
             ),
             array(
-                "link" => $pagePath."disposables/",
+                "link" => $pagePath . "disposables/",
                 "name" => "Disposables",
                 "img" => $imgPath . "disposables.jpg"
             ),
             array(
-                "link" => $pagePath."endodontics/",
+                "link" => $pagePath . "endodontics/",
                 "name" => "Endodontics",
                 "img" => $imgPath . "endodontics.jpg"
             ),
             array(
-                "link" => $pagePath."equipments/",
+                "link" => $pagePath . "equipments/",
                 "name" => "Equipments",
                 "img" => $imgPath . "equipments.jpg"
             ),
             array(
-                "link" => $pagePath."films/",
+                "link" => $pagePath . "films/",
                 "name" => "Films",
                 "img" => $imgPath . "films.jpg"
             ),
             array(
-                "link" => $pagePath."germicides/",
+                "link" => $pagePath . "germicides/",
                 "name" => "Germicides",
                 "img" => $imgPath . "germicides.jpg"
             ),
             array(
-                "link" => $pagePath."handpieces/",
+                "link" => $pagePath . "handpieces/",
                 "name" => "Handpieces",
                 "img" => $imgPath . "handpieces.jpg"
             ),
             array(
-                "link" => $pagePath."hemostatic-solutions/",
+                "link" => $pagePath . "hemostatic-solutions/",
                 "name" => "Hemostatic Solutions",
                 "img" => $imgPath . "hemostatic-solutions.jpg"
             ),
             array(
-                "link" => $pagePath."impression-materials/",
+                "link" => $pagePath . "impression-materials/",
                 "name" => "Impression Materials",
                 "img" => $imgPath . "impression-materials.jpg"
             ),
             array(
-                "link" => $pagePath."infection-control/",
+                "link" => $pagePath . "infection-control/",
                 "name" => "Infection Control",
                 "img" => $imgPath . "infection-control.jpg"
             ),
             array(
-                "link" => $pagePath."matrix-and-wedges/",
+                "link" => $pagePath . "matrix-and-wedges/",
                 "name" => "Matrix and Wedges",
                 "img" => $imgPath . "matrix-wedges.jpg"
             ),
             array(
-                "link" => $pagePath."miscellaneous/",
+                "link" => $pagePath . "miscellaneous/",
                 "name" => "Miscellaneous",
                 "img" => $imgPath . "miscellaneous.jpg"
             ),
             array(
-                "link" => $pagePath."orthodontics/",
+                "link" => $pagePath . "orthodontics/",
                 "name" => "Orthodontics",
                 "img" => $imgPath . "orthodontics.jpg"
             ),
             array(
-                "link" => $pagePath."parts-equipment/",
+                "link" => $pagePath . "parts-equipment/",
                 "name" => "Parts Equipment",
                 "img" => $imgPath . "parts-equipments.jpg"
             ),
             array(
-                "link" => $pagePath."pins-and-posts/",
+                "link" => $pagePath . "pins-and-posts/",
                 "name" => "Pins and Posts",
                 "img" => $imgPath . "pins-posts.jpg"
             ),
             array(
-                "link" => $pagePath."preventives/",
+                "link" => $pagePath . "preventives/",
                 "name" => "Preventives",
                 "img" => $imgPath . "preventives.jpg"
             ),
             array(
-                "link" => $pagePath."rubber-dams/",
+                "link" => $pagePath . "rubber-dams/",
                 "name" => "Rubber Dams",
                 "img" => $imgPath . "rubber-dams.jpg"
             ),
             array(
-                "link" => $pagePath."surgical-and-sutures/",
+                "link" => $pagePath . "surgical-and-sutures/",
                 "name" => "Surgical and Sutures",
                 "img" => $imgPath . "surgical-sutures.jpg"
             )
