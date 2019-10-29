@@ -99,16 +99,15 @@ class Home
 
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
-        <h2 class='promo-date'>October 07 - 13, 2019</h2>";
-
+        <h2 class='promo-date'>October 28 - November 3, 2019</h2>";
 
         $ids = array(
-            41148 => array("promo" => "", "promo-price" => "28.50", "net-price" => ""),
-            38991 => array("promo" => "", "promo-price" => "6.00", "net-price" => ""),
-            37485 => array("promo" => "", "promo-price" => "29.95", "net-price" => ""),
-            26854 => array("promo" => "Promo 3+1", "promo-price" => "149.95", "net-price" => "112.46"),
-            27952 => array("promo" => "Promo 4+1", "promo-price" => "57.70", "net-price" => "46.16"),
-            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.99", "net-price" => "9.79")
+            26322 => array("promo" => "", "promo-price" => "134.95", "net-price" => ""),
+            31347 => array("promo" => "Promo 4+1", "promo-price" => "99.00", "net-price" => "79.20"),
+            38872 => array("promo" => "Promo 7+3", "promo-price" => "28.50", "net-price" => "19.95"),
+            32032 => array("promo" => "", "promo-price" => "7.99", "net-price" => ""),
+            27827 => array("promo" => "", "promo-price" => "7.99", "net-price" => ""),
+            37638 => array("promo" => "", "promo-price" => "1.99", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
