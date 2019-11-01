@@ -164,7 +164,7 @@ class Home
 
         $ids = array(
             32439 => array("promo" => "Promo 3+1", "promo-price" => "289.00", "net-price" => ""),
-            30893 => array("promo" => "Promo 3+1", "promo-price" => "109.95", "net-price" => ""),
+            30893 => array("promo" => "Promo 3+1", "promo-price" => "139.95", "net-price" => ""),
             38932 => array("promo" => "", "promo-price" => "14.95", "net-price" => ""),
             34214 => array("promo" => "", "promo-price" => "399.00", "net-price" => ""),
             33980 => array("promo" => "Get 1 Gluma PowerGel Kit Free", "promo-price" => "188.00", "net-price" => ""),
