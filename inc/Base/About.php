@@ -26,7 +26,7 @@ class About
         <h2 class='acme-sec-title'>PROVIDING OUTSTANDING SERVICE SO THAT YOU CAN DELIVER A POSITIVE EXPERIENCE TO YOUR
             PATIENTS</h2>
  
-        <p class='acme-text'>Founded in 1996, Acmedent Corporation is a dental equipment and products supply
+        <p class='acme-text'>Founded in 1996, Acmedent Corporation is a dental equipment and dental products supply
             company located in Concord, Ontario. We strive to help you develop a solid foundation so that you can
             provide the best services to your patients. Our sales representatives are multilingual and have more than 10
             years of experience, allowing us to meet all business needs. Whether you are situated in the east or west
@@ -34,8 +34,8 @@ class About
             customers are satisfied with their experience.</p>
  
  
-        <h2 class='acme-sec-title'>QUALITY PRODUCTS AT COMPETITIVE PRICES</h2>
-        <p class='acme-text'>Acmedent offers a complete range of dental supplies and equipment from manufacturers
+        <h2 class='acme-sec-title'>QUALITY DENTAL PRODUCTS AT COMPETITIVE PRICES</h2>
+        <p class='acme-text'>Acmedent offers a complete range of dental supplies and dental equipment from manufacturers
             like Dentsply, Coltene/Whaledent, GC, Heraeus, Hu-Friedy, Medicom, Premier, Pulpdent, DMG, Tuttnauer,
             Miltex, Morita, Shofu, Sable, Techwest, VElopex, Parkwell, Young, Microcopy, Kuraray, Teledyne Dalsa, and
             Ocean Pacific.</p>
