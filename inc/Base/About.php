@@ -54,6 +54,7 @@ class About
     {
         $page = "<div class='acme-partners-container'>
     <div class='acme-container'>
+        <br>
         <h2 class='acme-sec-title'>A FEW OF OUR PARTNERS</h2>
         ";
 

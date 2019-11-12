@@ -100,15 +100,15 @@ class Home
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
         
-        <h2 class='promo-date'>November 04 - 10, 2019</h2>";
+        <h2 class='promo-date'>November 11 - 17, 2019</h2>";
 
         $ids = array(
-            32439 => array("promo" => "Promo 3+1", "promo-price" => "289.00", "net-price" => ""),
-            30893 => array("promo" => "Promo 3+1", "promo-price" => "139.95", "net-price" => ""),
-            38932 => array("promo" => "", "promo-price" => "14.95", "net-price" => ""),
-            34214 => array("promo" => "", "promo-price" => "399.00", "net-price" => ""),
-            33980 => array("promo" => "Get 1 Gluma PowerGel Kit Free", "promo-price" => "188.00", "net-price" => ""),
-            33651 => array("promo" => "", "promo-price" => "75.95", "net-price" => "")
+            50449 => array("promo" => "", "promo-price" => "227.00", "net-price" => ""),
+            27354 => array("promo" => "", "promo-price" => "25.95", "net-price" => ""),
+            42711 => array("promo" => "Promo 4+1", "promo-price" => "70.20", "net-price" => ""),
+            50458 => array("promo" => "", "promo-price" => "166.95", "net-price" => ""),
+            50463 => array("promo" => "Promo 4+1", "promo-price" => "159.00", "net-price" => ""),
+            50464 => array("promo" => "Promo 3+1", "promo-price" => "168.95", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
