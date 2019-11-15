@@ -164,12 +164,12 @@ class Home
         <h2 class='promo-date'>November 18 - 24, 2019</h2>";
 
         $ids = array(
-            26843 => array("promo" => "Promo 5+1|10+3|15+6", "promo-price" => "120.60", "net-price" => ""),
-            31403 => array("promo" => "Promo 3+1", "promo-price" => "156.60", "net-price" => ""),
-            31136 => array("promo" => "Promo 3+1", "promo-price" => "144.45", "net-price" => ""),
+            26843 => array("promo" => "Promo 5+1|10+3|15+6", "promo-price" => "114.95", "net-price" => ""),
+            31403 => array("promo" => "Promo 3+1", "promo-price" => "144.95", "net-price" => ""),
+            31136 => array("promo" => "Promo 3+1", "promo-price" => "134.95", "net-price" => ""),
             38719 => array("promo" => "Promo 7+3", "promo-price" => "14.99", "net-price" => ""),
-            32333 => array("promo" => "Buy 5 Get +20 Tips FREE", "promo-price" => "57.60", "net-price" => ""),
-            31224 => array("promo" => "Promo 3+1", "promo-price" => "151.65", "net-price" => "")
+            32333 => array("promo" => "Buy 5 Get +20 Tips FREE", "promo-price" => "54.95", "net-price" => ""),
+            32454 => array("promo" => "Promo 3+1", "promo-price" => "294.95", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
