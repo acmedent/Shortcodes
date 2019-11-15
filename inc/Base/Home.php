@@ -17,15 +17,40 @@ class Home
         add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
-        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
+        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));        
+
+        $start_date = '2019-11-18';
+        $end_date = '2019-11-24';
+        $date_from_user = date('Y-m-d');
+
+        $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
+
+        if($dateVerify)
+        add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        else
         add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
+        
     }
+
+    
+
+    function check_in_range($start_date, $end_date, $date_from_user)
+        {
+            // Convert to timestamp
+            $start_ts = strtotime($start_date);
+            $end_ts = strtotime($end_date);
+            $user_ts = strtotime($date_from_user);
+
+            // Check that user date is between start & end
+            return (($user_ts >= $start_ts) && ($user_ts <= $end_ts));
+        }
 
 
     function AcmedentHomeSlidePage()
     {
         //CATALOG
-        $slide1 = "<div class='acme-slide slide1'>
+        $slide1 = "
+        <div class='acme-slide slide1'>
         <div class='acme-slide-box'>
 
         <a class='side1-link'  href='/wp-content/uploads/pdf/catalog.pdf'>
@@ -60,12 +85,9 @@ class Home
         
         <a href='https://www.acmedent.com/shop-dental-supplies-products/'><h2>Store</h2></a>
         <br>
-        <h2 class='acme-maintitle slide2-h3'>New Online Store</h2>
-       
-        
+        <h2 class='acme-maintitle slide2-h3'>New Online Store</h2>      
         
         </div>";
-
 
         $page = "
        <br> <div class='home-login-grid'>
