@@ -90,7 +90,7 @@ class Home
 
 
         //Denstrply Promo
-        $slide4 = "<a href='https://www.acmedent.com/shop-dental-supplies-products/'><div class='acme-slide slide4'>                
+        $slide4 = "<a href='https://www.acmedent.com/wp-content/uploads/2019/11/DS_BlackFriday_2019_Promotions.pdf'><div class='acme-slide slide4'>                
         </div></a>";
 
         $page = "
