@@ -19,8 +19,8 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2019-11-18';
-        $end_date = '2019-11-24';
+        $start_date = '2019-11-25';
+        $end_date = '2019-12-01';
         $date_from_user = date('Y-m-d');
 
         $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
@@ -187,7 +187,7 @@ class Home
 
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
-        <h2 class='promo-date'>November 18 - 24, 2019</h2>";
+        <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
 
         $ids = array(
             26843 => array("promo" => "Promo 5+1|10+3|15+6", "promo-price" => "114.95", "net-price" => ""),
