@@ -17,7 +17,7 @@ class Home
         add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
-        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));        
+        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
         $start_date = '2019-11-18';
         $end_date = '2019-11-24';
@@ -25,25 +25,24 @@ class Home
 
         $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
 
-        if($dateVerify)
-        add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        if ($dateVerify)
+            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
         else
-        add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
-        
+            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
     }
 
-    
+
 
     function check_in_range($start_date, $end_date, $date_from_user)
-        {
-            // Convert to timestamp
-            $start_ts = strtotime($start_date);
-            $end_ts = strtotime($end_date);
-            $user_ts = strtotime($date_from_user);
+    {
+        // Convert to timestamp
+        $start_ts = strtotime($start_date);
+        $end_ts = strtotime($end_date);
+        $user_ts = strtotime($date_from_user);
 
-            // Check that user date is between start & end
-            return (($user_ts >= $start_ts) && ($user_ts <= $end_ts));
-        }
+        // Check that user date is between start & end
+        return (($user_ts >= $start_ts) && ($user_ts <= $end_ts));
+    }
 
 
     function AcmedentHomeSlidePage()
@@ -89,6 +88,11 @@ class Home
         
         </div>";
 
+
+        //Denstrply Promo
+        $slide4 = "<a href='https://www.acmedent.com/shop-dental-supplies-products/'><div class='acme-slide slide4'>                
+        </div></a>";
+
         $page = "
        <br> <div class='home-login-grid'>
         <div class='acme-wrap'>
@@ -96,7 +100,7 @@ class Home
         <</div>
                 <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
-                    " . $slide3 . $slide1 . $slide2 . $slide3 . $slide1 . "
+                    " . $slide4 . $slide1 . $slide2 . $slide3 . $slide4 . $slide1 . "
 
                 </div>
         </div>

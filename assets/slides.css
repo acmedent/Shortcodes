@@ -41,7 +41,7 @@
 
 .acme-slider {
     margin: auto;
-    width: 500%;
+    width: 600%;
     height: 300px;
     margin-left: 0%;
     background-color: #777;
@@ -50,7 +50,7 @@
 .acme-slide {
     display: flex;
     float: left;
-    width: 20%;
+    width: 16.66%;
     height: 300px;
     margin-left: 0px;
 }
@@ -76,6 +76,13 @@
     background-position-y: 75%;
     background-position-x: 0;
     background-image: url(/wp-content/uploads/2019/06/shop.jpg);
+}
+
+.slide4 {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/wp-content/uploads/2019/11/DS_BlackFriday_2019_Promotions.jpg);
 }
 
 .acme-slide-box {
