@@ -190,12 +190,12 @@ class Home
         <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
 
         $ids = array(
-            26843 => array("promo" => "Promo 5+1|10+3|15+6", "promo-price" => "114.95", "net-price" => ""),
-            31403 => array("promo" => "Promo 3+1", "promo-price" => "144.95", "net-price" => ""),
-            31136 => array("promo" => "Promo 3+1", "promo-price" => "134.95", "net-price" => ""),
-            38719 => array("promo" => "Promo 7+3", "promo-price" => "14.99", "net-price" => ""),
-            32333 => array("promo" => "Buy 5 Get +20 Tips FREE", "promo-price" => "54.95", "net-price" => ""),
-            32454 => array("promo" => "Promo 3+1", "promo-price" => "294.95", "net-price" => "")
+            28249 => array("promo" => "Promo 6+1|10+2", "promo-price" => "24.35", "net-price" => ""),
+            31962 => array("promo" => "Promo 3+2", "promo-price" => "12.15", "net-price" => ""),
+            34080 => array("promo" => "Promo 4+1", "promo-price" => "120.00", "net-price" => ""),
+            50251 => array("promo" => "Promo 3+1", "promo-price" => "70.95", "net-price" => ""),
+            39318 => array("promo" => "Promo 10+2", "promo-price" => "12.00", "net-price" => ""),
+            50463 => array("promo" => "Promo 4+1", "promo-price" => "162.45", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
