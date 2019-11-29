@@ -19,8 +19,8 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2019-11-25';
-        $end_date = '2019-12-01';
+        $start_date = '2019-12-02';
+        $end_date = '2019-12-08';
         $date_from_user = date('Y-m-d');
 
         $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
@@ -89,9 +89,20 @@ class Home
         </div>";
 
 
-        //Denstrply Promo
-        $slide4 = "<a href='https://www.acmedent.com/wp-content/uploads/2019/11/DS_BlackFriday_2019_Promotions.pdf'><div class='acme-slide slide4'>                
-        </div></a>";
+        //Kuraray Promo
+        $slide4 = "<div class='acme-slide slide4'>
+        <div class='slide4-left'>
+        <a href='wp-content/uploads/2019/11/2019-11-GNY-main-kuraray-products-SPECIALS-revised-2019-11-05-b.pdf'>     
+        <div></div>   
+        </a></div>
+        <div class='slide4-right'>
+        <a href='wp-content/uploads/2019/11/2019-11-GNY-panavia-sa-cement-universal-flyer-promo.pdf'>
+        <div></div> 
+        </a>
+        </div>
+        
+
+        </div>";
 
         $page = "
        <br> <div class='home-login-grid'>
@@ -112,8 +123,6 @@ class Home
         <br>
         ";
 
-
-
         return $page;
     }
 
@@ -126,15 +135,15 @@ class Home
         <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
 
         
-        <h2 class='promo-date'>November 18 - 24, 2019</h2>";
-
+        <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
+        
         $ids = array(
-            26843 => array("promo" => "Promo 5+1|10+3|15+6", "promo-price" => "114.95", "net-price" => ""),
-            31403 => array("promo" => "Promo 3+1", "promo-price" => "144.95", "net-price" => ""),
-            31136 => array("promo" => "Promo 3+1", "promo-price" => "134.95", "net-price" => ""),
-            38719 => array("promo" => "Promo 7+3", "promo-price" => "14.99", "net-price" => ""),
-            32333 => array("promo" => "Buy 5 Get +20 Tips FREE", "promo-price" => "54.95", "net-price" => ""),
-            32454 => array("promo" => "Promo 3+1", "promo-price" => "294.95", "net-price" => "")
+            28249 => array("promo" => "Promo 6+1|10+2", "promo-price" => "24.35", "net-price" => ""),
+            31962 => array("promo" => "Promo 3+2", "promo-price" => "12.15", "net-price" => ""),
+            34080 => array("promo" => "Promo 4+1", "promo-price" => "120.00", "net-price" => ""),
+            50251 => array("promo" => "Promo 3+1", "promo-price" => "70.95", "net-price" => ""),
+            39318 => array("promo" => "Promo 10+2", "promo-price" => "12.00", "net-price" => ""),
+            50463 => array("promo" => "Promo 4+1", "promo-price" => "162.45", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
@@ -180,15 +189,15 @@ class Home
 
     function AcmedentHomePromoNextWeek()
     {
-
+    
         $page = "
         <br>
         <div class='promo-grid'>
 
-        <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
+        <img src='wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
-
+        
         $ids = array(
             28249 => array("promo" => "Promo 6+1|10+2", "promo-price" => "24.35", "net-price" => ""),
             31962 => array("promo" => "Promo 3+2", "promo-price" => "12.15", "net-price" => ""),
@@ -241,7 +250,7 @@ class Home
     function AcmedentHomeCategories()
     {
 
-        $imgPath = "/wp-content/uploads/2019/10/";
+        $imgPath = "wp-content/uploads/2019/10/";
         $pagePath = "dental-products-supplies/";
         $categories = array(
             array(

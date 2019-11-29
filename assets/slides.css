@@ -44,7 +44,7 @@
     width: 600%;
     height: 300px;
     margin-left: 0%;
-    background-color: #777;
+    background-color: #fff;
 }
 
 .acme-slide {
@@ -56,7 +56,7 @@
 }
 
 .slide1 {
-    background-image: url(/wp-content/uploads/2019/08/shipping.jpg);
+    background-image: url(../../../uploads/2019/08/shipping.jpg);
     background-size: cover;
     background-position-y: 50%;
     background-position-x: 0;
@@ -65,7 +65,7 @@
 
 .slide2 {
     height: 100%;
-    background-image: url(/wp-content/uploads/2019/06/catalog.jpg);
+    background-image: url(../../../uploads/2019/06/catalog.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,14 +75,34 @@
     background-size: cover;
     background-position-y: 75%;
     background-position-x: 0;
-    background-image: url(/wp-content/uploads/2019/06/shop.jpg);
+    background-image: url(../../../uploads/2019/06/shop.jpg);
 }
 
 .slide4 {
-    display: block;
-    background-size: cover;
+    display: inline-flex;
+    background-size: 95%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../../uploads/2019/11/DS_BlackFriday_2019_Promotions.jpg);
+    background-image: url(../../../uploads/2019/11/Kuraray.jpg);
+}
+
+.slide4 div {
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.slide4 div a div {
+    width: 100%;
+    height: 100%;
+}
+
+.slide4-left:hover {
+    background: rgba(207, 40, 40, 0.4);
+}
+
+.slide4-right:hover {
+    background: rgba(30, 11, 202, 0.4);
 }
 
 .acme-slide-box {
@@ -131,7 +151,7 @@
     padding: 0px;
     max-width: 400px;
     margin: 0 auto;
-    background-image: url(/wp-content/uploads/2019/06/catalog.jpg);
+    background-image: url(../../../uploads/2019/06/catalog.jpg);
     background-position: center;
 }
 

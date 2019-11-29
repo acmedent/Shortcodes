@@ -8,10 +8,20 @@
     font-family: "Roboto", Sans-serif;
 }
 
+.promo-logo {
+    color: rgb(18, 168, 18);
+    text-align: center;
+    height: auto;
+    max-height: 200px;
+    grid-area: promoTitle;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .promo-title {
     color: rgb(18, 168, 18);
     text-align: center;
-    font-size: 30px;
+    height: auto;
     grid-area: promoTitle;
     margin: 0 auto;
     padding: 0;

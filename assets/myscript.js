@@ -9,8 +9,11 @@ window.onload = function() {
     var auto;
     auto = setTimeout(() => slidePos(pos), 1000);
 
+    window.addEventListener('blur', () => { clearTimeout(auto); });
+    window.addEventListener('focus', () => { auto = setTimeout(() => slidePos(pos), 1000); });
+
     rightArrow.addEventListener('click', () => {
-        console.log("ok:" + pos);
+
         if (!animating) {
             pos++;
             slidePos(pos);
