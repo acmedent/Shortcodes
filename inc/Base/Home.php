@@ -132,7 +132,7 @@ class Home
         <br>
         <div class='promo-grid'>
 
-        <h2 class='promo-title'>WEEKLY FLASH SALE!</h2>
+        <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         
         <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
@@ -194,17 +194,17 @@ class Home
         <br>
         <div class='promo-grid'>
 
-        <img src='wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
+        <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
+        <h2 class='promo-date'>December 02 - 08, 2019</h2>";
         
         $ids = array(
-            28249 => array("promo" => "Promo 6+1|10+2", "promo-price" => "24.35", "net-price" => ""),
-            31962 => array("promo" => "Promo 3+2", "promo-price" => "12.15", "net-price" => ""),
-            34080 => array("promo" => "Promo 4+1", "promo-price" => "120.00", "net-price" => ""),
-            50251 => array("promo" => "Promo 3+1", "promo-price" => "70.95", "net-price" => ""),
-            39318 => array("promo" => "Promo 10+2", "promo-price" => "12.00", "net-price" => ""),
-            50463 => array("promo" => "Promo 4+1", "promo-price" => "162.45", "net-price" => "")
+            33626 => array("promo" => "Promo 4+1", "promo-price" => "66.25", "net-price" => ""),
+            27952 => array("promo" => "Promo 4+1", "promo-price" => "58.20", "net-price" => ""),
+            32353 => array("promo" => "Promo 6+1", "promo-price" => "44.85", "net-price" => ""),
+            33132 => array("promo" => "", "promo-price" => "235.95", "net-price" => ""),
+            33581 => array("promo" => "Promo 10+2", "promo-price" => "19.65", "net-price" => ""),
+            27922 => array("promo" => "Promo 2+1", "promo-price" => "228.70", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
