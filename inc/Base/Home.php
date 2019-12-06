@@ -202,7 +202,7 @@ class Home
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>December 02 - 08, 2019</h2>";
+        <h2 class='promo-date'>December 09 - 15, 2019</h2>";
 
         $ids = array(
             30893 => array("promo" => "Promo 3+1", "promo-price" => "149.63", "net-price" => ""),
