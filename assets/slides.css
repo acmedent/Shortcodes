@@ -41,7 +41,7 @@
 
 .acme-slider {
     margin: auto;
-    width: 600%;
+    width: 700%;
     height: 300px;
     margin-left: 0%;
     background-color: #fff;
@@ -50,7 +50,7 @@
 .acme-slide {
     display: flex;
     float: left;
-    width: 16.66%;
+    width: 14.28%;
     height: 300px;
     margin-left: 0px;
 }
@@ -103,6 +103,27 @@
 
 .slide4-right:hover {
     background: rgba(30, 11, 202, 0.4);
+}
+
+.slide5 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../uploads/2019/12/Sable_jingle_sale.jpg);
+}
+
+.slide5_box {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide5_box a div {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .acme-slide-box {

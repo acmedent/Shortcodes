@@ -35,13 +35,11 @@ window.onload = function() {
         slider.style.transition = "2s";
         switch (spos) {
             case 0:
-
                 slider.style.marginLeft = "-0%";
-
                 setTimeout(() => {
                     slider.style.transition = "0s";
-                    slider.style.marginLeft = "-400%";
-                    pos = 4;
+                    slider.style.marginLeft = "-500%";
+                    pos = 5;
                     animating = false;
                 }, 2000);
                 break;
@@ -73,6 +71,12 @@ window.onload = function() {
                 break;
             case 5:
                 slider.style.marginLeft = "-500%";
+                setTimeout(() => {
+                    animating = false;
+                }, 2000);
+                break;
+            case 6:
+                slider.style.marginLeft = "-600%";
                 setTimeout(() => {
                     slider.style.transition = "0s";
                     slider.style.marginLeft = "-100%";

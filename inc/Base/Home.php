@@ -19,8 +19,8 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2019-12-02';
-        $end_date = '2019-12-08';
+        $start_date = '2019-12-09';
+        $end_date = '2019-12-15';
         $date_from_user = date('Y-m-d');
 
         $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
@@ -100,8 +100,14 @@ class Home
         <div></div> 
         </a>
         </div>
-        
+        </div>";
 
+        $slide5 = "<div class='acme-slide slide5'>
+        <div class='slide5_box'>
+        <a href='wp-content/uploads/2019/12/Sable-2019_Jingle_sale.pdf'>     
+        <div></div>
+        </a>
+        </div>  
         </div>";
 
         $page = "
@@ -111,7 +117,7 @@ class Home
         <</div>
                 <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
-                    " . $slide4 . $slide1 . $slide2 . $slide3 . $slide4 . $slide1 . "
+                    " . $slide5 . $slide1 . $slide2 . $slide3 . $slide4 . $slide5 . $slide1 . "
 
                 </div>
         </div>
@@ -136,7 +142,7 @@ class Home
 
         
         <h2 class='promo-date'>November 25 - December 01, 2019</h2>";
-        
+
         $ids = array(
             28249 => array("promo" => "Promo 6+1|10+2", "promo-price" => "24.35", "net-price" => ""),
             31962 => array("promo" => "Promo 3+2", "promo-price" => "12.15", "net-price" => ""),
@@ -189,7 +195,7 @@ class Home
 
     function AcmedentHomePromoNextWeek()
     {
-    
+
         $page = "
         <br>
         <div class='promo-grid'>
@@ -197,14 +203,14 @@ class Home
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         <h2 class='promo-date'>December 02 - 08, 2019</h2>";
-        
+
         $ids = array(
-            33626 => array("promo" => "Promo 4+1", "promo-price" => "66.25", "net-price" => ""),
-            27952 => array("promo" => "Promo 4+1", "promo-price" => "58.20", "net-price" => ""),
-            32353 => array("promo" => "Promo 6+1", "promo-price" => "44.85", "net-price" => ""),
-            33132 => array("promo" => "", "promo-price" => "235.95", "net-price" => ""),
-            33581 => array("promo" => "Promo 10+2", "promo-price" => "19.65", "net-price" => ""),
-            27922 => array("promo" => "Promo 2+1", "promo-price" => "228.70", "net-price" => "")
+            30893 => array("promo" => "Promo 3+1", "promo-price" => "149.63", "net-price" => ""),
+            32333 => array("promo" => "Promo 5+20 Diapex Tips", "promo-price" => "54.72", "net-price" => ""),
+            42711 => array("promo" => "Promo 4+1", "promo-price" => "71.39", "net-price" => ""),
+            27389 => array("promo" => "Promo 2+1", "promo-price" => "319.77", "net-price" => ""),
+            35618 => array("promo" => "", "promo-price" => "119.70", "net-price" => ""),
+            26854 => array("promo" => "Promo 3+1", "promo-price" => "151.76", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
