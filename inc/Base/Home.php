@@ -92,11 +92,11 @@ class Home
         //Kuraray Promo
         $slide4 = "<div class='acme-slide slide4'>
         <div class='slide4-left'>
-        <a href='wp-content/uploads/2019/11/2019-11-GNY-main-kuraray-products-SPECIALS-revised-2019-11-05-b.pdf'>     
+        <a href='wp-content/uploads/2019/11/2019-11-GNY-main-kuraray-products-SPECIALS-revised-2019-11-05-b-min.pdf'>     
         <div></div>   
         </a></div>
         <div class='slide4-right'>
-        <a href='wp-content/uploads/2019/11/2019-11-GNY-panavia-sa-cement-universal-flyer-promo.pdf'>
+        <a href='wp-content/uploads/2019/11/2019-11-GNY-panavia-sa-cement-universal-flyer-promo-min.pdf'>
         <div></div> 
         </a>
         </div>
