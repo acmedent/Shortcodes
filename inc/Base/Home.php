@@ -187,7 +187,7 @@ class Home
             34080 => array("promo" => "Promo 4+1", "promo-price" => "113.81", "net-price" => ""),
             39921 => array("promo" => "Promo 20+10", "promo-price" => "19.85", "net-price" => ""),
             32059 => array("promo" => "promo 7+3", "promo-price" => "47.49", "net-price" => ""),
-            33678 => array("promo" => "Promo 2 + Stetilization Integrators", "promo-price" => "232.88", "net-price" => "")
+            33678 => array("promo" => "Promo 2 + Stetilization Integrators", "promo-price" => "245.81", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
