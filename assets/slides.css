@@ -41,7 +41,7 @@
 
 .acme-slider {
     margin: auto;
-    width: 700%;
+    width: 500%;
     height: 300px;
     margin-left: 0%;
     background-color: #fff;
@@ -50,7 +50,7 @@
 .acme-slide {
     display: flex;
     float: left;
-    width: 14.28%;
+    width: 20%;
     height: 300px;
     margin-left: 0px;
 }
@@ -76,54 +76,6 @@
     background-position-y: 75%;
     background-position-x: 0;
     background-image: url(../../../uploads/2019/06/shop.jpg);
-}
-
-.slide4 {
-    display: inline-flex;
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../../../uploads/2019/11/Kuraray.jpg);
-}
-
-.slide4 div {
-    width: 50%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-.slide4 div a div {
-    width: 100%;
-    height: 100%;
-}
-
-.slide4-left:hover {
-    background: rgba(207, 40, 40, 0.4);
-}
-
-.slide4-right:hover {
-    background: rgba(30, 11, 202, 0.4);
-}
-
-.slide5 {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../../../uploads/2019/12/Sable_jingle_sale.jpg);
-}
-
-.slide5_box {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide5_box a div {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .acme-slide-box {

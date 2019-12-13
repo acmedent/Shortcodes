@@ -38,8 +38,8 @@ window.onload = function() {
                 slider.style.marginLeft = "-0%";
                 setTimeout(() => {
                     slider.style.transition = "0s";
-                    slider.style.marginLeft = "-500%";
-                    pos = 5;
+                    slider.style.marginLeft = "-300%";
+                    pos = 3;
                     animating = false;
                 }, 2000);
                 break;
@@ -66,26 +66,14 @@ window.onload = function() {
             case 4:
                 slider.style.marginLeft = "-400%";
                 setTimeout(() => {
-                    animating = false;
-                }, 2000);
-                break;
-            case 5:
-                slider.style.marginLeft = "-500%";
-                setTimeout(() => {
-                    animating = false;
-                }, 2000);
-                break;
-            case 6:
-                slider.style.marginLeft = "-600%";
-                setTimeout(() => {
                     slider.style.transition = "0s";
                     slider.style.marginLeft = "-100%";
                     pos = 1;
                     animating = false;
                 }, 2000);
-
                 break;
             default:
+                pos = 1;
                 break;
         }
 
