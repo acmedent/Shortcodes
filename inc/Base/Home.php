@@ -24,13 +24,18 @@ class Home
 
         $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
 
+        //if ($dateVerify)
         if ($dateVerify)
-            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
-        else
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
+            //add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        else
+            add_shortcode('acme-home-promo', array($this, 'empty'));
+        //    add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
     }
 
-
+    function empty(){
+        return " ";
+    }
 
     function check_in_range($start_date, $end_date, $date_from_user)
     {
@@ -118,15 +123,15 @@ class Home
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         
-        <h2 class='promo-date'>December 09 - 15, 2019</h2>";
+        <h2 class='promo-date'>December 16 - 22, 2019</h2>";
 
         $ids = array(
-            30893 => array("promo" => "Promo 3+1", "promo-price" => "149.63", "net-price" => ""),
-            32333 => array("promo" => "Promo 5+20 Diapex Tips", "promo-price" => "54.72", "net-price" => ""),
-            42711 => array("promo" => "Promo 4+1", "promo-price" => "71.39", "net-price" => ""),
-            27389 => array("promo" => "Promo 2+1", "promo-price" => "319.77", "net-price" => ""),
-            35618 => array("promo" => "", "promo-price" => "119.70", "net-price" => ""),
-            26854 => array("promo" => "Promo 3+1", "promo-price" => "151.76", "net-price" => "")
+            27769 => array("promo" => "Promo 2+1", "promo-price" => "226.58", "net-price" => ""),
+            31253 => array("promo" => "Promo 4+1", "promo-price" => "70.88", "net-price" => ""),
+            34080 => array("promo" => "Promo 4+1", "promo-price" => "113.81", "net-price" => ""),
+            39921 => array("promo" => "Promo 20+10", "promo-price" => "19.85", "net-price" => ""),
+            32059 => array("promo" => "", "promo-price" => "47.49", "net-price" => ""),
+            33678 => array("promo" => "Promo 2 + 1 Bag of<br> Integrators SSI-100", "promo-price" => "245.81", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
