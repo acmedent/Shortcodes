@@ -11,6 +11,10 @@
     margin-bottom: 10px;
 }
 
+.qtl-img-box img{
+    max-width: 200px;
+}
+
 .quaterly img {
     max-height: 120px;
     margin: 0;
