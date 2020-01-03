@@ -92,6 +92,15 @@ class Home
         
         </div>";
 
+        $slide4 = "<div class='acme-slide slide4'>
+        
+        <h2>HAPPY 2020</h2>
+        <br>
+        <h3 class='acme-maintitle slide3-h3'>Use the coupon ACMEPROMO for 5% off in any <u>Online Order.</u></h3>      
+        <p>**Only available in January 2020.</p>      
+        
+        </div>"; 
+
         $page = "
        <br> <div class='home-login-grid'>
         <div class='acme-wrap'>
@@ -99,7 +108,7 @@ class Home
         <</div>
                 <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
-                    " . $slide3 . $slide1 . $slide2 . $slide3 . $slide1 . "
+                    " . $slide4 . $slide1 . $slide2 . $slide3. $slide4 . $slide1 . "
 
                 </div>
         </div>
