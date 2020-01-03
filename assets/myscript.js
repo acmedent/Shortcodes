@@ -4,7 +4,7 @@ window.onload = function () {
     var rightArrow = document.getElementById("right-arrow");
     var slider = document.getElementById("acme-slider");
 
-    var pos = 1;
+    var pos = -1;
     var animating = true;
     var auto;
     auto = setTimeout(() => slidePos(pos), 1000);
