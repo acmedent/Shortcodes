@@ -95,7 +95,7 @@ class Home
         $slide4 = "<div class='acme-slide slide4'>
         
         <h2>HAPPY 2020</h2>
-        <br>
+        
         <h3 class='acme-maintitle slide3-h3'>Use the coupon ACMEPROMO for 5% off in any <u>Online Order.</u></h3>      
         <p>**Only available in January 2020.</p>      
         

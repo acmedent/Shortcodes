@@ -91,7 +91,8 @@
 
 .slide4 h2 {
     padding-top: 12%;
-    width: 50%;
+    width: 600px;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 10%;
     color: #fcfcfc;
@@ -99,27 +100,28 @@
     font-family: Sans-serif;
     font-weight: 600;
     background-color: rgba(3, 3, 3, 0.5);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     padding: 0;
     line-height: 46px;
 }
 
 .slide4 h3 {
-    width: 550px;
+    width: 600px;
     max-width: 80%;
     color: #fcfcfc;
     font-size: 20px;
     font-weight: 600;
     font-family: "Yantramanav", Sans-serif;
     background-color: rgba(3, 3, 3, 0.5);
-    border-radius: 10px 10px 0 0;
+    border-radius: 0;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 10px;
     line-height: 36px;
+    padding-bottom: 5px;
 }
 .slide4 p {
     
-    width: 550px;
+    width: 600px;
     max-width: 80%;
     color: #fcfcfc;
     font-size: 12px;
