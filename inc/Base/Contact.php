@@ -47,7 +47,7 @@ class Contact
         <b>Phone: </b>(905) 761-6850​
         </p>
         <p class='acme-text'>
-        <b>​Fax: </b>(905) 695-028
+        <b>​Fax: </b>(905) 695-0284
         </p>
 
         <h2 class='acme-maintitle' style='text-align:left'>
@@ -69,7 +69,7 @@ class Contact
        
     </div>
     <div class='acme-container acme-contact'>
-     ".do_shortcode('[wpforms id="93"]')."       
+     " . do_shortcode('[wpforms id="93"]') . "       
         
        
     </div>
@@ -81,4 +81,3 @@ class Contact
         return $page;
     }
 }
-
