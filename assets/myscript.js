@@ -2,13 +2,8 @@ window.onload = function () {
 
     var leftArrow = document.getElementById("left-arrow");
     var rightArrow = document.getElementById("right-arrow");
-    var slideArrows = document.getElementsByClassName("slide-arrow");
     var slider = document.getElementById("acme-slider");
     var animating = false;
-
-    slideArrows.forEach(arrow => {
-        arrow.style.display = "block";
-    });
 
     var pos = 0;
     var auto;
