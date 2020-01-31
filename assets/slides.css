@@ -7,6 +7,7 @@
 }
 
 .slide-arrow {
+    display: none;
     z-index: 99;
     cursor: pointer;
     position: absolute;
@@ -41,7 +42,8 @@
 
 .acme-slider {
     margin: auto;
-    width: 600%;
+    width: 500%;
+    /*100*(# of slides+2)*/
     height: 300px;
     margin-left: 0%;
     background-color: #fff;
@@ -50,7 +52,8 @@
 .acme-slide {
     display: flex;
     float: left;
-    width: 16.66666%;
+    width: 20%;
+    /*100/#of slides*/
     height: 300px;
     margin-left: 0px;
 }
@@ -76,62 +79,6 @@
     background-position-y: 75%;
     background-position-x: 0;
     background-image: url(../../../uploads/2019/06/shop.jpg);
-}
-
-.slide4 {
-    background-size: cover;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    background-position-y: 0%;
-    background-position-x: 50%;
-    background-repeat: no-repeat;
-    background-image: url(../../../uploads/2020/01/holidays.jpeg);
-}
-
-.slide4 h2 {
-    padding-top: 12%;
-    width: 600px;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 10%;
-    color: #fcfcfc;
-    font-size: 24px;
-    font-family: Sans-serif;
-    font-weight: 600;
-    background-color: rgba(3, 3, 3, 0.5);
-    border-radius: 10px 10px 0 0;
-    padding: 0;
-    line-height: 46px;
-}
-
-.slide4 h3 {
-    width: 600px;
-    max-width: 80%;
-    color: #fcfcfc;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: "Yantramanav", Sans-serif;
-    background-color: rgba(3, 3, 3, 0.5);
-    border-radius: 0;
-    margin: 0 auto;
-    padding: 0 10px;
-    line-height: 36px;
-    padding-bottom: 5px;
-}
-.slide4 p {
-    
-    width: 600px;
-    max-width: 80%;
-    color: #fcfcfc;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: "Yantramanav", Sans-serif;
-    background-color: rgba(3, 3, 3, 0.5);
-    border-radius: 0 0 10px 10px;
-    margin: 0 auto;
-    padding: 0 3%;
-    line-height: 16px;
 }
 
 .acme-slide-box {
