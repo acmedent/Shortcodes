@@ -85,7 +85,7 @@ class Quaterly
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/medicom.png",
-                "link" => $pdfPath . "Medicom_Q1_2020.pdf",
+                "link" => $pdfPath . "NEW_Q1_PromoCDN_2020.pdf",
                 "alt" => "Medicom"
 
             ),
