@@ -186,7 +186,7 @@ class Home
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>Jan 27 - Feb 02, 2020</h2>";
+        <h2 class='promo-date'>February 03 - 09, 2020</h2>";
 
         $ids = array(
             40818 => array("promo" => "Promo 5+1", "promo-price" => "12.56", "net-price" => ""),
