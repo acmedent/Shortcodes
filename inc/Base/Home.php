@@ -18,19 +18,15 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2020-02-03';
-        $end_date = '2020-02-09';
+        $start_date = '2020-02-10';
         $date_from_user = date('Y-m-d');
 
-        $dateVerify = $this->check_in_range($start_date, $end_date, $date_from_user);
-
-        //if ($dateVerify)
-        if ($dateVerify)
+        if ($this->check_in_range($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
-        //add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
-        else
+        elseif ($this->previous_than($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
-        //add_shortcode('acme-home-promo', array($this, 'empty'));
+        else
+            add_shortcode('acme-home-promo', array($this, 'empty'));
     }
 
     function empty()
@@ -38,15 +34,25 @@ class Home
         return " ";
     }
 
-    function check_in_range($start_date, $end_date, $date_from_user)
+    function check_in_range($start_date, $date_from_user)
     {
         // Convert to timestamp
         $start_ts = strtotime($start_date);
-        $end_ts = strtotime($end_date);
+        $end_ts = $start_ts + 6 * 86400;
         $user_ts = strtotime($date_from_user);
 
         // Check that user date is between start & end
         return (($user_ts >= $start_ts) && ($user_ts <= $end_ts));
+    }
+
+    function previous_than($start_date, $date_from_user)
+    {
+        // Convert to timestamp
+        $start_ts = strtotime($start_date);
+        $user_ts = strtotime($date_from_user);
+
+        // Check that user date is between start & end
+        return (($user_ts < $start_ts));
     }
 
 
@@ -93,8 +99,6 @@ class Home
         
         </div>";
 
-
-
         $page = "
        <br> <div class='home-login-grid'>
         <div class='acme-wrap'>
@@ -125,15 +129,14 @@ class Home
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>Jan 27 - Feb 02, 2020</h2>";
+        <h2 class='promo-date'>February 03 - 09, 2020</h2>";
 
         $ids = array(
-            31410 => array("promo" => "Promo 3+1", "promo-price" => "142.36", "net-price" => ""),
-            33611 => array("promo" => "", "promo-price" => "22.49", "net-price" => ""),
-            34120 => array("promo" => "", "promo-price" => "24.37", "net-price" => ""),
-            38872 => array("promo" => "Promo 7+3", "promo-price" => "29.24", "net-price" => ""),
-            43190 => array("promo" => "Promo 4+1", "promo-price" => "49.16", "net-price" => ""),
-            32038 => array("promo" => "", "promo-price" => "83.79", "net-price" => "")
+            40818 => array("promo" => "Promo 5+1", "promo-price" => "12.56", "net-price" => ""),
+            43160 => array("promo" => "Promo 3+1", "promo-price" => "53.01", "net-price" => ""),
+            37687 => array("promo" => "Promo 5+2", "promo-price" => "221.94", "net-price" => ""),
+            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.01", "net-price" => ""),
+            31438 => array("promo" => "Promo 3+1", "promo-price" => "81.81", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
@@ -186,14 +189,14 @@ class Home
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>February 03 - 09, 2020</h2>";
+        <h2 class='promo-date'>February 10 - 16, 2020</h2>";
 
         $ids = array(
-            40818 => array("promo" => "Promo 5+1", "promo-price" => "12.56", "net-price" => ""),
-            43160 => array("promo" => "Promo 3+1", "promo-price" => "53.01", "net-price" => ""),
-            37687 => array("promo" => "Promo 5+2", "promo-price" => "221.94", "net-price" => ""),
-            38719 => array("promo" => "Promo 7+3", "promo-price" => "13.01", "net-price" => ""),
-            31438 => array("promo" => "Promo 3+1", "promo-price" => "81.81", "net-price" => "")
+            33974 => array("promo" => "5% Off", "promo-price" => "71.82", "net-price" => ""),
+            42712 => array("promo" => "10% Off", "promo-price" => "59.13", "net-price" => ""),
+            41090 => array("promo" => "10% Off", "promo-price" => "83.43", "net-price" => ""),
+            33272 => array("promo" => "5% Off", "promo-price" => "133.81", "net-price" => ""),
+            34090 => array("promo" => "10% Off", "promo-price" => "14.99", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {

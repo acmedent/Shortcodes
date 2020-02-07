@@ -160,6 +160,9 @@
 @media (max-width: 1048px) {}
 
 @media (max-width: 768px) {
+    .promo-grid {
+        text-align: center;
+    }
     .promo-name {
         font-size: 22px;
     }
