@@ -31,7 +31,7 @@ class Home
 
     function empty()
     {
-        return " ";
+        return "";
     }
 
     function check_in_range($start_date, $date_from_user)
