@@ -52,8 +52,6 @@ class Svg
       <a href="/next-week-promo"><div id="svgCover"></div></a>
       
       <svg
-        width="auto"
-        height="auto"
         viewBox="0 0 136.30745 28.196934"
         id="nextWeek"
       >

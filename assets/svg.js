@@ -12,14 +12,13 @@ window.onload = function () {
             animating = true;
             supLine.beginElement();
             infLine.beginElement();
-            console.log(paths);
-            paths.forEach(path => {
-                if (path.tagName == "path")
-                    path.style.stroke = "#337ebf"
+            for (var i = 0; i < paths.length; i++) {
+                if (paths[i].tagName == "path")
+                    paths[i].style.stroke = "#337ebf"
                 else {
-                    path.style.fill = "#337ebf"
+                    paths[i].style.fill = "#337ebf"
                 }
-            });
+            };
 
 
             setTimeout(function () {
@@ -30,13 +29,13 @@ window.onload = function () {
     var endAnimation = svg.addEventListener("mouseout", function () {
         supLineEnd.endElement();
         infLineEnd.endElement();
-        paths.forEach(path => {
-            if (path.tagName == "path")
-                path.style.stroke = "#000"
+        for (var i = 0; i < paths.length; i++) {
+            if (paths[i].tagName == "path")
+                paths[i].style.stroke = "#000"
             else {
-                path.style.fill = "#000"
+                paths[i].style.fill = "#000"
             }
-        });
+        };
     });
 
 }
