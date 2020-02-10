@@ -20,7 +20,7 @@ class Pages
         $Shipping = new Shipping();
         $Contact = new Contact();
         $Quaterly = new Quaterly();
+        $Svg = new Svg();
         $Home = new Home();
     }
-
 }

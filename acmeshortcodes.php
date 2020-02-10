@@ -59,7 +59,6 @@ if (!class_exists('AcmeShortcodes')) {
 
         function register()
         {
-
             add_action('wp_enqueue_scripts', array($this, 'enqueue'));
             //add_action('admin_enqueue_scripts', array($this, 'enqueue'));
             $Pages = new Pages();
@@ -70,6 +69,7 @@ if (!class_exists('AcmeShortcodes')) {
         {
             // enqueue all our scripts
             wp_enqueue_script('shortcodesscript', plugins_url('/assets/myscript.js', __FILE__));
+            wp_enqueue_script('svgscript', plugins_url('/assets/svg.js', __FILE__));
             wp_enqueue_style('shortcodesstyle', plugins_url('/assets/mystyle.css', __FILE__));
         }
         function activate()
@@ -83,9 +83,8 @@ if (!class_exists('AcmeShortcodes')) {
 
     function action_woocommerce_product_thumbnails()
     {
-        
-                echo "<p class='acme-text' style='font-size:10px;text-align:center'>The images have the illustration purpose, the product may not be the same. Check the description or contact our sales team.</p>";
-        
+
+        echo "<p class='acme-text' style='font-size:10px;text-align:center'>The images have the illustration purpose, the product may not be the same. Check the description or contact our sales team.</p>";
     }
 
     add_action('woocommerce_product_thumbnails', 'action_woocommerce_product_thumbnails', 100, 0);
@@ -94,5 +93,4 @@ if (!class_exists('AcmeShortcodes')) {
     register_activation_hook(__FILE__, array($AcmeShortcodes, 'activate'));
     // deactivation
     register_deactivation_hook(__FILE__, array('Deactivate', 'deactivate'));
-    
 }
