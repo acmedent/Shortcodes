@@ -186,7 +186,6 @@ class Home
 
         $page = "
         
-        <a href='/next-week-promo'>" . do_shortcode('[nextWeekSvg]') . "</a>
         <div class='promo-grid'>
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
