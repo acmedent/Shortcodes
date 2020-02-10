@@ -18,7 +18,7 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2020-02-10';
+        $start_date = '2020-02-11';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -125,7 +125,7 @@ class Home
     {
         $page = "
         
-        <a href='/next-week-promo'>" . do_shortcode('[nextWeekSvg]') . "</a>
+       " . do_shortcode('[nextWeekSvg]') . "
         <div class='promo-grid'>
         
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
@@ -173,7 +173,6 @@ class Home
         $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
         <h2 class='acme-maintitle promo-steam'>Sales Team</h2>
         <h2 class='acme-sec-title promo-phone'>905-761-6850</h2>
-
         </div><br>";
 
         return $page;

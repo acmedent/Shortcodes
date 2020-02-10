@@ -7,27 +7,29 @@
 namespace Inc\Base;
 
 if (!defined('ABSPATH')) {
-    die;
+  die;
 };
 class Svg
 {
 
-    function __construct()
-    {
-        add_shortcode('nextWeekSvg', array($this, 'nextWeekSvg'));
-    }
+  function __construct()
+  {
+    add_shortcode('nextWeekSvg', array($this, 'nextWeekSvg'));
+  }
 
-    function nextWeekSvg()
-    {
-        return ('
+  function nextWeekSvg()
+  {
+    return ('
             <style>
       #svgBox {
           margin:auto;
-        cursor: pointer;
         display: block;
         position: relative;
         width: 170px;
         height: auto;
+      }
+      svg{
+        cursor: pointer;
       }
       #svgCover {
         z-index: 4;
@@ -37,9 +39,18 @@ class Svg
         width: 100%;
         height: 100%;
       }
+      .teste:hover{
+      stroke:#ffffff
+      }
+      .svgColor{
+        transition: stroke 0.3s;
+        transition: fill 0.3s;
+      }
+
     </style>
     <div id="svgBox">
-      <div id="svgCover"></div>
+      <a href="/next-week-promo"><div id="svgCover"></div></a>
+      
       <svg
         width="auto"
         height="auto"
@@ -54,7 +65,7 @@ class Svg
           id="layer1"
           transform="translate(-31.417707,-134.18692)"
         >
-          <g
+          <g class="svgColor"
             aria-label="Next Week"
             style="font-style:normal;font-weight:normal;font-size:50.79999924px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
             id="NextWeek"
@@ -108,7 +119,7 @@ class Svg
               inkscape:connector-curvature="0"
             />
           </g>
-          <path
+          <path class="svgColor"
             style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
           >
             <animate
@@ -132,7 +143,7 @@ class Svg
               begin="infLine_2.end"
             />
           </path>
-          <path
+          <path class="svgColor"
             style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
           >
             <animate
@@ -158,7 +169,8 @@ class Svg
           </path>
         </g>
       </svg>
+      
     </div>
             ');
-    }
+  }
 }
