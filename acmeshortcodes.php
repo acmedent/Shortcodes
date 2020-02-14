@@ -69,7 +69,6 @@ if (!class_exists('AcmeShortcodes')) {
         {
             // enqueue all our scripts
             wp_enqueue_script('shortcodesscript', plugins_url('/assets/myscript.js', __FILE__));
-            wp_enqueue_script('svgscript', plugins_url('/assets/svg.js', __FILE__));
             wp_enqueue_style('shortcodesstyle', plugins_url('/assets/mystyle.css', __FILE__));
         }
         function activate()
