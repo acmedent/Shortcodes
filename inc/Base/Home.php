@@ -198,7 +198,7 @@ class Home
             31410 => array("promo" => "Promo 3+1", "promo-price" => "142.36", "net-price" => ""),
             33256 => array("promo" => "10% Off", "promo-price" => "110.57", "net-price" => ""),
             32059 => array("promo" => "10% Off", "promo-price" => "60.75", "net-price" => ""),
-            33599 => array("promo" => "10% Off", "promo-price" => "14.18", "net-price" => "")
+            33599 => array("promo" => "10% Off", "promo-price" => "14.58", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
