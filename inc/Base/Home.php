@@ -193,10 +193,10 @@ class Home
         <h2 class='promo-date'>March 09 - 15, 2020</h2>";
 
         $ids = array(
-            33656 => array("promo" => "5% Off", "promo-price" => "148.77", "net-price" => ""),
-            36656 => array("promo" => "10% Off", "promo-price" => "49.82", "net-price" => ""),
-            26843 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
-            50830 => array("promo" => "5% Off", "promo-price" => "145.35", "net-price" => ""),
+            31403 => array("promo" => "5% Off", "promo-price" => "148.77", "net-price" => ""),
+            26231 => array("promo" => "10% Off", "promo-price" => "49.82", "net-price" => ""),
+            36610 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
+            26322 => array("promo" => "5% Off", "promo-price" => "145.35", "net-price" => ""),
             38601 => array("promo" => "10% Off", "promo-price" => "50.22", "net-price" => ""),
             50251 => array("promo" => "5% Off", "promo-price" => "70.97", "net-price" => "")
         );
