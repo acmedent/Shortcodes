@@ -194,7 +194,7 @@ class Home
 
         $ids = array(
             31403 => array("promo" => "5% Off", "promo-price" => "148.77", "net-price" => ""),
-            26231 => array("promo" => "10% Off", "promo-price" => "49.82", "net-price" => ""),
+            26321 => array("promo" => "10% Off", "promo-price" => "49.82", "net-price" => ""),
             36610 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
             26322 => array("promo" => "5% Off", "promo-price" => "145.35", "net-price" => ""),
             38601 => array("promo" => "10% Off", "promo-price" => "50.22", "net-price" => ""),
