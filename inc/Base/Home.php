@@ -226,8 +226,16 @@ class Home
                     "price" => $product->get_price(),
                 );
 
+                //#d3eaf7
+                $this->even = !$this->even;
+                if ($this->even)
+                    $color = '#d3eaf7';
+                else
+                    $color = '#fff';
+
+
                 $page .= "
-            <div class='promo-prod'>
+            <div class='promo-prod' style='background:" . $color . ";padding:20px'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
                 <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
