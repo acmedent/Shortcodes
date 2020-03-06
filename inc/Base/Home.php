@@ -18,7 +18,7 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $start_date = '2020-03-02';
+        $start_date = '2020-03-09';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -130,15 +130,15 @@ class Home
         
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>Feb 24 - Mar 01, 2020</h2>";
+        <h2 class='promo-date'>March 02 - 08, 2020</h2>";
 
         $ids = array(
-            37502 => array("promo" => "5% Off", "promo-price" => "99.18", "net-price" => ""),
-            26849 => array("promo" => "5% Off", "promo-price" => "51.30", "net-price" => ""),
-            31410 => array("promo" => "Promo 3+1", "promo-price" => "142.36", "net-price" => ""),
-            33256 => array("promo" => "10% Off", "promo-price" => "110.57", "net-price" => ""),
-            32059 => array("promo" => "10% Off", "promo-price" => "60.75", "net-price" => ""),
-            33599 => array("promo" => "10% Off", "promo-price" => "14.58", "net-price" => "")
+            33656 => array("promo" => "5% Off", "promo-price" => "202.64", "net-price" => ""),
+            36656 => array("promo" => "10% Off", "promo-price" => "117.86", "net-price" => ""),
+            26843 => array("promo" => "5% Off", "promo-price" => "118.42", "net-price" => ""),
+            50830 => array("promo" => "7.5% Off", "promo-price" => "4.99", "net-price" => ""),
+            33580 => array("promo" => "2+1", "promo-price" => "18.81", "net-price" => ""),
+            32454 => array("promo" => "4+1", "promo-price" => "297.00", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
@@ -190,17 +190,15 @@ class Home
 
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>March 02 - 08, 2020</h2>";
-
-
+        <h2 class='promo-date'>March 09 - 15, 2020</h2>";
 
         $ids = array(
-            33656 => array("promo" => "5% Off", "promo-price" => "202.64", "net-price" => ""),
-            36656 => array("promo" => "10% Off", "promo-price" => "117.86", "net-price" => ""),
-            26843 => array("promo" => "5% Off", "promo-price" => "118.42", "net-price" => ""),
-            50830 => array("promo" => "7.5% Off", "promo-price" => "4.99", "net-price" => ""),
-            33580 => array("promo" => "2+1", "promo-price" => "18.81", "net-price" => ""),
-            32454 => array("promo" => "4+1", "promo-price" => "297.00", "net-price" => "")
+            33656 => array("promo" => "5% Off", "promo-price" => "148.77", "net-price" => ""),
+            36656 => array("promo" => "10% Off", "promo-price" => "49.82", "net-price" => ""),
+            26843 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
+            50830 => array("promo" => "5% Off", "promo-price" => "145.35", "net-price" => ""),
+            38601 => array("promo" => "10% Off", "promo-price" => "50.22", "net-price" => ""),
+            50251 => array("promo" => "5% Off", "promo-price" => "70.97", "net-price" => "")
         );
 
         foreach ($ids as $id => $value) {
