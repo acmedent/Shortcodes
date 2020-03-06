@@ -11,6 +11,9 @@ if (!defined('ABSPATH')) {
 };
 class Home
 {
+
+    private $even = false;
+
     function __construct()
     {
         add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
@@ -126,7 +129,7 @@ class Home
         $page = "
         
        " . do_shortcode('[nextWeekSvg]') . "
-        <div class='promo-grid'>
+        <div class='promo-grid' style='background:#fff'>
         
         <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
@@ -145,30 +148,39 @@ class Home
 
             $product = wc_get_product($id);
 
-            $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
+            if (isset($product) && $product != null) {
+                $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
 
 
-            $prod_info = array(
-                "name" => $product->get_name(),
-                "img" => $image,
-                "price" => $product->get_price(),
-            );
+                $prod_info = array(
+                    "name" => $product->get_name(),
+                    "img" => $image,
+                    "price" => $product->get_price(),
+                );
+                //#d3eaf7
+                $this->even = !$this->even;
+                if ($this->even)
+                    $color = '#d3eaf7';
+                else
+                    $color = '#fff';
 
-            $page .= "
-            <div class='promo-prod'>
+
+                $page .= "
+            <div class='promo-prod' style='background:" . $color . ";padding:20px'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
                 <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
                 <h2 class='prod-price'>Each: $" . $value["promo-price"];
-            if ($value["net-price"] == "")
-                $page .=  "</h2>";
-            else
-                $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
+                if ($value["net-price"] == "")
+                    $page .=  "</h2>";
+                else
+                    $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-            $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
+                $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
                 <h2>Product Page</h2>
                 </a>
                 </div>";
+            }
         }
 
         $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
@@ -204,31 +216,32 @@ class Home
         foreach ($ids as $id => $value) {
 
             $product = wc_get_product($id);
+            if (isset($product) && $product != null) {
+                $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
 
-            $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
 
+                $prod_info = array(
+                    "name" => $product->get_name(),
+                    "img" => $image,
+                    "price" => $product->get_price(),
+                );
 
-            $prod_info = array(
-                "name" => $product->get_name(),
-                "img" => $image,
-                "price" => $product->get_price(),
-            );
-
-            $page .= "
+                $page .= "
             <div class='promo-prod'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
                 <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
                 <h2 class='prod-price'>Each: $" . $value["promo-price"];
-            if ($value["net-price"] == "")
-                $page .=  "</h2>";
-            else
-                $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
+                if ($value["net-price"] == "")
+                    $page .=  "</h2>";
+                else
+                    $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
-            $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
+                $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
                     <h2>Product Page</h2>
                 </a>
             </div>";
+            }
         }
 
         $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
