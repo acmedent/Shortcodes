@@ -132,7 +132,7 @@ class Home
        " . do_shortcode('[nextWeekSvg]') . "
         <div class='promo-grid' style='background:#ffffff'>
         
-        <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
+        <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         <h2 class='promo-date'>March 16 - 22, 2020</h2>";
 
@@ -201,7 +201,7 @@ class Home
         
         <div class='promo-grid'>
 
-        <img src='/wp-content/uploads/2019/11/WinterSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
+        <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         <h2 class='promo-date'>March 23 - 29, 2020</h2>";
 
