@@ -27,85 +27,93 @@ class Quaterly
             
             ";
 
-        $pdfPath = "/wp-content/uploads/pdf/";
+        $pdfPath = "/wp-content/uploads/2020/03/";
 
 
         $arr = array(
-            array(
-                "src" => "/wp-content/uploads/2019/06/coltene-1.png",
-                "link" => $pdfPath . "Crosstex_Q1_2020.pdf",
-                "alt" => "Crosstex"
-            ),
+            // array(
+            //     "src" => "/wp-content/uploads/2019/06/coltene-1.png",
+            //     "link" => $pdfPath . "Crosstex_Q1_2020.pdf",
+            //     "alt" => "Crosstex"
+            // ),
             array(
                 "src" => "/wp-content/uploads/2019/06/dentsply-1.png",
-                "link" => $pdfPath . "Dentsply_Q1_2020.pdf",
+                "link" => $pdfPath . "Dentsply_Q2_2020-min.pdf",
                 "alt" => "Dentsply"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/diadent.png",
-                "link" => $pdfPath . "DiaDent_2020_Q1.pdf",
+                "link" => $pdfPath . "Diadent-Q2-2020-min.pdf",
                 "alt" => "Diadent"
 
             ),
+            // array(
+            //     "src" => "/wp-content/uploads/2019/06/dmg-1.png",
+            //     "link" => $pdfPath . "DMG_Q1_2020.pdf",
+            //     "alt" => "DMG"
+
+            // ),
+            // array(
+            //     "src" => "/wp-content/uploads/2019/06/gc-america.png",
+            //     "link" => $pdfPath . "GCAmerica_Q1-2020.pdf",
+            //     "alt" => "GC"
+
+            // ),
+
             array(
-                "src" => "/wp-content/uploads/2019/06/dmg-1.png",
-                "link" => $pdfPath . "DMG_Q1_2020.pdf",
-                "alt" => "DMG"
+                "src" => "/wp-content/uploads/2020/03/flight.png",
+                "link" => $pdfPath . "Flight-Autoclave-Flyer-Single-Page-Promo-min.pdf",
+                "alt" => "Flight"
 
             ),
             array(
-                "src" => "/wp-content/uploads/2019/06/gc-america.png",
-                "link" => $pdfPath . "GCAmerica_Q1-2020.pdf",
-                "alt" => "GC"
-
-            ),
-            array(
-                "src" => "/wp-content/uploads/2019/06/morita.png",
-                "link" => $pdfPath . "J.Morita_Q1_2020.pdf",
-                "alt" => "JMorita"
+                "src" => "/wp-content/uploads/2019/06/hufriendy.png",
+                "link" => $pdfPath . "Hu-Friedy-Q2-2020-Promo-Pad-CA.pdf",
+                "alt" => "Hu-Friedy"
 
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/kulzer.jpg",
-                "link" => $pdfPath . "Kulzer_Q1_2020.pdf",
+                "link" => $pdfPath . "Kulzer-Q2-2020-min.pdf",
                 "alt" => "Kulzer"
 
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/kuraray.png",
-                "link" => $pdfPath . "Kuraray-2020-Q1-PANAVIA-sm.pdf",
+                "link" => $pdfPath . "2020-2Q-Specials-CANADA-kuraray-min.pdf",
                 "alt" => "Kuraray Panavia"
 
             ),
-            array(
-                "src" => "/wp-content/uploads/2019/06/kuraray.png",
-                "link" => $pdfPath . "Kuraray_2020-Q1-CLEARFIL-sm.pdf",
-                "alt" => "Kuraray Clearfil"
 
-            ),
             array(
                 "src" => "/wp-content/uploads/2019/06/medicom.png",
-                "link" => $pdfPath . "NEW_Q1_PromoCDN_2020.pdf",
+                "link" => $pdfPath . "Medicom-Q2-min.pdf",
                 "alt" => "Medicom"
 
             ),
             array(
+                "src" => "/wp-content/uploads/2019/06/morita.png",
+                "link" => $pdfPath . "J.Morita-Q2_2020-min.pdf",
+                "alt" => "JMorita"
+
+            ),
+            array(
                 "src" => "/wp-content/uploads/2019/06/puldent.png",
-                "link" => $pdfPath . "Pulpdent-1st-Quarter-2020.pdf",
+                "link" => $pdfPath . "Pulpdent-Q2-2020-min.pdf",
                 "alt" => "Pulpdent"
 
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/sable-1-e1577983965932.png",
-                "link" => $pdfPath . "Sable_2020_Q1.pdf",
+                "link" => $pdfPath . "Sable-Q2-2020-min.pdf",
                 "alt" => "Sable"
 
             ),
-            array(
-                "src" => "/wp-content/uploads/2020/01/Waterpik-Logo.png",
-                "link" => $pdfPath . "Waterpik_2019-2020.pdf",
-                "alt" => "Waterpik"
-            )
+            // array(
+            //     "src" => "/wp-content/uploads/2020/01/Waterpik-Logo.png",
+            //     "link" => $pdfPath . "Waterpik_2019-2020.pdf",
+            //     "alt" => "Waterpik"
+            // )
         );
 
 
