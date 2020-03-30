@@ -124,7 +124,7 @@ class Quaterly
 
             if (sizeof($arr) > 0) {
                 foreach ($arr as $img) {
-                    $page .= '<div class="partner quaterly"><div class="qtl-img-box"><img src="' . $img['src'] . '" alt="' . $img['alt'] . '"></div><div class="qtl-btn-box"><a href="' . $img['link'] . '" class="quaterly-link"><div class="qtl-btn">PROMO</div></a></div></div>';
+                    $page .= '<div class="partner quaterly"><div class="qtl-img-box"><a href="' . $img['link'] . '"><img src="' . $img['src'] . '" alt="' . $img['alt'] . '"></a></div><div class="qtl-btn-box"><a href="' . $img['link'] . '" class="quaterly-link"><div class="qtl-btn">PROMO</div></a></div></div>';
                 }
                 $page .= "</div>";
             } else {
