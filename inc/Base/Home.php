@@ -102,6 +102,16 @@ class Home
         
         </div>";
 
+        //Pro Surface
+        $slide4 = "<div class='acme-slide slide4'> 
+        <div class='slide4-prod'>
+        <img  src='/wp-content/uploads/2020/04/ProSurface.png' alt='Pro-Surface'>
+        </div>
+        <div class='slide4-price'>
+        <img src='/wp-content/uploads/2020/04/ProSurface-Price.png' alt='Pro-Surface'>
+        </div>
+        </div>";
+
         $page = "
         <div class='warning-box'><span class='warning-text'>All Personal Protective Equipment Items are Final Sale.</span></div>
         <div class='home-login-grid'>
@@ -110,7 +120,7 @@ class Home
         <</div>
                 <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
-                    " . $slide3 . $slide1 . $slide2 . $slide3 . $slide1 . "
+                    " . $slide4 . $slide1 . $slide2 . $slide3 . $slide4 . $slide1 . "
 
                 </div>
         </div>

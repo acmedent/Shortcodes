@@ -86,6 +86,7 @@
     border: 1px #aaa solid;
     background-color: #eee;
     border-radius: 10px;
+    max-width: 100%;
     width: 600px;
     margin: 0 auto;
     margin-top: 10px;
@@ -152,5 +153,16 @@
     }
     .promo-grid {
         display: block;
+    }
+    .warning-box {
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+        max-width: 100%;
+        width: 600px;
+        text-align: center;
+    }
+    .warning-text {
+        font-size: 12px;
     }
 }

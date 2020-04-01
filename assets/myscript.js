@@ -7,7 +7,7 @@ window.onload = function () {
     var pos = 0;
     var auto;
 
-    var slidesNr = 3;
+    var slidesNr = 4;
     slidePos(pos);
 
     window.addEventListener('blur', () => { clearTimeout(auto); });
@@ -17,7 +17,7 @@ window.onload = function () {
 
         if (!animating) {
             pos++;
-            if (pos > 5)
+            if (pos > slidesNr + 1)
                 pos = 0;
             slidePos(pos);
         }
@@ -28,7 +28,7 @@ window.onload = function () {
         if (!animating) {
             pos--;
             if (pos < 0)
-                pos = 4;
+                pos = slidesNr + 1;
             slidePos(pos);
         }
     });
@@ -69,6 +69,12 @@ window.onload = function () {
                 }, 1000);
                 break;
             case 4:
+                slider.style.marginLeft = "-400%";
+                setTimeout(() => {
+                    animating = false;
+                }, 1000);
+                break;
+            case 5:
                 slider.style.marginLeft = (-1) * (slidesNr + 1) * 100 + "%";
                 setTimeout(() => {
                     slider.style.transition = "0s";
