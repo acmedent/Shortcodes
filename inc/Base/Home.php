@@ -219,7 +219,7 @@ class Home
             32239 => array("promo" => "Promo 3+1", "promo-price" => "53.00", "net-price" => ""),
             32240 => array("promo" => "Promo 3+1", "promo-price" => "83.27", "net-price" => ""),
             26322 => array("promo" => "Promo 4+1", "promo-price" => "139.95", "net-price" => ""),
-            27839 => array("promo" => "Promo 3+1", "promo-price" => "207", "net-price" => ""),
+            27839 => array("promo" => "Promo 3+1", "promo-price" => "207.00", "net-price" => ""),
             28249 => array("promo" => "6+1 | 10+2", "promo-price" => "25.20", "net-price" => ""),
         );
 
