@@ -112,6 +112,11 @@ class Home
         </div>
         </div>";
 
+        $slide5 = "<div class='acme-slide slide5'> 
+        
+        <div class='slide5-btn' onclick='window.location.href = \"https://www.acmedent.com/product/face-shield-blue-12-x-9-direct-splash-protection/\";'><span>Product Page</span></div>
+        </div>";
+
         $page = "
         <div class='warning-box'><span class='warning-text'>All Personal Protective Equipment Items are Final Sale.</span></div>
         <div class='home-login-grid'>
@@ -120,7 +125,7 @@ class Home
         <</div>
                 <div class='slide-arrow right-arrow' id='right-arrow'>></div>
                 <div class='acme-slider' id='acme-slider'>
-                    " . $slide4 . $slide1 . $slide2 . $slide3 . $slide4 . $slide1 . "
+                    " . $slide5 . $slide1 . $slide2 . $slide3 . $slide4 . $slide5 . $slide1 . "
 
                 </div>
         </div>

@@ -41,7 +41,7 @@
 
 .acme-slider {
     margin: auto;
-    width: 600%;
+    width: 700%;
     /*100*(# of slides+2)*/
     height: 300px;
     margin-left: 0%;
@@ -51,7 +51,7 @@
 .acme-slide {
     display: flex;
     float: left;
-    width: 16.66666666666667%;
+    width: 14.28571428571429%;
     /*100/#of slides*/
     height: 300px;
     margin-left: 0px;
@@ -114,6 +114,44 @@
 
 .slide4-prod img {
     margin-top: 100px;
+}
+
+.slide5 {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000bb9;
+    background-image: url(../../../uploads/2020/04/faceShield.png);
+}
+
+.slide5-btn {
+    position: relative;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+    top: 240px;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slide5-btn:hover {
+    background-color: #000;
+}
+
+.slide5-btn span {
+    transition: 0.3s;
+    color: #555;
+    font-size: 16px;
+}
+
+.slide5-btn:hover span {
+    color: #fff
 }
 
 .acme-slide-box {

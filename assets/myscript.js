@@ -7,7 +7,7 @@ window.onload = function () {
     var pos = 0;
     var auto;
 
-    var slidesNr = 4;
+    var slidesNr = 5;
     slidePos(pos);
 
     window.addEventListener('blur', () => { clearTimeout(auto); });
@@ -75,6 +75,12 @@ window.onload = function () {
                 }, 1000);
                 break;
             case 5:
+                slider.style.marginLeft = "-500%";
+                setTimeout(() => {
+                    animating = false;
+                }, 1000);
+                break;
+            case 6:
                 slider.style.marginLeft = (-1) * (slidesNr + 1) * 100 + "%";
                 setTimeout(() => {
                     slider.style.transition = "0s";
