@@ -3,10 +3,9 @@ window.onload = function () {
     var leftArrow = document.getElementById("left-arrow");
     var rightArrow = document.getElementById("right-arrow");
     var slider = document.getElementById("acme-slider");
-    var animating = false;
-    var pos = 0;
+    var animating = true;
+    var pos = 1;
     var auto;
-
     var slidesNr = 5;
     slidePos(pos);
 
