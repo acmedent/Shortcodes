@@ -88,17 +88,18 @@
 }
 
 .slide4-price {
+    position: relative;
     width: 100%;
     min-width: 60%;
-    height: 0;
-    min-height: auto;
-    text-align: right;
+    height: 300px;
+    min-height: 300px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .slide4-price img {
-    position: sticky;
-    max-height: 130px;
-    margin-top: 60px;
+    max-height: 150px;
+    margin-top: 50px;
     height: auto;
     right: 0px;
 }
@@ -289,8 +290,11 @@
     .slide4-price {
         min-width: 70%;
     }
-    .slide4-prod img {
-        margin-top: 20px;
-        max-height: 300px;
+    .slide4-prod {
+        display: none;
+    }
+    .slide4-price {
+        text-align: center;
+        margin: 0;
     }
 }
