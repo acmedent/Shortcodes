@@ -105,10 +105,10 @@ class Home
         //Pro Surface
         $slide4 = "<div class='acme-slide slide4'> 
         <div class='slide4-prod'>
-        <img  src='/acme/wp-content/uploads/2020/04/ProSurface.png' alt='Pro-Surface'>
+        <img  src='/wp-content/uploads/2020/04/ProSurface.png' alt='Pro-Surface'>
         </div>
         <div class='slide4-price'>
-        <img src='/acme/wp-content/uploads/2020/04/ProSurface-Price.png' alt='Pro-Surface'>
+        <img src='/wp-content/uploads/2020/04/ProSurface-Price.png' alt='Pro-Surface'>
         </div>
         </div>";
 
