@@ -151,15 +151,15 @@ class Home
         
         <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>April 06 - 12, 2020</h2>";
+         <h2 class='promo-date'>April 13 - 19, 2020</h2>";
 
         $ids = array(
-            50688 => array("promo" => "Promo 5+2", "promo-price" => "54.90", "net-price" => ""),
-            32239 => array("promo" => "Promo 3+1", "promo-price" => "53.00", "net-price" => ""),
-            32240 => array("promo" => "Promo 3+1", "promo-price" => "83.27", "net-price" => ""),
-            26322 => array("promo" => "Promo 4+1", "promo-price" => "139.95", "net-price" => ""),
-            27839 => array("promo" => "Promo 3+1", "promo-price" => "207.00", "net-price" => ""),
-            28249 => array("promo" => "6+1 | 10+2", "promo-price" => "25.20", "net-price" => ""),
+            50835 => array("promo" => "Promo 3+1", "promo-price" => "15.82", "net-price" => ""),
+            50988 => array("promo" => "New Item!", "promo-price" => "24.85", "net-price" => ""),
+            26801 => array("promo" => "Promo 3+1", "promo-price" => "271.35", "net-price" => ""),
+            26263 => array("promo" => "5% Discount", "promo-price" => "46.77 | $48.23", "net-price" => ""),
+            26847 => array("promo" => "6+1 | 10+2", "promo-price" => "38.90", "net-price" => ""),
+            32478 => array("promo" => "Promo 3+1", "promo-price" => "302.67", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
@@ -220,15 +220,15 @@ class Home
 
         <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>April 13 - 19, 2020</h2>";
+        <h2 class='promo-date'>April 20 - 26, 2020</h2>";
 
         $ids = array(
-            50835 => array("promo" => "Promo 3+1", "promo-price" => "15.82", "net-price" => ""),
-            50988 => array("promo" => "New Item!", "promo-price" => "24.85", "net-price" => ""),
-            26801 => array("promo" => "Promo 3+1", "promo-price" => "271.35", "net-price" => ""),
-            26263 => array("promo" => "5% Discount", "promo-price" => "46.77 | $48.23", "net-price" => ""),
-            26847 => array("promo" => "6+1 | 10+2", "promo-price" => "38.90", "net-price" => ""),
-            32478 => array("promo" => "Promo 3+1", "promo-price" => "302.67", "net-price" => ""),
+            42711 => array("promo" => "5% OFF", "promo-price" => "74.39", "net-price" => ""),
+            51011 => array("promo" => "New Item!", "promo-price" => "39.95", "net-price" => ""),
+            33677 => array("promo" => "5% OFF", "promo-price" => "114.57", "net-price" => ""),
+            43193 => array("promo" => "15% OFF", "promo-price" => "46.67", "net-price" => ""),
+            34400 => array("promo" => "10% OFF", "promo-price" => "94.37", "net-price" => ""),
+            38814 => array("promo" => "v", "promo-price" => "23.90", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
