@@ -220,7 +220,7 @@ class Home
 
         <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
-        <h2 class='promo-date'>April 20 - 26, 2020</h2>";
+        <h2 class='promo-date'>April 27 - May 03, 2020</h2>";
 
         $ids = array(
             43189 => array("promo" => "10% OFF", "promo-price" => "18.63", "net-price" => ""),
