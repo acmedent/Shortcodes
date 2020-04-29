@@ -98,7 +98,7 @@ class Quaterly
 
             ),
             array(
-                "src" => "/wp-content/uploads/2019/06/puldent.png",
+                "src" => "/wp-content/uploads/2020/04/Pulpdent-Q2-Promos_Canada_2020-revised-Aprl-28-2020.pdf",
                 "link" => $pdfPath . "Pulpdent-Q2-2020-min.pdf",
                 "alt" => "Pulpdent"
 
