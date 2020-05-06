@@ -5,6 +5,7 @@
  */
 
 namespace Inc\Base;
+
 if (!defined('ABSPATH')) {
     die;
 };
@@ -37,7 +38,7 @@ class About
         <h2 class='acme-sec-title'>QUALITY DENTAL PRODUCTS AT COMPETITIVE PRICES</h2>
         <p class='acme-text'>Acmedent offers a complete range of dental supplies and dental equipment from manufacturers
             like Dentsply, Coltene/Whaledent, GC, Heraeus, Hu-Friedy, Medicom, Premier, Pulpdent, DMG, Tuttnauer,
-            Miltex, Morita, Shofu, Sable, Techwest, Velopex, Parkwell, Young, Microcopy, Kuraray, Teledyne Dalsa, and
+            Miltex, Morita, Shofu, Sable, Techwest, Velopex, Young, Microcopy, Kuraray, Teledyne Dalsa, and
             Ocean Pacific.</p>
  
         <h2 class='acme-sec-title'>FAST DELIVERY</h2>
@@ -106,10 +107,6 @@ class About
             array(
                 "src" => "/wp-content/uploads/2019/06/oceanpacific.png",
                 "alt" => "Ocean Pacific"
-            ),
-            array(
-                "src" => "/wp-content/uploads/2019/06/parkell.png",
-                "alt" => "Parkell"
             ),
             array(
                 "src" => "/wp-content/uploads/2019/06/premier.png",
