@@ -5,6 +5,10 @@
 @import "quaterly.css";
 @import "wplogin.css";
 @import "slides.css";
+html {
+    font-size: 45px !important;
+}
+
 .entry {
     align-content: center;
 }
