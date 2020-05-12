@@ -120,7 +120,7 @@ class Home
         </div>";
 
         $page = "
-        <div class='warning-box'><span class='warning-text'>All Personal Protective Equipment Items are Final Sale.</span></div>
+        <div class='warning-box'><span class='warning-text'>All Personal Protective Equipment Items are Final Sale</span></div>
         <div class='home-login-grid'>
         <div class='acme-wrap'>
         <div class='slide-arrow left-arrow' id='left-arrow'>
