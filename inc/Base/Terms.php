@@ -183,10 +183,48 @@ class Terms
         <div class="swiper-box">
         <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide"><div class="slide2-img">
+
+        <h2 class="acme-maintitle slide2-h2">
+        Free Shipping Over $300.00 Orders
+        </h2>
+
+        </div></div>
+      <div class="swiper-slide"><div class="acme-slide slide1">
+        <div class="acme-slide-box">
+
+        <a class="side1-link"  href="/wp-content/uploads/pdf/catalog.pdf">
+        <h2 class="acme-maintitle">Download</h2>
+        </a>
+        
+        <br>
+
+        <h2 class="acme-maintitle slide1-h2">
+        Download our latest Catalog
+        </h2>
+
+        </div>
+        
+        </div></div>
+      <div class="swiper-slide"><div class="acme-slide slide3">
+        
+        <a href="https://www.acmedent.com/shop-dental-supplies-products/"><h2>Store</h2></a>
+        <br>
+        <h2 class="acme-maintitle slide2-h3">New Online Store</h2>      
+        
+        </div></div>
+      <div class="swiper-slide"><div class="acme-slide slide4"> 
+        <div class="slide4-prod">
+        <img  src="/wp-content/uploads/2020/04/ProSurface.png" alt="Pro-Surface">
+        </div>
+        <div class="slide4-price">
+        <img src="/wp-content/uploads/2020/04/ProSurface-Price.png" alt="Pro-Surface">
+        </div>
+        </div></div>
+      <div class="swiper-slide"><div class="acme-slide slide5"> 
+        
+        <div class="slide5-btn" onclick="window.location.href = \"https://www.acmedent.com/product/face-shield-blue-12-x-9-direct-splash-protection/\";"><span>Product Page</span></div>
+        </div></div>
 
     </div>
     <!-- Add Pagination -->
@@ -207,7 +245,7 @@ class Terms
       centeredSlides: true,
       loop: true,
       autoplay: {
-        delay: 2500,
+        delay: 10000,
         disableOnInteraction: false,
       },
       pagination: {
