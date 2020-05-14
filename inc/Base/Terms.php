@@ -7,21 +7,21 @@
 namespace Inc\Base;
 
 if (!defined('ABSPATH')) {
-    die;
+  die;
 };
 class Terms
 {
 
-    function __construct()
-    {
-        add_shortcode('acme-terms', array($this, 'AcmedentTermsPage'));
-        add_shortcode('acme-carousel', array($this, 'AcmedentCarousel'));
-    }
+  function __construct()
+  {
+    add_shortcode('acme-terms', array($this, 'AcmedentTermsPage'));
+    add_shortcode('acme-carousel', array($this, 'AcmedentCarousel'));
+  }
 
 
-    function AcmedentTermsPage()
-    {
-        $page = "
+  function AcmedentTermsPage()
+  {
+    $page = "
         <div class='acme-container'>
 
         <h2 class='acme-maintitle'>
@@ -130,23 +130,23 @@ class Terms
 
 
 
-        return $page;
+    return $page;
+  }
+
+  function AcmedentCarousel()
+  {
+
+    function hook_css()
+    {
+?>
+      <link rel="stylesheet" href="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/wp/package/css/swiper.min.css">
+<?php
     }
 
-    function AcmedentCarousel()
-    {
+    add_action('wp_head', 'hook_css');
 
-        function hook_css()
-        {
-?>
-            <link rel="stylesheet" href="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/wp/package/css/swiper.min.css">
-<?php
-        }
-
-        add_action('wp_head', 'hook_css');
-
-        $page = '
-        <link rel="stylesheet" href="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/css/swiper.min.css">
+    $page = '
+        <link rel="stylesheet" href="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/css/swiper.min.css">
         
         <style>
     
@@ -198,7 +198,7 @@ class Terms
   </div>
 
   <!-- Swiper JS -->
-  <script src="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
+  <script src="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -222,6 +222,6 @@ class Terms
   </script>
         ';
 
-        return $page;
-    }
+    return $page;
+  }
 }
