@@ -227,6 +227,8 @@ class Home
             51051 => array("promo" => "", "promo-price" => "36.95", "net-price" => ""),
             51102 => array("promo" => "", "promo-price" => "149.95", "net-price" => ""),
             51111 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""),
+            51171 => array("promo" => "", "promo-price" => "79.99", "net-price" => ""),
+            51131 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
