@@ -135,31 +135,91 @@ class Terms
 
     function AcmedentCarousel()
     {
-        $page = '
-        <style>
-        .label-big{
-            font-size:1.5rem;
-        }
-        </style>
 
-        <div class="container mt-5">
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1" class="label-big" >Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label ml-5" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary my-3">Submit</button>
-        </form>
-        </div>
+        function hook_css()
+        {
+?>
+            <link rel="stylesheet" href="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/wp/package/css/swiper.min.css">
+<?php
+        }
+
+        add_action('wp_head', 'hook_css');
+
+        $page = '
+        <link rel="stylesheet" href="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/css/swiper.min.css">
+        
+        <style>
+    
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-box{
+        width:100%;
+        height:500px;
+    }
+  </style>
+        <div class="swiper-box">
+        <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../wp-content/plugins/AcmeShortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
         ';
 
         return $page;
