@@ -1,0 +1,99 @@
+<link
+  rel="stylesheet"
+  href="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/css/swiper.min.css"
+/>
+
+<div class="swiper-box">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide2-img">
+          <h2 class="acme-maintitle slide2-h2">
+            Free Shipping Over $300.00 Orders
+          </h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="acme-slide slide1">
+          <div class="acme-slide-box">
+            <a class="side1-link" href="/wp-content/uploads/pdf/catalog.pdf">
+              <h2 class="acme-maintitle">Download</h2>
+            </a>
+
+            <br />
+
+            <h2 class="acme-maintitle slide1-h2">
+              Download our latest Catalog
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="acme-slide slide3">
+          <a href="https://www.acmedent.com/shop-dental-supplies-products/">
+            <h2>Store</h2>
+          </a>
+          <br />
+          <h2 class="acme-maintitle slide2-h3">New Online Store</h2>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="acme-slide slide4">
+          <div class="slide4-prod">
+            <img
+              src="/wp-content/uploads/2020/04/ProSurface.png"
+              alt="Pro-Surface"
+            />
+          </div>
+          <div class="slide4-price">
+            <img
+              src="/wp-content/uploads/2020/04/ProSurface-Price.png"
+              alt="Pro-Surface"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="acme-slide slide5">
+          <div
+            class="slide5-btn"
+            onclick="`window.location.href"
+            ="https://www.acmedent.com/product/face-shield-blue-12-x-9-direct-splash-protection/"
+            ;`
+          >
+            <span>Product Page</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".swiper-container", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

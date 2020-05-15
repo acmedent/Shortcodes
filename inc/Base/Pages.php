@@ -22,5 +22,6 @@ class Pages
         $Quaterly = new Quaterly();
         $Svg = new Svg();
         $Home = new Home();
+        $HomePage = new HomePage();
     }
 }

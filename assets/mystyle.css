@@ -5,6 +5,7 @@
 @import "quaterly.css";
 @import "wplogin.css";
 @import "slides.css";
+@import "home-slider.css";
 html {
     font-size: 36px !important;
 }
