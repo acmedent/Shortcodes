@@ -231,7 +231,7 @@ class Home
             51051 => array("promo" => "", "promo-price" => "36.95", "net-price" => ""),
             51102 => array("promo" => "", "promo-price" => "149.95", "net-price" => ""),
             51111 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""),
-            51131 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
+            51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
             51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""),
         );
 
