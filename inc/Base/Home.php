@@ -157,7 +157,7 @@ class Home
 
 
         $ids = array(
-            51011 => array("promo" => "", "promo-price" => "39.95", "net-price" => ""),
+            51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""),
             51051 => array("promo" => "", "promo-price" => "36.95", "net-price" => ""),
             51102 => array("promo" => "", "promo-price" => "149.95", "net-price" => ""),
             51111 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""),
@@ -227,7 +227,7 @@ class Home
         ";
 
         $ids = array(
-            51011 => array("promo" => "", "promo-price" => "39.95", "net-price" => ""),
+            51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""),
             51051 => array("promo" => "", "promo-price" => "36.95", "net-price" => ""),
             51102 => array("promo" => "", "promo-price" => "149.95", "net-price" => ""),
             51111 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""),
