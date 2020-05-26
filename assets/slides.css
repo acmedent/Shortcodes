@@ -78,13 +78,11 @@
 
 .slide4 {
     display: flex;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 0;
-    background-position-x: right;
     background-color: #000;
-    background-image: url(../../../uploads/2020/04/Medicom-ProSurface.jpg);
+    background-image: url(../../../uploads/2020/05/pro-surface-topbanner_eng_us.jpg);
 }
 
 .slide4-price {
@@ -118,18 +116,19 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #000bb9;
-    background-image: url(../../../uploads/2020/04/faceShield.png);
+    background-color: #141414;
+    background-image: url(../../../uploads/2020/05/Banner-Thermometer.jpg);
 }
 
 .slide5-btn {
     position: relative;
     width: 140px;
-    height: 40px;
+    height: 35px;
     margin: 0 auto;
-    top: 240px;
+    margin-left: -200px;
+    top: 260px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 5px;
     justify-content: center;
     text-align: center;
     line-height: 40px;
@@ -138,7 +137,7 @@
 }
 
 .slide5-btn:hover {
-    background-color: #000;
+    background-color: #337ebf;
 }
 
 .slide5-btn span {

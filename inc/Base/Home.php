@@ -106,17 +106,13 @@ class Home
 
         //Pro Surface
         $slide4 = "<div class='acme-slide slide4'> 
-        <div class='slide4-prod'>
-        <img  src='/wp-content/uploads/2020/04/ProSurface.png' alt='Pro-Surface'>
-        </div>
-        <div class='slide4-price'>
-        <img src='/wp-content/uploads/2020/04/ProSurface-Price.png' alt='Pro-Surface'>
-        </div>
+        
         </div>";
 
+        //FACE SHILD
         $slide5 = "<div class='acme-slide slide5'> 
         
-        <div class='slide5-btn' onclick='window.location.href = \"https://www.acmedent.com/product/face-shield-blue-12-x-9-direct-splash-protection/\";'><span>Product Page</span></div>
+        <div class='slide5-btn' onclick='window.location.href = \"https://www.acmedent.com/product/non-contact-forehead-infrared-thermometer-sk-t008-cloc/\";'><span>Shop</span></div>
         </div>";
 
         $page = "
