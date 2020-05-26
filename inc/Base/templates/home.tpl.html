@@ -1,12 +1,12 @@
 <link
   rel="stylesheet"
-  href="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/css/swiper.min.css"
+  href="/wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/css/swiper.min.css"
 />
 
-<div class="swiper-box">
+<div class="swiper-box" style="margin-bottom: 20px;">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide slide2">
         <div class="slide2-img">
           <h2 class="acme-maintitle slide2-h2">
             Free Shipping Over $300.00 Orders
@@ -38,28 +38,13 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="acme-slide slide4">
-          <div class="slide4-prod">
-            <img
-              src="/wp-content/uploads/2020/04/ProSurface.png"
-              alt="Pro-Surface"
-            />
-          </div>
-          <div class="slide4-price">
-            <img
-              src="/wp-content/uploads/2020/04/ProSurface-Price.png"
-              alt="Pro-Surface"
-            />
-          </div>
-        </div>
+        <div class="acme-slide slide4"></div>
       </div>
       <div class="swiper-slide">
         <div class="acme-slide slide5">
           <div
             class="slide5-btn"
-            onclick="`window.location.href"
-            ="https://www.acmedent.com/product/face-shield-blue-12-x-9-direct-splash-protection/"
-            ;`
+            onclick='window.location.href="https://www.acmedent.com/product/non-contact-forehead-infrared-thermometer-sk-t008-cloc/";'
           >
             <span>Product Page</span>
           </div>
@@ -73,27 +58,31 @@
     <div class="swiper-button-prev"></div>
   </div>
 </div>
-
 <!-- Swiper JS -->
-<script src="../wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
+<script src="./wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/js/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".swiper-container", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 10000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  setTimeout(() => {
+    startSlider();
+  }, 1000);
+  function startSlider() {
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 100000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
 </script>
