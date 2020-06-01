@@ -246,6 +246,19 @@
     color: #555
 }
 
+.slide6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    padding-top: 100px;
+    max-width: 1024px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
 .acme-slide-box {
     width: 900px;
     margin: auto;

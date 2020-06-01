@@ -23,7 +23,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-05-31';
+        $start_date = '2020-06-15';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
