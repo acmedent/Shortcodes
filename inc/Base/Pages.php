@@ -25,7 +25,6 @@ class Pages
         $HomePage = new HomePage();
 
         if ($_POST['submit_campaign']) {
-            // echo $_POST['email_campaign'];
 
             $to = "rgarbulha@acmedent.com";
             $subject = "Subscribed email.";
