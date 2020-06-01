@@ -28,8 +28,8 @@ class Pages
             // echo $_POST['email_campaign'];
 
             $to = "rgarbulha@acmedent.com";
-            $subject = "My subject";
-            $txt = "Hello world!";
+            $subject = "Subscribed email.";
+            $txt = $_POST['email_campaign'];
             $headers = "From: info@acmedent.com";
 
             mail($to, $subject, $txt, $headers);
