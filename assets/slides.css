@@ -252,11 +252,30 @@
     width: 100%;
     padding: 10px;
     padding-top: 100px;
-    max-width: 1024px;
     height: 100%;
     text-align: center;
     align-items: center;
     align-content: center;
+    background-image: url(../../../uploads/2020/06/email_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(8px);
+}
+
+.slide6 .campaign-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slide6 .campaign-box h2, .slide6 .campaign-box form label {
+    color: #337ebf
+}
+
+.slide6 .campaign-box #email_campaign {
+    background-color: #eee;
+    border-color: #337ebf;
 }
 
 .acme-slide-box {
