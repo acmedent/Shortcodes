@@ -60,22 +60,6 @@
         </div>
       </div>
       <!-- slide 5 end -->
-      <!-- slide 6 -->
-      <div class="swiper-slide">
-        <div class="acme-slide slide6">
-          <h2>Do you want to receive our promos and updates?</h2>
-          <h2>Subscribe!</h2>
-          <form action="">
-            <div class="form-group">
-              <label for="email_campaign">Email: </label
-              ><input type="email" name="email_campaign" id="email_campaign" />
-            </div>
-            <br />
-            <input type="submit" value="Subscribe" />
-          </form>
-        </div>
-      </div>
-      <!-- slide 5 end -->
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -94,11 +78,11 @@
   }, 1000);
   function startSlider() {
     var swiper = new Swiper(".swiper-container", {
-      spaceBetween: 30,
+      spaceBetween: 0,
       centeredSlides: true,
       loop: true,
       autoplay: {
-        delay: 100000,
+        delay: 5000,
         disableOnInteraction: false,
       },
       pagination: {
