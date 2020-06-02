@@ -26,6 +26,18 @@ class Pages
 
         if ($_POST['submit_campaign']) {
 
+            echo "
+            
+            <script>
+            this.setTimeout(()=>{
+                
+                jQuery('#ex1').modal({
+            fadeDuration: 100
+            });
+                
+            },500);
+            </script>";
+
             $to = "rgarbulha@acmedent.com";
             $subject = "Subscribed email.";
             $txt = $_POST['email_campaign'];
