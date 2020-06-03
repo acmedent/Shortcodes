@@ -35,7 +35,7 @@ class Pages
             fadeDuration: 100
             });
                 
-            },500);
+            },1000);
             </script>";
 
             $curl = curl_init();
