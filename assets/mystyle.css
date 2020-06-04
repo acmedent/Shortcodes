@@ -6,6 +6,7 @@
 @import "wplogin.css";
 @import "slides.css";
 @import "home-slider.css";
+@import "showcase.css";
 html {
     font-size: 36px !important;
 }

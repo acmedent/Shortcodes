@@ -10,29 +10,13 @@
 />
 
 <div class="swiper-box" style="margin-bottom: 20px;">
-  <div class="swiper-container">
+  <div class="swiper-container home-swiper">
     <div class="swiper-wrapper">
       <!-- slide 6 -->
       <div class="swiper-slide">
         <div class="acme-slide slide6">
           <div class="campaign-box">
-            <h2>Do you want to receive our promos and updates?</h2>
-            <h2>Subscribe Here:</h2>
-            <form action="/" method="post">
-              <div class="form-group">
-                <label for="email_campaign">Email: </label
-                ><input
-                  type="email"
-                  name="email_campaign"
-                  id="email_campaign"
-                  autocomplete="off"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  required
-                />
-              </div>
-              <br />
-              <input type="submit" name="submit_campaign" value="Subscribe" />
-            </form>
+            {{{emailcampaign}}}
           </div>
         </div>
       </div>
@@ -93,7 +77,7 @@
       <!-- slide 5 end -->
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination home-pagination"></div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -111,7 +95,7 @@
     startSlider();
   }, 2000);
   function startSlider() {
-    var swiper = new Swiper(".swiper-container", {
+    var swiper = new Swiper(".home-swiper", {
       spaceBetween: 0,
       centeredSlides: true,
       loop: true,
@@ -120,7 +104,7 @@
         disableOnInteraction: true,
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: ".home-pagination",
         clickable: true,
       },
       navigation: {

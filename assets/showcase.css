@@ -1,0 +1,14 @@
+.showcase-slider {
+    height: 400px;
+}
+
+.product-slide {
+    width: 300px;
+    background-color: chartreuse;
+}
+
+@media (max-width: 500px) {
+    .showcase-slide {
+        min-height: 100vh;
+    }
+}

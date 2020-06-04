@@ -1,3 +1,68 @@
 <div style="margin: auto; width: auto;">
   <h2 style="text-align: center;">Showcase</h2>
 </div>
+
+<!-- Swiper -->
+<div class="swiper-container showcase-slider">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide product-slide">Slide 1</div>
+    <div class="swiper-slide product-slide">Slide 2</div>
+    <div class="swiper-slide product-slide">Slide 3</div>
+    <div class="swiper-slide product-slide">Slide 4</div>
+    <div class="swiper-slide product-slide">Slide 5</div>
+    <div class="swiper-slide product-slide">Slide 6</div>
+    <div class="swiper-slide product-slide">Slide 7</div>
+    <div class="swiper-slide product-slide">Slide 8</div>
+    <div class="swiper-slide product-slide">Slide 9</div>
+    <div class="swiper-slide product-slide">Slide 10</div>
+    <div class="swiper-slide product-slide">Slide 11</div>
+    <div class="swiper-slide product-slide">Slide 12</div>
+    <div class="swiper-slide product-slide">Slide 13</div>
+    <div class="swiper-slide product-slide">Slide 14</div>
+    <div class="swiper-slide product-slide">Slide 15</div>
+    <div class="swiper-slide product-slide">Slide 16</div>
+    <div class="swiper-slide product-slide">Slide 17</div>
+    <div class="swiper-slide product-slide">Slide 18</div>
+    {{{slides}}}
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination showcase-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<!-- <script src="../package/js/swiper.min.js"></script> -->
+
+<link
+  rel="stylesheet"
+  href="/wp-content/plugins/Shortcodes/plugin/slider/swiper-master/package/css/swiper.min.css"
+/>
+
+<!-- Initialize Swiper -->
+<script>
+  setTimeout(() => {
+    var swiper2 = new Swiper(".showcase-slider", {
+      slidesPerView: 1,
+      spaceBetween: 5,
+      loop: true,
+      // init: false,
+      pagination: {
+        el: ".showcase-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+    });
+  }, 2000);
+</script>
