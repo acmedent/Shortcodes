@@ -1,10 +1,22 @@
 .showcase-slider {
-    height: 400px;
+    background-color: #000;
+}
+
+.showcase-slider {
+    height: 350px;
+    background-color: #000;
 }
 
 .product-slide {
-    width: 300px;
-    background-color: chartreuse;
+    min-width: 300px;
+    width: fit-content;
+    max-height: 330px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.quick-sale>ul>li {
+    width: 100% !important;
 }
 
 @media (max-width: 500px) {
