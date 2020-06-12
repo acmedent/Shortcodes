@@ -23,7 +23,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-06-15';
+        $start_date = '2020-06-30';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -146,7 +146,7 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>UNTIL QUANTITIES LAST</h2>
+        <h2 class='promo-date'>WHILE QUANTITIES LAST</h2>
         ";
 
 
@@ -219,7 +219,7 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>UNTIL QUANTITIES LAST</h2>
+        <h2 class='promo-date'>WHILE QUANTITIES LAST</h2>
         ";
 
         $ids = array(
