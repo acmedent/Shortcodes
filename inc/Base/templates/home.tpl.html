@@ -131,9 +131,15 @@
               </svg>
               <hr class="svgBtmLine" />
               <div class="appstore-logos">
-                <div id="app-logo" class="appstore-img"></div>
+                <div
+                  id="app-logo"
+                  class="appstore-img"
+                  onclick="appmodal()"
+                ></div>
                 <div id="app-link" class="appstore-btn">
-                  <span class="appstore-link">Download App</span>
+                  <span class="appstore-link" onclick="appmodal()"
+                    >Download App</span
+                  >
                 </div>
               </div>
             </div>
@@ -274,16 +280,11 @@
   googleLogo.addEventListener("click", androidLink);
   appleLogo.addEventListener("click", iosLink);
 
-  appLink.addEventListener("click", () => {
+  function appmodal() {
     jQuery("#appsmodal").modal({
       fadeDuration: 100,
     });
-  });
-  appLogo.addEventListener("click", () => {
-    jQuery("#appsmodal").modal({
-      fadeDuration: 100,
-    });
-  });
+  }
 
   function androidLink() {
     window.open(
