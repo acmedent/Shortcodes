@@ -20,6 +20,11 @@
     width: 100% !important;
 }
 
+.showcase-content{
+    padding: 20px 0;
+    background-color: #000;
+}
+
 @media (max-width: 500px) {
     .showcase-slide {
         min-height: 100vh;
