@@ -66,11 +66,11 @@ class Quaterly
             //     "link" => $pdfPath . "Flight-Autoclave-Flyer-Single-Page-Promo-min.pdf",
             //     "alt" => "Flight"
             // ),
-            // array(
-            //     "src" => $imgPath . "2019/06/hufriendy.png",
-            //     "link" => $pdfPath . "Hu-Friedy-Q2-2020-Promo-Pad-CA.pdf",
-            //     "alt" => "Hu-Friedy"
-            // ),
+            array(
+                "src" => $imgPath . "2019/06/hufriendy.png",
+                "link" => $pdfPath . "Hu-Friedy-Aug-Sept.pdf",
+                "alt" => "Hu-Friedy"
+            ),
             array(
                 "src" => $imgPath . "2019/06/kulzer.jpg",
                 "link" => $pdfPath . "Kulzer-Q3-2020-min.pdf",
