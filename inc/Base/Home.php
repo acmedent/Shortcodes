@@ -16,7 +16,6 @@ class Home
 
     function __construct()
     {
-        add_shortcode('acme-home-slide', array($this, 'AcmedentHomeSlidePage'));
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
@@ -58,84 +57,6 @@ class Home
 
         // Check that user date is between start & end
         return (($user_ts < $start_ts));
-    }
-
-
-    function AcmedentHomeSlidePage()
-    {
-        //CATALOG
-        $slide1 = "
-        <div class='acme-slide slide1'>
-        <div class='acme-slide-box'>
-
-        <a class='side1-link'  href='/wp-content/uploads/pdf/catalog.pdf'>
-        <h2 class='acme-maintitle'>Download</h2>
-        </a>
-        
-        <br>
-
-        <h2 class='acme-maintitle slide1-h2'>
-        Download our latest Catalog
-        </h2>
-
-        </div>
-        
-        </div>";
-
-        //FREE SHIPPING
-        $slide2 = "<div class='acme-slide slide2'>
-        <div>
-        <div class='slide2-img'>
-
-        <h2 class='acme-maintitle slide2-h2'>
-        Free Shipping Over $300.00 Orders
-        </h2>
-
-        </div>
-        </div>
-        </div>";
-
-        //ONLINE STORE
-        $slide3 = "<div class='acme-slide slide3'>
-        
-        <a href='https://www.acmedent.com/shop-dental-supplies-products/'><h2>Store</h2></a>
-        <br>
-        <h2 class='acme-maintitle slide2-h3'>New Online Store</h2>      
-        
-        </div>";
-
-        //Pro Surface
-        $slide4 = "<div class='acme-slide slide4'> 
-        
-        </div>";
-
-        //FACE SHILD
-        $slide5 = "<div class='acme-slide slide5'> 
-        
-        <div class='slide5-btn' onclick='window.location.href = \"https://www.acmedent.com/product/non-contact-forehead-infrared-thermometer-sk-t008-cloc/\";'><span>Shop</span></div>
-        </div>";
-
-        $page = "
-        <div class='warning-box'><span class='warning-text'>All Personal Protective Equipment Items are Final Sale</span></div>
-        <div class='home-login-grid'>
-        <div class='acme-wrap'>
-        <div class='slide-arrow left-arrow' id='left-arrow'>
-        <</div>
-                <div class='slide-arrow right-arrow' id='right-arrow'>></div>
-                <div class='acme-slider' id='acme-slider'>
-                    " . $slide5 . $slide1 . $slide2 . $slide3 . $slide4 . $slide5 . $slide1 . "
-
-                </div>
-        </div>
-        <div></div>
-        <div class='login-box'>
-        " . do_shortcode('[wpmem_form login]') . "
-        </div>
-        </div>
-        <br>
-        ";
-
-        return $page;
     }
 
     function AcmedentHomePromo()
