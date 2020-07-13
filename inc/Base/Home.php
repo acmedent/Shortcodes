@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-07-06';
+        $start_date = '2020-07-05';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -141,7 +141,7 @@ class Home
         ";
 
         $ids = array(
-            51138 => array("promo" => "10% Off", "promo-price" => "8.99", "net-price" => ""),
+            51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""),
             51011 => array("promo" => "", "promo-price" => "39.65", "net-price" => ""),
             31964 => array("promo" => "4+2", "promo-price" => "17.55", "net-price" => ""),
             27680 => array("promo" => "2+1", "promo-price" => "243.00", "net-price" => ""),
