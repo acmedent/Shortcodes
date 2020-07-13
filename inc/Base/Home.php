@@ -30,7 +30,7 @@ class Home
         elseif ($this->previous_than($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
         else
-            add_shortcode('acme-home-promo', array($this, 'empty'));
+            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
     }
 
     function empty()
@@ -71,12 +71,12 @@ class Home
         ";
 
         $ids = array(
-            51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""),
-            51051 => array("promo" => "", "promo-price" => "36.95", "net-price" => ""),
-            51102 => array("promo" => "", "promo-price" => "119.00", "net-price" => ""),
-            32454 => array("promo" => "", "promo-price" => "299.00", "net-price" => ""),
-            51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
             51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""),
+            51011 => array("promo" => "", "promo-price" => "39.65", "net-price" => ""),
+            31964 => array("promo" => "4+2", "promo-price" => "17.55", "net-price" => ""),
+            27680 => array("promo" => "2+1", "promo-price" => "243.00", "net-price" => ""),
+            33667 => array("promo" => "", "promo-price" => "92.70", "net-price" => ""),
+            51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
