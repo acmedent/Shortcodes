@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-07-05';
+        $start_date = '2020-07-20';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -30,7 +30,7 @@ class Home
         elseif ($this->previous_than($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
         else
-            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
+            add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
     }
 
     function empty()
@@ -141,12 +141,12 @@ class Home
         ";
 
         $ids = array(
+            26055 => array("promo" => "", "promo-price" => "36.00", "net-price" => ""),
             51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""),
-            51011 => array("promo" => "", "promo-price" => "39.65", "net-price" => ""),
-            31964 => array("promo" => "4+2", "promo-price" => "17.55", "net-price" => ""),
-            27680 => array("promo" => "2+1", "promo-price" => "243.00", "net-price" => ""),
-            33667 => array("promo" => "", "promo-price" => "92.70", "net-price" => ""),
+            38719 => array("promo" => "", "promo-price" => "18.99", "net-price" => ""),
+            43193 => array("promo" => "", "promo-price" => "54.40", "net-price" => ""),
             51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
+            36611 => array("promo" => "", "promo-price" => "24.75", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
