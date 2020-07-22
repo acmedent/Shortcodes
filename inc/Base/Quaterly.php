@@ -93,7 +93,7 @@ class Quaterly
             ),
             array(
                 "src" => $imgPath . "2019/06/pulpdent.png",
-                "link" => $pdfPath . "Pulpdent-Q3-2020.pdf",
+                "link" => $pdfPath . "Canada-Q3-Pulpdent-Promos2020.pdf",
                 "alt" => "Pulpdent"
             ),
             array(
