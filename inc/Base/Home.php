@@ -63,7 +63,7 @@ class Home
     {
         // " . do_shortcode('[nextWeekSvg]') . "
         $page = "
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>PERSONAL PROTECTIVE EQUIPMENT</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>ACMEDENT SHOW CASE</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
@@ -133,20 +133,21 @@ class Home
         // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         $page = "        
-         <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>PERSONAL PROTECTIVE EQUIPMENT</h2></div>
+         <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Acmedent Flash Promo</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>FEATURED ITEMS</h2>
+        <h2 class='promo-date'>FLASH PROMO</h2>
+        <h2 class='promo-date'>From July 27th to August 02nd, 2020</h2>
         ";
 
         $ids = array(
-            26055 => array("promo" => "", "promo-price" => "36.00", "net-price" => ""),
-            51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""),
-            38719 => array("promo" => "", "promo-price" => "18.99", "net-price" => ""),
-            43193 => array("promo" => "", "promo-price" => "54.40", "net-price" => ""),
+            51102 => array("promo" => "$20 Off", "promo-price" => "99.00", "net-price" => ""),
             51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
-            33611 => array("promo" => "", "promo-price" => "24.75", "net-price" => ""),
+            50251 => array("promo" => "3+1", "promo-price" => "70.97", "net-price" => ""),
+            27827 => array("promo" => "15% Off", "promo-price" => "14.15", "net-price" => ""),
+            50049 => array("promo" => "10% Off", "promo-price" => "83.43", "net-price" => ""),
+            31072 => array("promo" => "5% Off", "promo-price" => "288.92", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
