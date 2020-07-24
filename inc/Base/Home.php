@@ -147,7 +147,7 @@ class Home
             50251 => array("promo" => "3+1", "promo-price" => "70.97", "net-price" => ""),
             27827 => array("promo" => "15% Off", "promo-price" => "14.15", "net-price" => ""),
             50049 => array("promo" => "10% Off", "promo-price" => "83.43", "net-price" => ""),
-            31072 => array("promo" => "5% Off", "promo-price" => "288.92", "net-price" => ""),
+            31072 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
