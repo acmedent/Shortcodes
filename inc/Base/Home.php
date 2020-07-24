@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-07-20';
+        $start_date = '2020-07-27';
         $date_from_user = date('Y-m-d');
 
         if ($this->check_in_range($start_date, $date_from_user))
@@ -137,7 +137,6 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>FLASH PROMO</h2>
         <h2 class='promo-date'>From July 27th to August 02nd, 2020</h2>
         ";
 
