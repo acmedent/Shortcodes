@@ -49,8 +49,6 @@ class HomePage
 
         $template = str_replace('{{{emailcampaign}}}', $emailSlide, $template);
 
-        // $template .= do_shortcode('[products limit="6" columns="6" best_selling="true" ]');
-        // $template .= do_shortcode('[product sku="EN4262" ]');
 
         return $template;
     }
