@@ -67,7 +67,7 @@ class Pages
             $txt = $_POST['email_campaign'];
             $headers = "From: info@acmedent.com";
 
-            mail($to, $subject, $txt, $headers);
+            // mail($to, $subject, $txt, $headers);
         }
     }
 }
