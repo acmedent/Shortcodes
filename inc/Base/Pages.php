@@ -64,24 +64,24 @@ class Pages
 
             // $email = $_POST['email_campaign'];
 
-            $emailErr = "";
+            // $emailErr = "";
 
-            if (empty($_POST["email_campaign"])) {
-                $emailErr = "Email is required";
-            } else {
-                $email = test_input($_POST["email_campaign"]);
-                // check if e-mail address is well-formed
-                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $emailErr = "Invalid email format";
-                }
-            }
+            // if (empty($_POST["email_campaign"])) {
+            //     $emailErr = "Email is required";
+            // } else {
+            //     $email = test_input($_POST["email_campaign"]);
+            //     // check if e-mail address is well-formed
+            //     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            //         $emailErr = "Invalid email format";
+            //     }
+            // }
 
             $to = "rgarbulha@acmedent.com";
             $subject = "Subscribed email.";
             $txt = "Email: " . $email . " - " . $emailErr;
             $headers = "From: info@acmedent.com";
 
-            mail($to, $subject, $txt, $headers);
+            // mail($to, $subject, $txt, $headers);
         }
     }
 }
