@@ -15,7 +15,7 @@ class HomePage
     function __construct()
     {
         add_shortcode('home-slider', array($this, 'HomeSlider'));
-        add_shortcode('home-showcase', array($this, 'HomeShowCase'));
+        // add_shortcode('home-showcase', array($this, 'HomeShowCase'));
     }
 
 
