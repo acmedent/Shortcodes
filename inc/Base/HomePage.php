@@ -55,33 +55,33 @@ class HomePage
         return $template;
     }
 
-    function HomeShowCase()
-    {
-        $path = home_url() . "/wp-content/plugins/Shortcodes/inc/Base/templates/";
-        $template = file_get_contents($path . 'showcase.tpl.html', FILE_USE_INCLUDE_PATH);
+    // function HomeShowCase()
+    // {
+    //     $path = home_url() . "/wp-content/plugins/Shortcodes/inc/Base/templates/";
+    //     $template = file_get_contents($path . 'showcase.tpl.html', FILE_USE_INCLUDE_PATH);
 
-        // $template = str_replace('{{{slides}}}', '<div class="swiper-slide product-slide">Slide 19 - Substituido</div>' . '<div class="swiper-slide product-slide">' . do_shortcode('[product sku="GE0149" class="quick-sale"]') . '</div>', $template);
+    //     // $template = str_replace('{{{slides}}}', '<div class="swiper-slide product-slide">Slide 19 - Substituido</div>' . '<div class="swiper-slide product-slide">' . do_shortcode('[product sku="GE0149" class="quick-sale"]') . '</div>', $template);
 
-        $skus = ['GE0149', 'GE0134B', 'DI0130', 'DI0436A', 'PR1391', 'GE0120'];
+    //     $skus = ['GE0149', 'GE0134B', 'DI0130', 'DI0436A', 'PR1391', 'GE0120'];
 
-        $ids = ['50799', '50619'];
+    //     $ids = ['50799', '50619'];
 
-        $slides = "";
+    //     $slides = "";
 
-        foreach ($skus as $sku) {
-            $slides .= '<div class="swiper-slide product-slide">' . do_shortcode('[product sku="' . $sku . '" class="quick-sale"]') . '</div>';
-        }
+    //     foreach ($skus as $sku) {
+    //         $slides .= '<div class="swiper-slide product-slide">' . do_shortcode('[product sku="' . $sku . '" class="quick-sale"]') . '</div>';
+    //     }
 
-        foreach ($ids as $id) {
-            $slides .= '<div class="swiper-slide product-slide">' . do_shortcode('[product id="' . $id . '" class="quick-sale"]') . '</div>';
-        }
+    //     foreach ($ids as $id) {
+    //         $slides .= '<div class="swiper-slide product-slide">' . do_shortcode('[product id="' . $id . '" class="quick-sale"]') . '</div>';
+    //     }
 
-        $template = str_replace('{{{slides}}}', $slides, $template);
-
-
+    //     $template = str_replace('{{{slides}}}', $slides, $template);
 
 
 
-        return $template;
-    }
+
+
+    //     return $template;
+    // }
 }
