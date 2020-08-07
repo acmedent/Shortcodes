@@ -22,10 +22,11 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-08-03';
+        $start_date = '2020-08-07';
         $date_from_user = date('Y-m-d');
+        $daysAhead = 9;
 
-        if ($this->check_in_range($start_date, $date_from_user))
+        if ($this->check_in_range($start_date, $date_from_user, $daysAhead))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
         elseif ($this->previous_than($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
@@ -38,11 +39,11 @@ class Home
         return "";
     }
 
-    function check_in_range($start_date, $date_from_user)
+    function check_in_range($start_date, $date_from_user, $days)
     {
         // Convert to timestamp
         $start_ts = strtotime($start_date);
-        $end_ts = $start_ts + 6 * 86400;
+        $end_ts = $start_ts + $days * 86400;
         $user_ts = strtotime($date_from_user);
 
         // Check that user date is between start & end
@@ -68,16 +69,16 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>From July 27th to August 02nd, 2020</h2>
+        <h2 class='promo-date'>From August 03rd to 09th, 2020</h2>
         ";
 
         $ids = array(
-            51102 => array("promo" => "$20 Off", "promo-price" => "99.00", "net-price" => ""),
-            51228 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""),
-            50251 => array("promo" => "3+1", "promo-price" => "70.97", "net-price" => ""),
-            27827 => array("promo" => "15% Off", "promo-price" => "14.15", "net-price" => ""),
-            50049 => array("promo" => "10% Off", "promo-price" => "83.43", "net-price" => ""),
-            31072 => array("promo" => "5% Off", "promo-price" => "88.92", "net-price" => ""),
+            51138 => array("promo" => "$10 Off", "promo-price" => "8.99", "net-price" => ""),
+            51228 => array("promo" => "$5 Off", "promo-price" => "65.50", "net-price" => ""),
+            26847 => array("promo" => "$5 Off", "promo-price" => "38.90", "net-price" => ""),
+            26849 => array("promo" => "10% Off", "promo-price" => "48.60", "net-price" => ""),
+            34084 => array("promo" => "5% Off", "promo-price" => "56.86", "net-price" => ""),
+            43312 => array("promo" => "10% Off", "promo-price" => "65.61", "net-price" => ""),
         );
 
         foreach ($ids as $id => $value) {
@@ -134,20 +135,20 @@ class Home
         // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         $page = "        
-         <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Acmedent Flash Promo</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Protect Yourself Going Back to School</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>From August 03rd to 09th, 2020</h2>
+        <h2 class='promo-date'>Until August 31th, 2020</h2>
         ";
 
         $ids = array(
-            51138 => array("promo" => "$10 Off", "promo-price" => "8.99", "net-price" => ""),
-            51228 => array("promo" => "$5 Off", "promo-price" => "65.50", "net-price" => ""),
-            26847 => array("promo" => "$5 Off", "promo-price" => "38.90", "net-price" => ""),
-            26849 => array("promo" => "10% Off", "promo-price" => "48.60", "net-price" => ""),
-            34084 => array("promo" => "5% Off", "promo-price" => "56.86", "net-price" => ""),
-            43312 => array("promo" => "10% Off", "promo-price" => "65.61", "net-price" => ""),
+            51138 => array("promo" => "", "promo-price" => "8.99", "net-price" => ""), //300ml sanit
+            51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //Kids
+            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //mask l3
+            51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""), //thermometer
+            51051 => array("promo" => "", "promo-price" => "24.99", "net-price" => ""), //1L sanit
+            38843 => array("promo" => "", "promo-price" => "35.55", "net-price" => ""), //Safebasics
         );
 
         foreach ($ids as $id => $value) {
