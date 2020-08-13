@@ -145,7 +145,7 @@ class Home
         $ids = array(
             51138 => array("promo" => "", "promo-price" => "8.99", "net-price" => ""), //300ml sanit
             51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //Kids
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //mask l3
+            51516 => array("promo" => "", "promo-price" => "39.99", "net-price" => ""), //mask l3
             51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""), //thermometer
             51051 => array("promo" => "", "promo-price" => "24.99", "net-price" => ""), //1L sanit
             38843 => array("promo" => "", "promo-price" => "35.55", "net-price" => ""), //Safebasics
