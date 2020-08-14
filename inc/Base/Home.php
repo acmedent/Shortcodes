@@ -24,7 +24,7 @@ class Home
         //Date that start next weeks promo
         $start_date = '2020-08-07';
         $date_from_user = date('Y-m-d');
-        $daysAhead = 9;
+        $daysAhead = 25;
 
         if ($this->check_in_range($start_date, $date_from_user, $daysAhead))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
@@ -148,7 +148,7 @@ class Home
             51516 => array("promo" => "", "promo-price" => "39.99", "net-price" => ""), //mask l3
             51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""), //thermometer
             51051 => array("promo" => "", "promo-price" => "24.99", "net-price" => ""), //1L sanit
-            38843 => array("promo" => "", "promo-price" => "35.55", "net-price" => ""), //Safebasics
+            51533 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //Wipes
         );
 
         foreach ($ids as $id => $value) {
