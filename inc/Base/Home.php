@@ -145,7 +145,7 @@ class Home
         $ids = array(
             32454 => array("promo" => "5% OFF", "promo-price" => "300", "net-price" => ""), //Cavitron
             50249 => array("promo" => "5% OFF", "promo-price" => "38.90", "net-price" => ""), //xylocaine red
-            51516 => array("promo" => "5% OFF", "promo-price" => "37.99", "net-price" => ""), //Betamars mask
+            51516 => array("promo" => "5% OFF", "promo-price" => "28.50", "net-price" => ""), //Betamars mask
             51513 => array("promo" => "5% OFF", "promo-price" => "20.85", "net-price" => ""), //kids mask
             51533 => array("promo" => "5% OFF", "promo-price" => "9.50", "net-price" => ""), //goody wipes
             51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //small sanitizer 300ml
