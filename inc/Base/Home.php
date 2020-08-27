@@ -135,7 +135,7 @@ class Home
         // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Protect Yourself Going Back to School</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Week Flash Promo</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
