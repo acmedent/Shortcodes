@@ -142,7 +142,7 @@ class Home
         ";
 
         $ids = array(
-            50251 => array("promo" => "", "promo-price" => "74.70", "net-price" => ""), //Flexitime
+            50251 => array("promo" => "3+1", "promo-price" => "74.70", "net-price" => ""), //Flexitime
             50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch
             51567 => array("promo" => "", "promo-price" => "85.50", "net-price" => ""), //Gowns
             51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //kids mask
