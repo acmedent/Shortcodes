@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-08-31';
+        $start_date = '2020-09-07';
         $date_from_user = date('Y-m-d');
         $daysAhead = 7;
 
@@ -63,22 +63,21 @@ class Home
     function AcmedentHomePromo()
     {
         // " . do_shortcode('[nextWeekSvg]') . "
-        $page =
-            "
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>ACMEDENT SHOW CASE</h2></div>
+        $page = "        
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Week Flash Promo</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Until August 31th, 2020</h2>
+        <h2 class='promo-date'>August 31st to September 06th, 2020</h2>
         ";
 
         $ids = array(
-            51138 => array("promo" => "", "promo-price" => "8.99", "net-price" => ""), //300ml sanit
-            51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //Kids
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //mask l3
-            51196 => array("promo" => "", "promo-price" => "109.95", "net-price" => ""), //thermometer
-            51051 => array("promo" => "", "promo-price" => "24.99", "net-price" => ""), //1L sanit
-            51533 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //Wipes
+            32454 => array("promo" => "5% OFF", "promo-price" => "300", "net-price" => ""), //Cavitron
+            50249 => array("promo" => "5% OFF", "promo-price" => "38.90", "net-price" => ""), //xylocaine red
+            51516 => array("promo" => "5% OFF", "promo-price" => "28.50", "net-price" => ""), //Betamars mask
+            51513 => array("promo" => "5% OFF", "promo-price" => "20.85", "net-price" => ""), //kids mask
+            51533 => array("promo" => "5% OFF", "promo-price" => "9.50", "net-price" => ""), //goody wipes
+            51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //small sanitizer 300ml
         );
 
         foreach ($ids as $id => $value) {
@@ -143,12 +142,12 @@ class Home
         ";
 
         $ids = array(
-            32454 => array("promo" => "5% OFF", "promo-price" => "300", "net-price" => ""), //Cavitron
-            50249 => array("promo" => "5% OFF", "promo-price" => "38.90", "net-price" => ""), //xylocaine red
-            51516 => array("promo" => "5% OFF", "promo-price" => "28.50", "net-price" => ""), //Betamars mask
-            51513 => array("promo" => "5% OFF", "promo-price" => "20.85", "net-price" => ""), //kids mask
-            51533 => array("promo" => "5% OFF", "promo-price" => "9.50", "net-price" => ""), //goody wipes
-            51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //small sanitizer 300ml
+            50251 => array("promo" => "", "promo-price" => "74.70", "net-price" => ""), //Flexitime
+            50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch
+            51567 => array("promo" => "", "promo-price" => "85.50", "net-price" => ""), //Gowns
+            51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //kids mask
+            51533 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //goody wipes
+            51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //small sanitizer 300ml
         );
 
         foreach ($ids as $id => $value) {
