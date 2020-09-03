@@ -134,11 +134,11 @@ class Home
         // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Week Flash Promo</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Featured Items</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>August 31st to September 06th, 2020</h2>
+        <h2 class='promo-date'>Until quantities last</h2>
         ";
 
         $ids = array(
