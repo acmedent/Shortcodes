@@ -145,7 +145,7 @@ class Home
             51102 => array("promo" => "16% OFF", "promo-price" => "99.96", "net-price" => ""), //KN95
             50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch Microdefense
             51565 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Gowns
-            51513 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //Betamars
+            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //Betamars
             51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
             51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //small sanitizer 300ml
         );
