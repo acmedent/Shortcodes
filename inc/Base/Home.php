@@ -64,19 +64,19 @@ class Home
     {
         // " . do_shortcode('[nextWeekSvg]') . "
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Featured Items</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Personal Protective Equipment</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Until quantities last</h2>
+        <h2 class='promo-date'>Promos from September 14th to 20th</h2>
         ";
 
         $ids = array(
-            50251 => array("promo" => "3+1", "promo-price" => "74.70", "net-price" => ""), //Flexitime
-            50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch
-            51567 => array("promo" => "", "promo-price" => "85.50", "net-price" => ""), //Gowns
-            51513 => array("promo" => "", "promo-price" => "21.95", "net-price" => ""), //kids mask
-            51533 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //goody wipes
+            51102 => array("promo" => "16% OFF", "promo-price" => "99.96", "net-price" => ""), //KN95
+            50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch Microdefense
+            51565 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Gowns
+            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //Betamars
+            51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
             51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //small sanitizer 300ml
         );
 
@@ -134,20 +134,20 @@ class Home
         // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
 
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Personal Protective Equipment</h2></div>
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Weekly Flash Promo</h2></div>
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos from September 14th to 20th</h2>
+        <h2 class='promo-date'>Promos Until September 27th</h2>
         ";
 
         $ids = array(
-            51102 => array("promo" => "16% OFF", "promo-price" => "99.96", "net-price" => ""), //KN95
-            50212 => array("promo" => "", "promo-price" => "57.96", "net-price" => ""), //Safetouch Microdefense
-            51565 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Gowns
+            33678 => array("promo" => "3% OFF", "promo-price" => "250.98", "net-price" => ""), //SCS Vials
+            31410 => array("promo" => "3% OFF", "promo-price" => "145.35", "net-price" => ""), //Spectra Tph compules st
+            26843 => array("promo" => "3% OFF", "promo-price" => "120.91", "net-price" => ""), //Astracaine
             51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //Betamars
             51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
-            51138 => array("promo" => "", "promo-price" => "9.99", "net-price" => ""), //small sanitizer 300ml
+            50212 => array("promo" => "$12 Off", "promo-price" => "51.95", "net-price" => ""), //Safetouch Microdefense
         );
 
         foreach ($ids as $id => $value) {
