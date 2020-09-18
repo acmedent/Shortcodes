@@ -9,7 +9,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
 />
 
-<div class="swiper-box" style="margin-bottom: 20px;">
+<div class="swiper-box" style="margin-bottom: 20px">
   <div class="swiper-container home-swiper">
     <div class="swiper-wrapper">
       <!-- slide App -->
@@ -35,7 +35,7 @@
                   <g
                     aria-label="ACMEDENT APP"
                     transform="matrix(0.26458333,0,0,0.26458333,-60.098214,3.4017857)"
-                    style="text-anchor: middle; fill: #000000; stroke: none;"
+                    style="text-anchor: middle; fill: #000000; stroke: none"
                     id="flowRoot4518"
                   >
                     <path
@@ -201,18 +201,6 @@
         <div class="acme-slide slide4"></div>
       </div>
       <!-- slide 4 end -->
-      <!-- slide 5 -->
-      <div class="swiper-slide">
-        <div class="acme-slide slide5">
-          <div
-            class="slide5-btn"
-            onclick='window.location.href="https://www.acmedent.com/product/non-contact-forehead-infrared-thermometer-sk-t008-cloc/";'
-          >
-            <span>Product Page</span>
-          </div>
-        </div>
-      </div>
-      <!-- slide 5 end -->
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination home-pagination"></div>
@@ -226,7 +214,7 @@
 </div>
 <div id="appsmodal" class="modal">
   <div class="stores-box">
-    <div class="googlePlay" style="margin-bottom: 30px;">
+    <div class="googlePlay" style="margin-bottom: 30px">
       <img
         id="googleLink"
         class="app-logo-cls"
@@ -253,7 +241,7 @@
     startSlider();
   }, 500);
   function startSlider() {
-    var swiper = new Swiper(".home-swiper", {
+    var swiper = new Swiper('.home-swiper', {
       spaceBetween: 0,
       centeredSlides: true,
       loop: true,
@@ -263,45 +251,45 @@
         disableOnInteraction: true,
       },
       pagination: {
-        el: ".home-pagination",
+        el: '.home-pagination',
         clickable: true,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
   }
 
   var iOS = navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-  const appLink = document.getElementById("app-link");
-  const appLogo = document.getElementById("app-logo");
+  const appLink = document.getElementById('app-link');
+  const appLogo = document.getElementById('app-logo');
 
-  const googleLogo = document.getElementById("googleLink");
-  const appleLogo = document.getElementById("appleLink");
+  const googleLogo = document.getElementById('googleLink');
+  const appleLogo = document.getElementById('appleLink');
 
-  googleLogo.addEventListener("click", androidLink);
-  appleLogo.addEventListener("click", iosLink);
+  googleLogo.addEventListener('click', androidLink);
+  appleLogo.addEventListener('click', iosLink);
 
   function appmodal() {
-    jQuery("#appsmodal").modal({
+    jQuery('#appsmodal').modal({
       fadeDuration: 100,
     });
   }
 
   function androidLink() {
     window.open(
-      "https://play.google.com/store/apps/details?id=com.acmedent.acmedent"
+      'https://play.google.com/store/apps/details?id=com.acmedent.acmedent'
     );
   }
 
   function iosLink() {
-    window.open("https://apps.apple.com/ca/app/acmedent/id1515575266");
+    window.open('https://apps.apple.com/ca/app/acmedent/id1515575266');
   }
 </script>
 
-<div style="margin: auto; width: auto; padding: 0 10px;">
-  <h2 style="text-align: center; color: brown;">
+<div style="margin: auto; width: auto; padding: 0 10px">
+  <h2 style="text-align: center; color: brown">
     All Personal Protective Equipment Items are Final Sale.
   </h2>
 </div>
