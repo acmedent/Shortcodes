@@ -138,7 +138,7 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until September 27th</h2>
+        <h2 class='promo-date'>Promos Until October 04th</h2>
         ";
 
         $ids = array(
@@ -147,7 +147,7 @@ class Home
             33678 => array("promo" => "3% OFF", "promo-price" => "250.98", "net-price" => ""), //SCS Vials
             51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //300ml sanitizer
             51602 => array("promo" => "", "promo-price" => "16.95", "net-price" => ""), //ComforTime Mask
-            38751 => array("promo" => "", "promo-price" => "12.99", "net-price" => ""), //Astracaine
+            38751 => array("promo" => "", "promo-price" => "12.99", "net-price" => ""), //Performance Gloves
         );
 
         foreach ($ids as $id => $value) {
