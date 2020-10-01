@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-09-27';
+        $start_date = '2020-10-04';
         $date_from_user = date('Y-m-d');
         $daysAhead = 14;
 
@@ -68,16 +68,16 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until September 27th</h2>
+        <h2 class='promo-date'>Promos Until October 04th</h2>
         ";
 
         $ids = array(
-            33678 => array("promo" => "3% OFF", "promo-price" => "250.98", "net-price" => ""), //SCS Vials
-            31410 => array("promo" => "3% OFF", "promo-price" => "145.35", "net-price" => ""), //Spectra Tph compules st
-            26843 => array("promo" => "3% OFF", "promo-price" => "120.91", "net-price" => ""), //Astracaine
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //Betamars
-            51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
             50212 => array("promo" => "$12 Off", "promo-price" => "51.95", "net-price" => ""), //Safetouch Microdefense
+            51533 => array("promo" => "5% OFF", "promo-price" => "8.50", "net-price" => ""), //goody wipes
+            33678 => array("promo" => "3% OFF", "promo-price" => "250.98", "net-price" => ""), //SCS Vials
+            51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //300ml sanitizer
+            51602 => array("promo" => "", "promo-price" => "16.95", "net-price" => ""), //ComforTime Mask
+            38751 => array("promo" => "", "promo-price" => "12.99", "net-price" => ""), //Performance Gloves
         );
 
         foreach ($ids as $id => $value) {
@@ -138,16 +138,16 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until October 04th</h2>
+        <h2 class='promo-date'>Promos Until October 18th</h2>
         ";
 
         $ids = array(
-            50212 => array("promo" => "$12 Off", "promo-price" => "51.95", "net-price" => ""), //Safetouch Microdefense
-            51533 => array("promo" => "5% OFF", "promo-price" => "8.50", "net-price" => ""), //goody wipes
-            33678 => array("promo" => "3% OFF", "promo-price" => "250.98", "net-price" => ""), //SCS Vials
-            51138 => array("promo" => "10% OFF", "promo-price" => "8.99", "net-price" => ""), //300ml sanitizer
-            51602 => array("promo" => "", "promo-price" => "16.95", "net-price" => ""), //ComforTime Mask
-            38751 => array("promo" => "", "promo-price" => "12.99", "net-price" => ""), //Performance Gloves
+            51533 => array("promo" => "", "promo-price" => "8.50", "net-price" => ""), //goody wipes
+            51622 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Blue Gowns
+            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars Mask
+            26843 => array("promo" => "5+1", "promo-price" => "124.65", "net-price" => ""), //Astracaine
+            50251 => array("promo" => "3+1", "promo-price" => "74.70", "net-price" => ""), //Flexitime
+            51233 => array("promo" => "", "promo-price" => "19.80", "net-price" => ""), //Green Caps
         );
 
         foreach ($ids as $id => $value) {
