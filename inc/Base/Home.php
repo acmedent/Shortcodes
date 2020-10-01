@@ -142,7 +142,7 @@ class Home
         ";
 
         $ids = array(
-            51533 => array("promo" => "", "promo-price" => "8.50", "net-price" => ""), //goody wipes
+            51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
             51622 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Blue Gowns
             51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars Mask
             26843 => array("promo" => "5+1", "promo-price" => "124.65", "net-price" => ""), //Astracaine
