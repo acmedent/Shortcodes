@@ -27,7 +27,7 @@ class Quaterly
             
             ";
 
-        $pdfPath = home_url() . "wp-content/uploads/2020/10/";
+        $pdfPath = home_url() . "/wp-content/uploads/2020/10/";
         $imgPath = home_url() . "/wp-content/uploads/";
 
         $arr = array(
