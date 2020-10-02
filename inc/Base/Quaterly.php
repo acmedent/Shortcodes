@@ -27,38 +27,38 @@ class Quaterly
             
             ";
 
-        $pdfPath = home_url() . "/wp-content/uploads/2020/07/";
+        $pdfPath = home_url() . "wp-content/uploads/2020/10/";
         $imgPath = home_url() . "/wp-content/uploads/";
 
         $arr = array(
             array(
                 "src" => "/wp-content/uploads/2019/06/coltene-1.png",
-                "link" => $pdfPath . "Coltene_Q3_2020.pdf",
+                "link" => $pdfPath . "Q4-2020-Coltene.pdf",
                 "alt" => "Coltene"
             ),
             array(
                 "src" => "/wp-content/uploads/2020/07/crosstex.jpg",
-                "link" => $pdfPath . "Crosstex-Aug-Sept.pdf",
+                "link" => $pdfPath . "Q4-2020-Crosstex.pdf",
                 "alt" => "Crosstex"
             ),
             array(
                 "src" => $imgPath . "2019/06/dentsply-1.png",
-                "link" => $pdfPath . "Dentsply_Q3_2020-min.pdf",
+                "link" => $pdfPath . "Q4-2020-Dentsply-min.pdf",
                 "alt" => "Dentsply"
             ),
             array(
                 "src" => $imgPath . "2019/06/diadent.png",
-                "link" => $pdfPath . "DiaDent-2020-Q3.pdf",
+                "link" => $pdfPath . "Q4-2020-Diadent-min.pdf",
                 "alt" => "Diadent"
             ),
             array(
                 "src" => $imgPath . "2019/06/dmg-1.png",
-                "link" => $pdfPath . "DMG-Q3-2020-min.pdf",
+                "link" => $pdfPath . "Q4-2020-DMG.pdf",
                 "alt" => "DMG"
             ),
             array(
                 "src" => $imgPath . "2019/06/gc-america.png",
-                "link" => $pdfPath . "GC-America-Q3-2020.pdf",
+                "link" => $pdfPath . "Q4-2020-GC.pdf",
                 "alt" => "GC"
             ),
             // array(
@@ -68,49 +68,49 @@ class Quaterly
             // ),
             array(
                 "src" => $imgPath . "2019/06/hufriendy.png",
-                "link" => $pdfPath . "Hu-Friedy-Aug-Sept.pdf",
+                "link" => $pdfPath . "Q4-2020-Hu-Friedy.pdf",
                 "alt" => "Hu-Friedy"
             ),
             array(
                 "src" => $imgPath . "2019/06/kulzer.jpg",
-                "link" => $pdfPath . "Kulzer-Q3-2020-min.pdf",
+                "link" => $pdfPath . "Q4-2020-Kulzer-min.pdf",
                 "alt" => "Kulzer"
             ),
             array(
                 "src" => $imgPath . "2019/06/kuraray.png",
-                "link" => $pdfPath . "Kuraray-2020-3Q-min.pdf",
+                "link" => $pdfPath . "Q4-2020-Kuraray-min.pdf",
                 "alt" => "Kuraray Panavia"
             ),
+             array(
+                 "src" => $imgPath . "2019/06/medicom.png",
+                 "link" => $pdfPath . "Q4-2020-Medicom-min.pdf",
+                 "alt" => "Medicom"
+             ),
             // array(
-            //     "src" => $imgPath . "2019/06/medicom.png",
-            //     "link" => $pdfPath . "Medicom-Q2-min.pdf",
-            //     "alt" => "Medicom"
+            //     "src" => $imgPath . "2019/06/morita.png",
+            //     "link" => $pdfPath . "J.Morita-Q3_2020_Promos-min.pdf",
+            //     "alt" => "JMorita"
             // ),
             array(
-                "src" => $imgPath . "2019/06/morita.png",
-                "link" => $pdfPath . "J.Morita-Q3_2020_Promos-min.pdf",
-                "alt" => "JMorita"
-            ),
-            array(
                 "src" => $imgPath . "2019/06/pulpdent.png",
-                "link" => $pdfPath . "Canada-Q3-Pulpdent-Promos2020.pdf",
+                "link" => $pdfPath . "Q4-2020-Pulpdent.pdf",
                 "alt" => "Pulpdent"
             ),
             array(
                 "src" => $imgPath . "2019/06/sable-1-e1577983965932.png",
-                "link" => $pdfPath . "Sable-2020-Q3-min.pdf",
+                "link" => $pdfPath . "Q4-2020-Sable-min.pdf",
                 "alt" => "Sable"
             ),
-            array(
-                "src" => $imgPath . "2019/06/shofu.png",
-                "link" => $pdfPath . "Shofu-Q3-2020.docx",
-                "alt" => "Shofu"
-            ),
-            array(
-                "src" => $imgPath . "2020/01/Waterpik-Logo.png",
-                "link" => $pdfPath . "Waterpik-2019-2020.pdf",
-                "alt" => "Waterpik"
-            )
+            // array(
+            //     "src" => $imgPath . "2019/06/shofu.png",
+            //     "link" => $pdfPath . "Shofu-Q3-2020.docx",
+            //     "alt" => "Shofu"
+            // ),
+            // array(
+            //     "src" => $imgPath . "2020/01/Waterpik-Logo.png",
+            //     "link" => $pdfPath . "Waterpik-2019-2020.pdf",
+            //     "alt" => "Waterpik"
+            // ),
         );
 
 
