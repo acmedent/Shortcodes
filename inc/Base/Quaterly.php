@@ -111,6 +111,11 @@ class Quaterly
             //     "link" => $pdfPath . "Waterpik-2019-2020.pdf",
             //     "alt" => "Waterpik"
             // ),
+            array(
+                "src" => $imgPath . "2020/10/zirc.png",
+                "link" => "/wp-content/uploads/2020/10/Q4-2020-Zirc.pdf",
+                "alt" => "Zirc"
+            ),
         );
 
 
