@@ -142,12 +142,12 @@ class Home
         ";
 
         $ids = array(
-            38601 => array("promo" => "5% Off", "promo-price" => "53.0", "net-price" => ""), //microbrush
+            38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
             32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
             51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
             51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
             51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
-            26055 => array("promo" => "4+1", "promo-price" => "36", "net-price" => ""), //enhance polish cups mandrel
+            26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
         );
         
 
