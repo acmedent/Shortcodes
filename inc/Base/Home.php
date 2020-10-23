@@ -22,7 +22,7 @@ class Home
 
 
         //Date that start next weeks promo
-        $start_date = '2020-10-19';
+        $start_date = '2020-10-25';
         $date_from_user = date('Y-m-d');
         $daysAhead = 7;
 
@@ -68,16 +68,16 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until October 18th</h2>
+        <h2 class='promo-date'>Promos Until October 25th</h2>
         ";
 
         $ids = array(
-            51533 => array("promo" => "", "promo-price" => "9.00", "net-price" => ""), //goody wipes
-            51622 => array("promo" => "", "promo-price" => "68.95", "net-price" => ""), //Blue Gowns
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars Mask
-            26843 => array("promo" => "5+1", "promo-price" => "124.65", "net-price" => ""), //Astracaine
-            50251 => array("promo" => "3+1", "promo-price" => "74.70", "net-price" => ""), //Flexitime
-            51233 => array("promo" => "", "promo-price" => "19.80", "net-price" => ""), //Green Caps
+            38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
+            32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
+            51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
+            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
+            51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
+            26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
         );
 
         foreach ($ids as $id => $value) {
@@ -138,16 +138,16 @@ class Home
         
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until October 25th</h2>
+        <h2 class='promo-date'>Promos Until November 01st</h2>
         ";
 
         $ids = array(
-            38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
-            32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
-            51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
-            51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
-            26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
+            51417 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""), //safebasics pink
+            51533 => array("promo" => "10% Off", "promo-price" => "7.99", "net-price" => ""), //Goody Wipes
+            51622 => array("promo" => "$9 Off", "promo-price" => "59.95", "net-price" => ""), //blue gowns
+            34120 => array("promo" => "", "promo-price" => "25.65", "net-price" => ""), //jeltrade
+            34084 => array("promo" => "", "promo-price" => "59.85", "net-price" => ""), //exafast
+            31136 => array("promo" => "3+1", "promo-price" => "150.75", "net-price" => ""), //venus diamond
         );
         
 
