@@ -21,10 +21,25 @@ class Home
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
 
+        $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
+            "title"=>"",
+            "message"=>"",
+            "days"=>0,
+            "products"=>array(
+                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+            )
+        );
+
+
         //Date that start next weeks promo
-        $start_date = '2020-10-25';
+        $start_date = $nextweek_promo['start-date'];
         $date_from_user = date('Y-m-d');
-        $daysAhead = 7;
+        $daysAhead = $nextweek_promo['days'];
 
         if ($this->check_in_range($start_date, $date_from_user, $daysAhead))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
@@ -62,23 +77,44 @@ class Home
 
     function AcmedentHomePromo()
     {
-        // " . do_shortcode('[nextWeekSvg]') . "
+
+        $promo = get_option('AcmeShortCode_Plugin_CurrentWeek')?:array(
+            "title"=>"",
+            "message"=>"",
+            "products"=>array(
+                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+            )
+            );
+
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Weekly Flash Promo</h2></div>
-        
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>";
+        $page .= $promo["title"];
+        $page.="</h2></div>        
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until October 25th</h2>
-        ";
+        <h2 class='promo-date'>";
+        $page.=$promo["message"];
+        $page.="</h2>";
 
-        $ids = array(
-            38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
-            32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
-            51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
-            51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
-            51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
-            26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
-        );
+        // $ids = array(
+        //     38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
+        //     32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
+        //     51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
+        //     51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
+        //     51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
+        //     26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
+        // );
+        $ids = array();
+
+       foreach($promo["products"] as $key=>$item){
+           if($item["id"] && $item["promo-price"] )
+                $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
+       }
 
         foreach ($ids as $id => $value) {
 
@@ -131,24 +167,43 @@ class Home
 
     function AcmedentHomePromoNextWeek()
     {
-        // <img src='/wp-content/uploads/2020/03/SpringSale.jpg' alt='WEEKLY FLASH SALE!' class='promo-logo'/>
+         $promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
+            "title"=>"",
+            "message"=>"",
+            "products"=>array(
+                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
+                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+            )
+            );
 
         $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>Weekly Flash Promo</h2></div>
-        
+        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>";
+        $page .= $promo["title"];
+        $page.="</h2></div>        
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>Promos Until November 01st</h2>
-        ";
+        <h2 class='promo-date'>";
+        $page.=$promo["message"];
+        $page.="</h2>";
 
-        $ids = array(
-            51417 => array("promo" => "", "promo-price" => "19.95", "net-price" => ""), //safebasics pink
-            51533 => array("promo" => "10% Off", "promo-price" => "7.99", "net-price" => ""), //Goody Wipes
-            51622 => array("promo" => "$9 Off", "promo-price" => "59.95", "net-price" => ""), //blue gowns
-            34120 => array("promo" => "", "promo-price" => "25.65", "net-price" => ""), //jeltrade
-            34084 => array("promo" => "", "promo-price" => "59.85", "net-price" => ""), //exafast
-            31136 => array("promo" => "3+1", "promo-price" => "150.75", "net-price" => ""), //venus diamond
-        );
+        // $ids = array(
+        //     38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
+        //     32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
+        //     51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
+        //     51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
+        //     51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
+        //     26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
+        // );
+        $ids = array();
+
+       foreach($promo["products"] as $key=>$item){
+           if($item["id"] && $item["promo-price"] )
+                $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
+       }
         
 
         foreach ($ids as $id => $value) {

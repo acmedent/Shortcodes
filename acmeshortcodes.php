@@ -61,8 +61,19 @@ if (!class_exists('AcmeShortcodes')) {
         {
             add_action('wp_enqueue_scripts', array($this, 'enqueue'));
             //add_action('admin_enqueue_scripts', array($this, 'enqueue'));
+            add_action('admin_menu', array($this, 'add_admin_pages'));
             $Pages = new Pages();
             $Pages->register();
+        }
+
+        public function add_admin_pages()
+        {
+            add_menu_page('Acme Shortcodes Plugin', 'Acme Shortcodes', 'manage_options', 'acmeshortcode_plugin', array($this, 'admin_index'), 'dashicons-editor-code', 110);
+        }
+
+        public function admin_index()
+        {
+            require_once plugin_dir_path(__FILE__) . 'templates/admin.php';
         }
 
         function enqueue()
