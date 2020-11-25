@@ -20,7 +20,6 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-
         $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
             "title"=>"",
             "message"=>"",
@@ -101,14 +100,6 @@ class Home
         $page.=$promo["message"];
         $page.="</h2>";
 
-        // $ids = array(
-        //     38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
-        //     32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
-        //     51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
-        //     51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
-        //     51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
-        //     26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
-        // );
         $ids = array();
 
        foreach($promo["products"] as $key=>$item){
@@ -123,7 +114,6 @@ class Home
             if (isset($product) && $product != null) {
                 $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
 
-
                 $prod_info = array(
                     "name" => $product->get_name(),
                     "img" => $image,
@@ -135,7 +125,6 @@ class Home
                     $color = '#d3eaf7';
                 else
                     $color = '#fff';
-
 
                 $page .= "
             <div class='promo-prod' style='background:" . $color . ";padding:20px'>
@@ -163,8 +152,6 @@ class Home
         return $page;
     }
 
-
-
     function AcmedentHomePromoNextWeek()
     {
          $promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
@@ -190,14 +177,6 @@ class Home
         $page.=$promo["message"];
         $page.="</h2>";
 
-        // $ids = array(
-        //     38601 => array("promo" => "5% Off", "promo-price" => "53.00", "net-price" => ""), //microbrush
-        //     32038 => array("promo" => "5% Off", "promo-price" => "83.79", "net-price" => ""), //steris
-        //     51622 => array("promo" => "5% Off", "promo-price" => "65.50", "net-price" => ""), //blue gowns
-        //     51516 => array("promo" => "", "promo-price" => "29.99", "net-price" => ""), //betamars
-        //     51533 => array("promo" => "5% Off", "promo-price" => "8.55", "net-price" => ""), //Goody Wipes
-        //     26055 => array("promo" => "4+1", "promo-price" => "36.00", "net-price" => ""), //enhance polish cups mandrel
-        // );
         $ids = array();
 
        foreach($promo["products"] as $key=>$item){
@@ -205,7 +184,6 @@ class Home
                 $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
        }
         
-
         foreach ($ids as $id => $value) {
 
             $product = wc_get_product($id);
@@ -254,10 +232,8 @@ class Home
         return $page;
     }
 
-
     function AcmedentHomeCategories()
     {
-
         $imgPath = "wp-content/uploads/2019/10/";
         $pagePath = "dental-products-supplies/";
         $categories = array(

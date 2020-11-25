@@ -23,6 +23,7 @@ class Pages
         $Svg = new Svg();
         $Home = new Home();
         $HomePage = new HomePage();
+        $BlackFriday = new BlackFriday();
 
         if ($_POST['submit_campaign']) {
 

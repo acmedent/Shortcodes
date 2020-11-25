@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.rows {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    margin-left: 4.5%;
+}
+
+.rows:nth-child(2) {
+    margin-top: 49%;
+}
+
+.rows:nth-child(3) {
+    margin-top: 81%;
+}
+
+.rows:nth-child(4) {
+    margin-top: 113%;
+}
+
+.links {
+    width: 20vw;
+    height: 20vw;
+    top: 0;
+    border-radius: 10vw;
+    transition: 0.3s;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
