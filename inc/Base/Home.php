@@ -20,32 +20,38 @@ class Home
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
-        $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
-            "title"=>"",
-            "message"=>"",
-            "days"=>0,
-            "products"=>array(
-                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+        $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
+            "title" => "",
+            "message" => "",
+            "days" => 0,
+            "products" => array(
+                1 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                2 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                3 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                4 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                5 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
             )
         );
-
 
         //Date that start next weeks promo
         $start_date = $nextweek_promo['start-date'];
         $date_from_user = date('Y-m-d');
         $daysAhead = $nextweek_promo['days'];
 
+        //add if statement to check if it will show the promos according to the value of data base variable $show_promo
+        $show_promo = get_option('AcmeShortCode_Plugin_ShowPromo')?:false;
+
+        if($show_promo){
         if ($this->check_in_range($start_date, $date_from_user, $daysAhead))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
         elseif ($this->previous_than($start_date, $date_from_user))
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
         else
             add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        }else{
+            add_shortcode('acme-home-promo', array($this, 'empty'));
+        }
     }
 
     function empty()
@@ -77,35 +83,35 @@ class Home
     function AcmedentHomePromo()
     {
 
-        $promo = get_option('AcmeShortCode_Plugin_CurrentWeek')?:array(
-            "title"=>"",
-            "message"=>"",
-            "products"=>array(
-                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+        $promo = get_option('AcmeShortCode_Plugin_CurrentWeek') ?: array(
+            "title" => "",
+            "message" => "",
+            "products" => array(
+                1 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                2 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                3 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                4 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                5 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
             )
-            );
+        );
 
         $page = "        
         <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>";
         $page .= $promo["title"];
-        $page.="</h2></div>        
+        $page .= "</h2></div>        
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
         <h2 class='promo-date'>";
-        $page.=$promo["message"];
-        $page.="</h2>";
+        $page .= $promo["message"];
+        $page .= "</h2>";
 
         $ids = array();
 
-       foreach($promo["products"] as $key=>$item){
-           if($item["id"] && $item["promo-price"] )
+        foreach ($promo["products"] as $key => $item) {
+            if ($item["id"] && $item["promo-price"])
                 $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
-       }
+        }
 
         foreach ($ids as $id => $value) {
 
@@ -154,36 +160,36 @@ class Home
 
     function AcmedentHomePromoNextWeek()
     {
-         $promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
-            "title"=>"",
-            "message"=>"",
-            "products"=>array(
-                1 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                2 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                3 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                4 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                5 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => ""),
-                6 =>array("id"=>"","promo" => "", "promo-price" => "", "net-price" => "")
+        $promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
+            "title" => "",
+            "message" => "",
+            "products" => array(
+                1 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                2 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                3 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                4 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                5 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+                6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
             )
-            );
+        );
 
         $page = "        
         <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>";
         $page .= $promo["title"];
-        $page.="</h2></div>        
+        $page .= "</h2></div>        
         <div class='promo-grid' style='background:#ffffff'>
         <img src='' alt='' class='promo-logo'/>
         <h2 class='promo-date'>";
-        $page.=$promo["message"];
-        $page.="</h2>";
+        $page .= $promo["message"];
+        $page .= "</h2>";
 
         $ids = array();
 
-       foreach($promo["products"] as $key=>$item){
-           if($item["id"] && $item["promo-price"] )
+        foreach ($promo["products"] as $key => $item) {
+            if ($item["id"] && $item["promo-price"])
                 $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
-       }
-        
+        }
+
         foreach ($ids as $id => $value) {
 
             $product = wc_get_product($id);

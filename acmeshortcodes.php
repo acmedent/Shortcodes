@@ -8,7 +8,7 @@
  Plugin Name: AcmeShortcode
  Plugin URI: http://acmedent.com
  Description: Quaterly Promos Messages Plugin
- Version: 1.0.0
+ Version: 1.2.1
  Author: Rodrigo
  Author URI: https://rgarbulha.github.io
  License: GPLv2 or later

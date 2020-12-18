@@ -32,6 +32,13 @@ $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek')?:array(
 )
 );
 
+
+if(isset($_POST['promo-form'])){
+    update_site_option('AcmeShortCode_Plugin_ShowPromo', $_POST['promo-status']=="on"?true:false);
+}
+
+$show_promo = get_option('AcmeShortCode_Plugin_ShowPromo')?:false;
+
 $savedMessage = "<span id='posted-message' style='position:absolute;width:fit-content;padding:5px 10px;margin:25px auto;border:1px solid #3e6f1d; border-radius:5px;background-color:#eaffea;transition:1s'>Promo successfully saved.</span>";
 
 $messageScript ="<script>var messageFadeOut = setTimeout(function(){ document.getElementById('posted-message').style.opacity = '0';}, 2000);var messageDisapear = setTimeout(function(){ document.getElementById('posted-message').style.display = 'none';}, 3000);</script>";
@@ -87,6 +94,12 @@ $divStyle = "width:550px; max-width:95%; height:fit-content; background-color:#f
 
 <h1>Acmedent Shortcodes</h1>
 
+<br>
+<form action="" method="POST" id="status-form">
+    <input type="hidden" name="promo-form" value="promo-form">
+    <label for="promo-status">Show Promo? <input type="checkbox" name="promo-status" id="promo-status" <?php echo $show_promo ? "checked":"" ?> onchange="document.getElementById('status-form').submit()"></label>
+</form>
+<br>
 <div style="<?php echo $divStyle ?>">
 
 <h2 style="text-align:center">Current Week</h2>
