@@ -24,6 +24,5 @@ class Pages
         $Home = new Home();
         $HomePage = new HomePage();
         $BlackFriday = new BlackFriday();
-
     }
 }

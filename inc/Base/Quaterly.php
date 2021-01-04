@@ -24,41 +24,35 @@ class Quaterly
 
         <div class='acme-quarterly-container'>        
         <div class='acme-container'>
-            
             ";
 
-        $pdfPath = home_url() . "/wp-content/uploads/2020/10/";
+        $pdfPath = home_url() . "/wp-content/uploads/2021/01/";
         $imgPath = home_url() . "/wp-content/uploads/";
 
         $arr = array(
             array(
-                "src" => "/wp-content/uploads/2019/06/coltene-1.png",
-                "link" => $pdfPath . "Q4-2020-Coltene.pdf",
+                "src" => $imgPath ."2019/06/coltene-1.png",
+                "link" => $pdfPath . "Coltene_q1_2021.pdf",
                 "alt" => "Coltene"
             ),
             array(
-                "src" => "/wp-content/uploads/2020/07/crosstex.jpg",
-                "link" => $pdfPath . "Q4-2020-Crosstex.pdf",
-                "alt" => "Crosstex"
-            ),
-            array(
                 "src" => $imgPath . "2019/06/dentsply-1.png",
-                "link" => $pdfPath . "Q4-2020-Dentsply-min.pdf",
+                "link" => $pdfPath . "Dentsply-Q1_2021.pdf",
                 "alt" => "Dentsply"
             ),
             array(
                 "src" => $imgPath . "2019/06/diadent.png",
-                "link" => $pdfPath . "Q4-2020-Diadent-min.pdf",
+                "link" => $pdfPath . "DiaDent-Q1-2021.pdf",
                 "alt" => "Diadent"
             ),
             array(
                 "src" => $imgPath . "2019/06/dmg-1.png",
-                "link" => $pdfPath . "Q4-2020-DMG.pdf",
+                "link" => $pdfPath . "DMG_Q1_2021.pdf",
                 "alt" => "DMG"
             ),
             array(
                 "src" => $imgPath . "2019/06/gc-america.png",
-                "link" => $pdfPath . "Q4-2020-GC.pdf",
+                "link" => $pdfPath . "GC-America-Q1-2021.pdf",
                 "alt" => "GC"
             ),
             // array(
@@ -67,55 +61,55 @@ class Quaterly
             //     "alt" => "Flight"
             // ),
             array(
-                "src" => $imgPath . "2019/06/hufriendy.png",
-                "link" => $pdfPath . "Q4-2020-Hu-Friedy.pdf",
-                "alt" => "Hu-Friedy"
+                "src" => $imgPath . "2021/01/Hu-Friedy-Group-Logo-scaled.jpg",
+                "link" => $pdfPath . "Crosstex-and-Hu-friedy-Q1-2021.pdf",
+                "alt" => "Hu-Friedy Group"
             ),
             array(
                 "src" => $imgPath . "2019/06/kulzer.jpg",
-                "link" => $pdfPath . "Q4-2020-Kulzer-min.pdf",
+                "link" => $pdfPath . "Kulzer_Q1_2021.pdf",
                 "alt" => "Kulzer"
             ),
             array(
                 "src" => $imgPath . "2019/06/kuraray.png",
-                "link" => $pdfPath . "Q4-2020-Kuraray-min.pdf",
-                "alt" => "Kuraray Panavia"
+                "link" => $pdfPath . "Kuraray-Q1-2021.xlsx",
+                "alt" => "Kuraray"
             ),
              array(
                  "src" => $imgPath . "2019/06/medicom.png",
-                 "link" => $pdfPath . "Q4-2020-Medicom-min.pdf",
+                 "link" => $pdfPath . "Medicom-Q1-2021.pdf",
                  "alt" => "Medicom"
              ),
-            // array(
-            //     "src" => $imgPath . "2019/06/morita.png",
-            //     "link" => $pdfPath . "J.Morita-Q3_2020_Promos-min.pdf",
-            //     "alt" => "JMorita"
-            // ),
+            array(
+                "src" => $imgPath . "2019/06/morita.png",
+                "link" => $pdfPath . "J.Morita_Q1_2021.pdf",
+                "alt" => "JMorita"
+            ),
             array(
                 "src" => $imgPath . "2019/06/pulpdent.png",
-                "link" => $pdfPath . "Q4-2020-Pulpdent.pdf",
+                "link" => $pdfPath . "Pulpdent_Q1_2021.pdf",
                 "alt" => "Pulpdent"
             ),
             array(
                 "src" => $imgPath . "2019/06/sable-1-e1577983965932.png",
-                "link" => $pdfPath . "Q4-2020-Sable-min.pdf",
+                "link" => $pdfPath . "Sable-2021-Q1.pdf",
                 "alt" => "Sable"
             ),
-            // array(
-            //     "src" => $imgPath . "2019/06/shofu.png",
-            //     "link" => $pdfPath . "Shofu-Q3-2020.docx",
-            //     "alt" => "Shofu"
-            // ),
-            // array(
-            //     "src" => $imgPath . "2020/01/Waterpik-Logo.png",
-            //     "link" => $pdfPath . "Waterpik-2019-2020.pdf",
-            //     "alt" => "Waterpik"
-            // ),
             array(
-                "src" => $imgPath . "2020/10/zirc.png",
-                "link" => "/wp-content/uploads/2020/10/Q4-2020-Zirc.pdf",
-                "alt" => "Zirc"
+                "src" => $imgPath . "2019/06/shofu.png",
+                "link" => $pdfPath . "Shofu-Q1-2021.pdf",
+                "alt" => "Shofu"
             ),
+            array(
+                "src" => $imgPath . "2020/01/Waterpik-Logo.png",
+                "link" => $pdfPath . "Waterpik-Q1-Q4-2021.pdf",
+                "alt" => "Waterpik"
+            ),
+            // array(
+            //     "src" => $imgPath . "2020/10/zirc.png",
+            //     "link" => "/wp-content/uploads/2020/10/Q4-2020-Zirc.pdf",
+            //     "alt" => "Zirc"
+            // ),
         );
 
 
