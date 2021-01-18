@@ -12,7 +12,14 @@ if (!defined('ABSPATH')) {
 
 class HomeCategory
 {
-    public static function AcmedentHomeCategories()
+
+    function __construct()
+    {
+        add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
+    }
+
+
+    function AcmedentHomeCategories()
     {
 
         $imgPath = "wp-content/uploads/2019/10/";
