@@ -19,9 +19,6 @@ class HomePromoClass
     function __construct()
     {
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
-        // add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
-        // add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
-
 
         $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
             "title" => "",
@@ -165,13 +162,6 @@ class HomePromoClass
         <h2 class='acme-maintitle promo-steam'>Sales Team</h2>
         <h2 class='promo-phone'>905-761-6850</h2>
         </div><br>";
-
-
-
-
-
-        // $page = "<h1>" . $this->tagName . "</h1>";
-
         return $page;
     }
 }

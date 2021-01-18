@@ -13,13 +13,10 @@ if (!defined('ABSPATH')) {
 class HomeCategoryClass
 {
 
-
-
     function __construct()
     {
         add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
     }
-
 
     function AcmedentHomeCategories()
     {
@@ -173,12 +170,7 @@ class HomeCategoryClass
                 </a>
             </div>";
         }
-
         $page .= "</div></div>";
-
-
-
-
         return $page;
     }
 }
