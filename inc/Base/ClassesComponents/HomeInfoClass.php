@@ -4,13 +4,13 @@
  * @package  AcmeShortcodes
  */
 
-namespace Inc\Base\Components;
+namespace Inc\Base\ClassesComponents;
 
 if (!defined('ABSPATH')) {
     die;
 };
 
-class HomeInfo
+class HomeInfoClass
 {
 
     function __construct()

@@ -4,14 +4,16 @@
  * @package  AcmeShortcodes
  */
 
-namespace Inc\Base\Components;
+namespace Inc\Base\ClassesComponents;
 
 if (!defined('ABSPATH')) {
     die;
 };
 
-class HomeCategory
+class HomeCategoryClass
 {
+
+
 
     function __construct()
     {

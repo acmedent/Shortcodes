@@ -10,62 +10,64 @@ if (!defined('ABSPATH')) {
     die;
 };
 
-use Inc\Base\Components\HomeCategory;
-use Inc\Base\Components\HomeInfo;
+use Inc\Base\ClassesComponents\HomeCategoryClass;
+use Inc\Base\ClassesComponents\HomeInfoClass;
+use Inc\Base\ClassesComponents\HomePromoClass;
 
 
 class Home
 {
 
-    private $even = false;
-    private $tagName;
+    // private $even = false;
+    // private $tagName;
 
 
     function __construct()
     {
 
-        $HomeCagory = new HomeCategory();
-        $HomeInfo = new HomeInfo();
+        $HomeCagory = new HomeCategoryClass();
+        $HomeInfo = new HomeInfoClass();
+        $HomePromo = new HomePromoClass();
 
-        add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
+        // add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         // add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         // add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
 
-        $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
-            "title" => "",
-            "message" => "",
-            "days" => 0,
-            "products" => array(
-                1 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
-                2 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
-                3 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
-                4 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
-                5 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
-                6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
-            )
-        );
+        // $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
+        //     "title" => "",
+        //     "message" => "",
+        //     "days" => 0,
+        //     "products" => array(
+        //         1 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+        //         2 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+        //         3 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+        //         4 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+        //         5 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => ""),
+        //         6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
+        //     )
+        // );
 
 
-        //Date that start next weeks promo
-        $start_date = $nextweek_promo['start-date'];
-        $date_from_user = date('Y-m-d');
-        $daysAhead = $nextweek_promo['days'];
+        // //Date that start next weeks promo
+        // $start_date = $nextweek_promo['start-date'];
+        // $date_from_user = date('Y-m-d');
+        // $daysAhead = $nextweek_promo['days'];
 
-        //add if statement to check if it will show the promos according to the value of data base variable $show_promo
-        $show_promo = get_option('AcmeShortCode_Plugin_ShowPromo') ?: false;
+        // //add if statement to check if it will show the promos according to the value of data base variable $show_promo
+        // $show_promo = get_option('AcmeShortCode_Plugin_ShowPromo') ?: false;
 
-        if ($show_promo) {
-            if ($this->check_in_range($start_date, $date_from_user, $daysAhead)) {
-                add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
-            } elseif ($this->previous_than($start_date, $date_from_user)) {
-                add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
-            } else {
-                add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
-            }
-        } else {
-            add_shortcode('acme-home-promo', array($this, 'empty'));
-        }
+        // if ($show_promo) {
+        //     if ($this->check_in_range($start_date, $date_from_user, $daysAhead)) {
+        //         add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        //     } elseif ($this->previous_than($start_date, $date_from_user)) {
+        //         add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromo'));
+        //     } else {
+        //         add_shortcode('acme-home-promo', array($this, 'AcmedentHomePromoNextWeek'));
+        //     }
+        // } else {
+        //     add_shortcode('acme-home-promo', array($this, 'empty'));
+        // }
     }
 
     function empty()
