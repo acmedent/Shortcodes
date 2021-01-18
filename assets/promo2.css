@@ -1,28 +1,65 @@
-.promo-grid {
-    display: grid;
-    grid-template: 'promoTitle promoTitle promoTitle' 'promoDate promoDate promoDate' '. . .' '. . .' 'promoMsg promoMsg promoMsg' 'promoSteam promoSteam promoSteam' 'promoPhone promoPhone promoPhone';
-    grid-template-columns: repeat(1, auto);
-    margin: auto;
-    max-width: 1048px;
-    padding: 0;
-    font-family: "Roboto", Sans-serif;
+.promo-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.promo-logo {
-    color: rgb(18, 168, 18);
-    text-align: center;
-    height: auto;
-    max-height: 200px;
-    grid-area: promoTitle;
-    margin: 0 auto;
-    padding: 0;
+.promo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-left: 1px solid #d1d1d1;
+    border-top: 1px solid #d1d1d1;
+    justify-content: center;
 }
 
-.promo-title {
-    color: rgb(18, 168, 50);
+.promo-list>div {
+    background-color: #fefefe;
+}
+
+.promo-list>div:hover {
+    background-color: #eeeeee;
+}
+
+.promo-info {
+    width: 50%;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-info>* {
+    margin: 0;
+}
+
+.promo-info h2 {
+    font-size: 40px;
+}
+
+.promo-info h3 {
+    font-size: 30px;
+}
+
+.promo-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+    border-right: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    padding-top: 10px;
+}
+
+.promo-name {
+    color: #6ec1e4;
     text-align: center;
     height: auto;
-    grid-area: promoTitle;
     margin: 0 auto;
     padding: 0;
 }
@@ -30,46 +67,17 @@
 .promo-date {
     margin: 10px auto;
     padding: 0;
-    color: black;
+    color: #6ec1e4;
     font-size: 20px;
     text-align: center;
-    grid-area: promoDate;
 }
 
 .promo-msg {
-    grid-area: promoMsg;
     color: #7a7a7a;
     line-height: 50px;
     height: 30px;
     font-size: 10px;
     text-align: center !important;
-}
-
-.promo-steam {
-    grid-area: promoSteam;
-    color: #6ec1e4;
-    line-height: 30px;
-    height: 30px;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 30px !important;
-}
-
-.promo-phone {
-    grid-area: promoPhone;
-    color: rgb(104, 14, 14);
-    text-align: center !important;
-    line-height: 30px;
-    height: 30px;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 16px;
-}
-
-.promo-prod {
-    text-align: center;
-    padding: 0 5px;
-    margin: 0;
 }
 
 .img-box {
@@ -84,88 +92,161 @@
 }
 
 .promo-img {
-    margin: auto;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    max-width: 230px;
-    max-height: 230px;
-    width: 230px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
     transition: 0.5s;
-    margin-bottom: 10px;
 }
 
 .promo-img:hover {
-    max-height: 230px;
-    width: 210px;
-    max-width: 210px;
-    padding: 10px;
-    filter: saturate(300%);
-}
-
-.title-box {
-    height: 70px;
+    filter: saturate(200%);
 }
 
 .promo-name {
-    color: #6ec1e4;
+    color: #50976a;
     font-size: 22px;
     min-height: 34px;
 }
 
 .prod-title {
-    color: #6ec1e4;
+    color: #1c1c1f;
     font-size: 16px;
     margin: auto;
     max-width: 300px;
 }
 
 .prod-price {
-    color: rgb(6, 187, 6);
+    color: #50976a;
     height: auto;
-    min-height: 70px;
-    line-height: 35px;
     margin: 0;
-}
-
-.prod-normal-price {
-    color: #000;
-    font-size: 14px;
-    margin-right: 10px;
-    font-weight: 100;
-    text-decoration: line-through;
+    font-size: 26px;
 }
 
 .promo-btn {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    margin: auto;
+    background: #6ec1e4;
+    transition: 0.1s;
+}
+
+.promo-btn:hover {
+    background: #337ebf;
 }
 
 .promo-btn h2 {
-    margin: auto;
+    margin: 0;
     font-size: 16px;
     color: #fff;
-    line-height: 30px;
-    height: 30px;
-    width: 150px;
-    background: #6ec1e4;
     text-decoration: none;
     border-radius: 2px;
-    transition: 0.5s;
 }
 
-.promo-btn h2:hover {
-    background: #000;
+.sales-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+    padding-top: 10px;
 }
 
-@media (max-width: 1048px) {}
+.sales-info>* {
+    margin: 0;
+}
 
-@media (max-width: 768px) {
-    .promo-grid {
-        text-align: center;
+.sales-info h2 {
+    width: 100%;
+    height: 35px;
+    font-size: 28px;
+    color: #337ebf;
+}
+
+.sales-info h3 {
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    font-size: 26px;
+    height: 30px;
+    width: 100%;
+}
+
+.mobile-ver {
+    display: none;
+}
+
+.web-ver {
+    display: flex;
+}
+
+@media (max-width: 1300px) {
+    .mobile-ver {
+        display: flex;
     }
-    .promo-name {
-        font-size: 22px;
+    .web-ver {
+        display: none;
+    }
+    .promo-info {
+        width: calc(200% / 3);
+    }
+    .promo-item {
+        width: calc(100% / 3);
+    }
+    .promo-list {
+        justify-content: left;
     }
 }
 
-@media (max-width: 500px) {}
+@media (max-width: 960px) {
+    .promo-info {
+        width: 50%;
+    }
+    .promo-info h2 {
+        font-size: 40px;
+    }
+    .promo-info h3 {
+        font-size: 30px;
+    }
+    .promo-item {
+        width: 50%;
+    }
+    .promo-list {
+        justify-content: left;
+    }
+    .sales-info h3 a {
+        color: #fefefe;
+    }
+    .sales-info h3 {
+        background-color: #6ec1e4;
+        height: 50px;
+        padding: 10px;
+        transition: 0.1s;
+    }
+    .sales-info h3:hover {
+        background-color: #337ebf;
+        height: 50px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 716px) {
+    .promo-info {
+        width: 100%;
+        padding: 20px;
+    }
+    .promo-info h2 {
+        font-size: 30px;
+    }
+    .promo-info h3 {
+        font-size: 24px;
+    }
+    .promo-item {
+        width: 100%;
+    }
+}

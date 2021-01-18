@@ -13,7 +13,6 @@ if (!defined('ABSPATH')) {
 class HomePromoClass
 {
 
-    private $even = false;
     private $tagName;
 
     function __construct()
@@ -33,7 +32,6 @@ class HomePromoClass
                 6 => array("id" => "", "promo" => "", "promo-price" => "", "net-price" => "")
             )
         );
-
 
         //Date that start next weeks promo
         $start_date = $nextweek_promo['start-date'];
@@ -104,26 +102,39 @@ class HomePromoClass
             )
         );
 
-        $page = "        
-        <div style='display:block;margin:auto; text-align:center;'><h2 style='font-size:26px'>";
-        $page .= $promo["title"];
-        $page .= "</h2></div>        
-        <div class='promo-grid' style='background:#ffffff'>
-        <img src='' alt='' class='promo-logo'/>
-        <h2 class='promo-date'>";
-        $page .= $promo["message"];
-        $page .= "</h2>";
+        //PROMO COMPONENT START
+        $page = "<div class='promo-container'>";
 
+
+        //Get ids from plugin database
         $ids = array();
-
         foreach ($promo["products"] as $key => $item) {
             if ($item["id"] && $item["promo-price"])
                 $ids[$item["id"]] = array("promo" => $item["promo"], "promo-price" => $item["promo-price"], "net-price" => $item["net-price"]);
         }
 
-        foreach ($ids as $id => $value) {
+        //PROMO LIST START
+        $page .= "<div class='promo-list'>";
 
+
+
+        //PROMO ITEMS LOOP START
+        $count = 0;
+        $infoAdded = false;
+        foreach ($ids as $id => $value) {
+            $count++;
             $product = wc_get_product($id);
+
+            if (!$infoAdded) {
+                //PROMO INFO ADDED MOBILE VERSION
+                $page .= "<div class='promo-info mobile-ver'><h2>";
+                $page .= $promo["title"];
+                $page .= "</h2>     
+                <h3 class='promo-date'>";
+                $page .= $promo["message"];
+                $page .= "</h3></div>";
+                //PROMO INFO END
+            }
 
             if (isset($product) && $product != null) {
                 $image = str_replace("-150x150", '', wp_get_attachment_image_src($product->get_image_id())[0]);
@@ -133,35 +144,80 @@ class HomePromoClass
                     "img" => $image,
                     "price" => $product->get_price(),
                 );
-                //#d3eaf7
-                $this->even = !$this->even;
-                if ($this->even)
-                    $color = '#d3eaf7';
-                else
-                    $color = '#fff';
+
 
                 $page .= "
-            <div class='promo-prod' style='background:" . $color . ";padding:20px'>
+            <div class='promo-item' style='grid-area: item" . $count . "'>
                 <h2 class='promo-name'>" . $value["promo"] . "</h2>
                 <div class='img-box'><a href='" . get_permalink($product->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
                 <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
-                <h2 class='prod-price'>Each: $" . $value["promo-price"];
+                <h2 class='prod-price'>$" . $value["promo-price"];
                 if ($value["net-price"] == "")
                     $page .=  "</h2>";
                 else
-                    $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
+                    $page .=  "<br>Net: $" . $value["net-price"] . "</h2>";
 
                 $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
                 <h2>Product Page</h2>
                 </a>
                 </div>";
+
+                //GENERATE A RANDOM PRODUCT TO FILL THE GRID
+            } else {
+                $args = array(
+                    'posts_per_page'   => 1,
+                    'orderby'          => 'rand',
+                    'post_type'        => 'product'
+                );
+
+                $random_products = get_posts($args);
+                $randomPost = $random_products[0];
+                $randomProduct = wc_get_product($randomPost->ID);
+                $image = str_replace("-150x150", '', wp_get_attachment_image_src($randomProduct->get_image_id())[0]);
+                // $image = "";
+
+                $prod_info = array(
+                    "name" => $randomProduct->get_name(),
+                    "img" => $image,
+                    "price" => $randomProduct->get_price(),
+                );
+
+                if ($prod_info['img'] === "")
+                    $prod_info['img'] = "https://www.acmedent.com/wp-content/uploads/woocommerce-placeholder-300x300.png";
+
+                $page .= "
+            <div class='promo-item' style='grid-area: item" . $count . "'>
+                <h2 class='promo-name'></h2>
+                <div class='img-box'><a href='" . get_permalink($randomProduct->get_id()) . "'> <img src='" . $prod_info["img"] . "' alt='" . $prod_info["name"] . "' class='promo-img'></a></div>
+                <div class='title-box'><h2 class='prod-title'>" . $prod_info["name"] . "</h2></div>
+                <h2 class='prod-price'>$" . number_format($randomProduct->get_price(), 2, '.', '') . "</h2>";
+
+                $page .= " <a class='promo-btn' href='" . get_permalink($randomProduct->get_id()) . "'>
+                <h2>Product Page</h2>
+                </a>
+                </div>";
+            }
+
+            if (!$infoAdded) {
+                $infoAdded = true;
+                //PROMO INFO ADDED
+                $page .= "<div class='promo-info web-ver'><h2>";
+                $page .= $promo["title"];
+                $page .= "</h2>     
+                <h3 class='promo-date'>";
+                $page .= $promo["message"];
+                $page .= "</h3></div>";
+                //PROMO INFO END
             }
         }
 
-        $page .= "<h2 class='acme-text promo-msg'>*Net promos only available by phone for while.</h2>
-        <h2 class='acme-maintitle promo-steam'>Sales Team</h2>
-        <h2 class='promo-phone'>905-761-6850</h2>
-        </div><br>";
+        //PROMO LIST END
+        $page .= "</div>";
+
+        $page .= "<div class='sales-info'>
+        <h2>Contact Our Sales Team</h2>
+        <h3><a href='tel:+19057616850'>905-761-6850</a></h3>
+        </div>   ";
         return $page;
     }
 }
