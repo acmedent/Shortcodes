@@ -9,9 +9,6 @@ namespace Inc\Base;
 if (!defined('ABSPATH')) {
     die;
 };
-
-
-
 class Home
 {
 
