@@ -22,10 +22,9 @@ class Home
     function __construct()
     {
 
-        $HomeCategory = new HomeCategory();
 
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
-        // add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
+        add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
         add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
 
@@ -251,6 +250,7 @@ class Home
 
     function AcmedentHomeCategories()
     {
+        return HomeCategory::AcmedentHomeCategories();
         // $imgPath = "wp-content/uploads/2019/10/";
         // $pagePath = "dental-products-supplies/";
         // $categories = array(
