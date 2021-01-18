@@ -21,9 +21,7 @@ class HomeInfoClass
     function AcmedentHomeInfo()
     {
         $page = "
-        <br>
         <div class='acme-container'>
-        <hr style='border-top: 1px solid #000;'>
         <h2 class='acme-maintitle' style='font-size:26px'>More than</h2>
         <h2 class='acme-maintitle' style='font-size:72px; color:#6ec1e4'>15000</h2>
         <h2 class='acme-maintitle' style='font-size:26px'>Products</h2>

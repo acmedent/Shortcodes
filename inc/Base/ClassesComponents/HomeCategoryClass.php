@@ -157,14 +157,13 @@ class HomeCategoryClass
         );
 
         $page = "
-        <br>
         <div class='categories-box'>
-        <h2>Product Categories</h2><br>
-        <div class='categories-grid'>";
+        <h2>FEATURED CATEGORIES</h2><br>
+        <div class='categories-list'>";
 
 
         foreach ($categories as $cat) {
-            $page .= "<div class='category' style='background: url(" . $cat["img"] . ");'>
+            $page .= "<div class='category-item' style='background-image: url(" . $cat["img"] . ");'>
                 <a href='" . $cat["link"] . "'>
                     <div><p>" . $cat["name"] . "</p></div>
                 </a>
