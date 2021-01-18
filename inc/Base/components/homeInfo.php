@@ -8,10 +8,17 @@ if (!defined('ABSPATH')) {
     die;
 };
 
-
-function AcmedentHomeInfo()
+class HomeInfo
 {
-    $page = "
+
+    function __construct()
+    {
+        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
+    }
+
+    function AcmedentHomeInfo()
+    {
+        $page = "
         <br>
         <div class='acme-container'>
         <hr style='border-top: 1px solid #000;'>
@@ -32,5 +39,6 @@ function AcmedentHomeInfo()
 
 
 
-    return $page;
+        return $page;
+    }
 }

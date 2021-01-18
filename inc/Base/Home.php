@@ -11,6 +11,7 @@ if (!defined('ABSPATH')) {
 };
 
 use Inc\Base\Components\HomeCategory;
+use Inc\Base\Components\HomeInfo;
 
 
 class Home
@@ -24,10 +25,11 @@ class Home
     {
 
         $HomeCagory = new HomeCategory();
+        $HomeInfo = new HomeInfo();
 
         add_shortcode('acme-home-promo-next-week', array($this, 'AcmedentHomePromoNextWeek'));
         // add_shortcode('acme-home-categories', array($this, 'AcmedentHomeCategories'));
-        add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
+        // add_shortcode('acme-home-info', array($this, 'AcmedentHomeInfo'));
 
 
         $nextweek_promo = get_option('AcmeShortCode_Plugin_NextWeek') ?: array(
