@@ -236,7 +236,7 @@ class Home
                     $page .=  "<br>Net Price: $" . $value["net-price"] . "</h2>";
 
                 $page .= " <a class='promo-btn' href='" . get_permalink($product->get_id()) . "'>
-                    <h2>Product Page" . $this->ts . "</h2>
+                    <h2>Product Page</h2>
                 </a>
             </div>";
             }

@@ -4,6 +4,8 @@
  * @package  AcmeShortcodes
  */
 
+namespace Inc\Base\Components;
+
 if (!defined('ABSPATH')) {
     die;
 };
