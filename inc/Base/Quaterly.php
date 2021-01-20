@@ -31,7 +31,7 @@ class Quaterly
 
         $arr = array(
             array(
-                "src" => $imgPath ."2019/06/coltene-1.png",
+                "src" => $imgPath . "2019/06/coltene-1.png",
                 "link" => $pdfPath . "Coltene_q1_2021.pdf",
                 "alt" => "Coltene"
             ),
@@ -75,11 +75,11 @@ class Quaterly
                 "link" => $pdfPath . "Kuraray-Q1-2021.xlsx",
                 "alt" => "Kuraray"
             ),
-             array(
-                 "src" => $imgPath . "2019/06/medicom.png",
-                 "link" => $pdfPath . "Medicom-Q1-2021.pdf",
-                 "alt" => "Medicom"
-             ),
+            array(
+                "src" => $imgPath . "2019/06/medicom.png",
+                "link" => $pdfPath . "Medicom-Q1-2021.pdf",
+                "alt" => "Medicom"
+            ),
             array(
                 "src" => $imgPath . "2019/06/morita.png",
                 "link" => $pdfPath . "J.Morita_Q1_2021.pdf",
@@ -101,15 +101,25 @@ class Quaterly
                 "alt" => "Shofu"
             ),
             array(
+                "src" => $imgPath . "2021/01/tokuyama_logo.png",
+                "link" =>  "/wp-content/uploads/2021/01/Tokuyama-Q1-21-1.pdf",
+                "alt" => "Tokuyama"
+            ),
+            array(
                 "src" => $imgPath . "2020/01/Waterpik-Logo.png",
                 "link" => $pdfPath . "Waterpik-Q1-Q4-2021.pdf",
                 "alt" => "Waterpik"
             ),
-            // array(
-            //     "src" => $imgPath . "2020/10/zirc.png",
-            //     "link" => "/wp-content/uploads/2020/10/Q4-2020-Zirc.pdf",
-            //     "alt" => "Zirc"
-            // ),
+            array(
+                "src" => $imgPath . "2019/06/young.png",
+                "link" => "/wp-content/uploads/2021/01/Young-Q1-and-Q2.pdf",
+                "alt" => "Young"
+            ),
+            array(
+                "src" => $imgPath . "2019/06/zest-dental.jpg",
+                "link" => "/wp-content/uploads/2021/01/Danville-Zest-2021-Q1-1.pdf",
+                "alt" => "Zest"
+            ),
         );
 
 
