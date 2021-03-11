@@ -125,7 +125,7 @@ class Quaterly
 
 
 
-        if (count($arr > 0)) {
+        if (count($arr) > 0) {
             $page .= " <div class='quaterly-grid'>";
 
             if (sizeof($arr) > 0) {
